@@ -6,3 +6,5 @@ CDF Special Interest Group - *MLOps*
 - Agenda: TBD
 
 The MLOps SIG meets every other week at 9:30 AM Pacific, on Thursdays
+
+Download this meeting invite to add to your calendar: https://zoom.us/meeting/u5Iqduutpj8o7fVIT1pePLk5wv4H9XpojQ/ics
