@@ -4,7 +4,7 @@
 
 This document sets out the current state of MLOps and provides a five year roadmap for future customer needs which is intended to support pre-competitive collaboration across the industry with a view to improving the overall state of MLOps as a capability for all.
 
-It is intended that this document be iteratively refined by group consensus within the MLOps SIG across a series of regular meetings and then published annually whilst relevant.
+It is intended that this document is iteratively refined by group consensus within the MLOps SIG across a series of regular meetings and then published annually whilst relevant.
 
 Acknowledgements
 
@@ -26,7 +26,7 @@ Terry Cox, Bootstrap Ltd <terry@bootstrap.je>
 
 MLOps could be narrowly defined as "the ability to apply DevOps principles to Machine Learning applications" however as we shall see shortly, this narrow definition misses the true value of MLOps to the customer. Instead, we define MLOps as “the extension of the DevOps methodology to include Machine Learning and Data Science assets as first class citizens within the DevOps ecology”.
 
-MLOps should be viewed as a practice for consistently managing the ML aspects of products in a way that is unified with all of the other technical and non-technical elements necessary to successfully commercialise those products with maximum potential for viability in the marketplace.
+MLOps should be viewed as a practice for consistently managing the ML aspects of products in a way that is unified with all of the other technical and non-technical elements necessary to successfully commercialize those products with maximum potential for viability in the marketplace.
 
 ### What is MLOps not?
 
@@ -36,13 +36,13 @@ For example, MLOps is not "putting Jupyter Notebooks into production environment
 
 RAD tools like Jupyter Notebooks can be extremely useful, both in classroom environments and in exploring problem spaces to understand potential approaches to mathematical problems. However, like all Rapid Application Development tools, they achieve the rapid element of their name by trading off other key non-functional requirements like maintainability, testability and scalability.
 
-In the next section, we will discuss the key drivers for MLOps and expand upon the requirements for a true DevOps approach to managing ML assets. At this point in the development of the practice, it perhaps helps to understand that much of ML and AI research and development activity has been driven by Data Science rather than Computer Science teams. This specialisation has enabled great leaps in the ML field but at the same time means that a significant proportion of ML practitioners have never been exposed to the lessons of the past seventy years of managing software assets in commercial environments.
+In the next section, we will discuss the key drivers for MLOps and expand upon the requirements for a true DevOps approach to managing ML assets. At this point in the development of the practice, it perhaps helps to understand that much of ML and AI research and development activity has been driven by Data Science rather than Computer Science teams. This specialization has enabled great leaps in the ML field but at the same time means that a significant proportion of ML practitioners have never been exposed to the lessons of the past seventy years of managing software assets in commercial environments.
 
 As we shall see, this can result in large conceptual gaps between what is involved in creating a viable proof of concept of a trained ML model on a Data Scientist’s laptop vs what it subsequently takes to be able to safely transition that asset into a commercial product in production environments. It is not therefore unfair to describe the current state of MLOps in 2020 as still on the early path towards maturity and to consider that much of the early challenge for adoption will be one of education and communication rather than purely technical refinements to tooling.
 
 Compounding this challenge, Machine Learning solutions tend to be decision-making systems rather than just data processing systems and thus will be required to be held accountable to much higher standards than those applied to the best quality software delivery projects. The bar for quality and governance processes is therefore very high, in many cases representing legal compliance processes mandated by regional legislation.
 
-As these decision-making solutions increasingly displace human decision-makers in commerce and government, we encounter a new class of governance problems, collectively known as ‘Responsible AI’. These introduce a range of challenges around complex issues such as ethics, fairness and bias in ML models and often fall under government regulation requiring interpretability and explainability of models, often to a standard higher than that applied to human staff.
+As these decision-making solutions increasingly displace human decision-makers in commerce and government, we encounter a new class of governance problems, collectively known as ‘Responsible AI’. These introduce a range of challenges around complex issues such as ethics, fairness and bias in ML models and often fall under government regulation requiring interoperability and expandability of models, often to a standard higher than that applied to human staff.
 
 As a result, it will be necessary for MLOps to develop in a manner that facilitates complex and sensitive governance processes that are of a standard appropriate to what is expected to become a highly regulated area.
 
@@ -54,9 +54,9 @@ As a result, it will be necessary for MLOps to develop in a manner that facilita
 
 ### General DevOps drivers applied to MLOps
 
-* Optimising the process of taking ML features into production by reducing Lead Time
+* Optimizing the process of taking ML features into production by reducing Lead Time
 
-* Optimising the feedback loop between production and development for ML assets
+* Optimizing the feedback loop between production and development for ML assets
 
 * Supporting the problem-solving cycle of experimentation and feedback for ML applications
 
@@ -68,9 +68,9 @@ As a result, it will be necessary for MLOps to develop in a manner that facilita
 
 * Supporting ML assets as first class citizens within CI/CD systems
 
-* Enabling shift-left on Security to include ML assets
+* Enabling shift-left on security to include ML assets
 
-* Improving quality through standardisation across conventional and ML assets
+* Improving quality through standardization across conventional and ML assets
 
 * Applying Static Analysis, Dynamic Analysis, Dependency Scanning and Integrity Checking to ML assets
 
@@ -84,7 +84,7 @@ As a result, it will be necessary for MLOps to develop in a manner that facilita
 
 * Reducing overheads of IT management through economies of scale
 
-* Facilitating the re-use of ML approaches through template or ‘quickstart’ projects
+* Facilitating the re-use of ML approaches through a template or ‘quickstart’ projects
 
 * Managing risk by aligning ML deliveries to appropriate governance processes
 
@@ -116,7 +116,7 @@ As a result, it will be necessary for MLOps to develop in a manner that facilita
 
 * Providing clear action paths to suspend or revert failed ML assets in production environments
 
-* Managing economic risks associated with deployment of key decision-making systems on customer infrastructure
+* Managing economic risks associated with the deployment of key decision-making systems on customer infrastructure
 
 * Leveraging ML techniques to improve MLOps solutions
 
@@ -136,13 +136,13 @@ MLOps must be language-agnostic. Training scripts for ML models can be written i
 
 MLOps must be framework-agnostic. There are a plethora of different Machine Learning frameworks commonly in use today and it is to be expected that these will continue to proliferate over time. It must be possible to use any desired framework within an MLOps context and be possible to combine multiple frameworks in any given deployment.
 
-MLOps must be platform and infrastructure agnostic. Adoption of MLOps is predicated upon being able to operate using this approach within the constraints of previously defined corporate infrastructure. It should be presumed unlikely that MLOps alone is a sufficient driver to motivate fundamental change to infrastructure.
+MLOps must be platform and infrastructure agnostic. The adoption of MLOps is predicated upon being able to operate using this approach within the constraints of previously defined corporate infrastructure. It should be presumed unlikely that MLOps alone is a sufficient driver to motivate fundamental change to infrastructure.
 
-MLOps should strive to be agnostic to target hardware. Models may expect to be trained or executed on CPU, GPU, TPU, dedicated ASICs or custom neuro-morphic silicon. It should be possible to use MLOps across the widest possible range of target hardware. In some scenarios, it may also be desirable to facilitate ‘cross-compilation’ where models are trained on one class of hardware to optimise for training speed and are deployed onto a different class of hardware to optimise for cost/performance.
+MLOps should strive to be agnostic to target hardware. Models may expect to be trained or executed on CPU, GPU, TPU, dedicated ASICs or custom neuro-morphic silicon. It should be possible to use MLOps across the widest possible range of target hardware. In some scenarios, it may also be desirable to facilitate ‘cross-compilation’ where models are trained on one class of hardware to optimize for training speed and are deployed onto a different class of hardware to optimize for cost/performance.
 
-MLOps implementations should follow a ‘convention over configuration’ pattern, seeking to minimise the level of build-specific assets that need to be maintained on top of the desired solution. Where configuration is necessary, it should be synthesised where possible and operate on the principle of always creating working examples that can be modified incrementally by customers to meet their needs.
+MLOps implementations should follow a ‘convention over configuration’ pattern, seeking to minimize the level of build-specific assets that need to be maintained on top of the desired solution. Where configuration is necessary, it should be synthesized where possible and operate on the principle of always creating working examples that can be modified incrementally by customers to meet their needs.
 
-The use of MLOps should teach best known methods of applying MLOps. It should be recognised that many customers will be experts in the field of Data Science but may have had relatively little exposure to DevOps or other SDLC principles. To minimise the learning curve, MLOps defaults should always align to best practice in production environments rather than ‘quick-and-dirty’ as might be the case for expert users wishing to trial an instance of the tooling in a test bench environment.
+The use of MLOps should teach best known methods of applying MLOps. It should be recognized that many customers will be experts in the field of Data Science but may have had relatively little exposure to DevOps or other SDLC principles. To minimise the learning curve, MLOps defaults should always align to best practice in production environments rather than ‘quick-and-dirty’ as might be the case for expert users wishing to trial an instance of the tooling in a test bench environment.
 
 
 
