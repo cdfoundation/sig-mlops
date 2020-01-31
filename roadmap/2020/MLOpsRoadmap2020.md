@@ -28,6 +28,10 @@ MLOps could be narrowly defined as "the ability to apply DevOps principles to Ma
 
 MLOps should be viewed as a practice for consistently managing the ML aspects of products in a way that is unified with all of the other technical and non-technical elements necessary to successfully commercialise those products with maximum potential for viability in the marketplace.
 
+
+> MLOps is not to be confused with "AIOps". AIOps often means an application of AI technologies to Ops data with sometimes unclear aims for gaining insights. These terms are still evolving, but for the purposes of this document we do not mean AIOps as it is currently known. For example: MLOps would be the term used if you are training and deploying and tracking models, AIOps would mean you are applying some machine learning to clickstreams or log files. 
+
+
 ### What is MLOps not?
 
 It sometimes helps to consider what anti-patterns exist around a concept in order to better understand it.
@@ -35,8 +39,6 @@ It sometimes helps to consider what anti-patterns exist around a concept in orde
 For example, MLOps is not "putting Jupyter Notebooks into production environments".
 
 RAD tools like Jupyter Notebooks can be extremely useful, both in classroom environments and in exploring problem spaces to understand potential approaches to mathematical problems. However, like all Rapid Application Development tools, they achieve the rapid element of their name by trading off other key non-functional requirements like maintainability, testability and scalability.
-
-MLOps is also not to be confused with "AIOps", which is now generally accepted to mean applying AI/ML technologies to data operations of services, runtimes, logs and so on, it is not directly related. 
 
 In the next section, we will discuss the key drivers for MLOps and expand upon the requirements for a true DevOps approach to managing ML assets. At this point in the development of the practice, it perhaps helps to understand that much of ML and AI research and development activity has been driven by Data Science rather than Computer Science teams. This specialisation has enabled great leaps in the ML field but at the same time means that a significant proportion of ML practitioners have never been exposed to the lessons of the past seventy years of managing software assets in commercial environments.
 
