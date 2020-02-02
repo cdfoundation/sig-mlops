@@ -28,6 +28,10 @@ MLOps could be narrowly defined as "the ability to apply DevOps principles to Ma
 
 MLOps should be viewed as a practice for consistently managing the ML aspects of products in a way that is unified with all of the other technical and non-technical elements necessary to successfully commercialise those products with maximum potential for viability in the marketplace.
 
+
+> MLOps is not to be confused with "AIOps". AIOps often means an application of AI technologies to Ops data with sometimes unclear aims for gaining insights. These terms are still evolving, but for the purposes of this document we do not mean AIOps in the latter usage. Some organisations are more comfortable with the designation 'AI' rather than 'Machine Learning' and so it is to be expected that MLOps may be referred to by AIOps in those domains, however the reverse is not true as use of the term 'AIOps' may not refer to the MLOps methodology.
+
+
 ### What is MLOps not?
 
 It sometimes helps to consider what anti-patterns exist around a concept in order to better understand it.
