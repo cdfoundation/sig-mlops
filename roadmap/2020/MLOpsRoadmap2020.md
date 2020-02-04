@@ -271,6 +271,18 @@ Managing root cause analysis for incident investigation
 Observability / interpretability
 Explainability and compliance</td>
   </tr>
+  <tr>
+    <td>Management of shared dependencies between training and operational phases</td>
+    <td>A number of ML approaches require the ability to have reusable resources that are applied both during training and during the pre-processing of data being passed to operational models. It is necessary to be able to synchronise these assets across the lifecycle of the model. e.g. Preprocessing, Validation, Word embeddings etc.</td>
+  </tr>
+    <tr>
+    <td>Abstraction for models</td>
+    <td>Stored models are currently often little more than serialised objects. To decouple training languages, platforms and hardware from operational languages, platforms and hardware it is necessary to have broadly supported standard intermediate storage formats for models that can be used reliably to decouple training and operational phases.</td>
+  </tr>
+  <tr>
+    <td>Longevity of ML assets</td>
+    <td>Decision-making systems can be expected to require very long effective operating lifetimes. It will be necessary in some scenarios to be able to refer to instances of models across significant spans of time and therefore forward and backward compatability issues, storage formats and migration of long running transactions are all to be considered.</td>
+  </tr>
 </table>
 
 
@@ -282,64 +294,77 @@ Explainability and compliance</td>
 <table>
   <tr>
     <td>Educating data science teams regarding the risks of trying to use Jupyter Notebooks in production</td>
-    <td></td>
+    <td> TBD </td>
   </tr>
   <tr>
     <td>Treat ML assets as first class citizens in DevOps processes</td>
-    <td></td>
+    <td> TBD </td>
   </tr>
   <tr>
     <td>Providing mechanisms by which training sets, training scripts and service wrappers may all be versioned appropriately</td>
-    <td></td>
+    <td> TBD </td>
   </tr>
   <tr>
     <td>Providing mechanisms by which changes to training sets, training scripts and service wrappers may all be auditable across their full lifecycle</td>
-    <td></td>
+    <td> TBD </td>
   </tr>
   <tr>
     <td>Treating training sets as managed assets under a MLOps workflow</td>
-    <td></td>
+    <td> TBD </td>
   </tr>
   <tr>
     <td>Managing the security of data in the MLOps process with particular focus upon the increased risk associated with aggregated data sets used for training or batch processing</td>
-    <td></td>
+    <td> TBD </td>
   </tr>
   <tr>
     <td>Implications of privacy, GDPR and the right to be forgotten upon training sets and deployed models</td>
-    <td></td>
+    <td> TBD </td>
   </tr>
   <tr>
     <td>Methods for wrapping trained models as deployable services in scenarios where data scientists training the models may not be experienced software developers with a background in service-oriented design</td>
-    <td></td>
+    <td> TBD </td>
   </tr>
   <tr>
     <td>Approaches for enabling all Machine Learning frameworks to be used within the scope of MLOps, regardless of language or platform</td>
-    <td></td>
+    <td> TBD </td>
   </tr>
   <tr>
     <td>Approaches for enabling MLOps to support a broad range of target platforms, including but not limited to CPU, GPU, TPU, custom ASICs and neuromorphic silicon.</td>
-    <td></td>
+    <td> TBD </td>
   </tr>
   <tr>
     <td>Methods for ensuring efficient use of hardware in both training and operational scenarios</td>
-    <td></td>
+    <td> TBD </td>
   </tr>
   <tr>
     <td>Approaches for applying MLOps to very large scale problems at petabyte scale and beyond</td>
-    <td></td>
+    <td> TBD </td>
   </tr>
   <tr>
     <td>Providing appropriate pipeline tools to manage MLOps workflows transparently as part of existing DevOps solutions</td>
-    <td></td>
+    <td> TBD </td>
   </tr>
   <tr>
     <td>Testing ML assets appropriately</td>
-    <td></td>
+    <td> TBD </td>
   </tr>
   <tr>
     <td>Governance processes for managing the release cycle of MLOps assets, including Responsible AI principles</td>
-    <td></td>
+    <td> TBD </td>
   </tr>
+  <tr>
+    <td>Management of shared dependencies between training and operational phases</td>
+    <td> TBD </td>
+  </tr>
+  <tr>
+    <td>Abstraction layer for models</td>
+    <td> TBD </td>
+  </tr>
+  <tr>
+    <td>Longevity of ML assets</td>
+    <td> TBD </td>
+  </tr>
+
 </table>
 
 
@@ -376,7 +401,6 @@ Show a timeline of potential solutions to set expectations.
     <td> Qualification / Pre-production</td>
   </tr>
 </table>
-
 
 <table>
   <tr>
@@ -507,6 +531,31 @@ Show a timeline of potential solutions to set expectations.
     <td></td>
     <td></td>
   </tr>
+    <tr>
+    <td>Management of shared dependencies between training and operational phases</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Abstraction layer for models</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Longevity of ML assets</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
 </table>
 
 
