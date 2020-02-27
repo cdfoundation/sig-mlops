@@ -26,7 +26,7 @@ Terry Cox, Bootstrap Ltd <terry@bootstrap.je>
 
 MLOps could be narrowly defined as "the ability to apply DevOps principles to Machine Learning applications" however as we shall see shortly, this narrow definition misses the true value of MLOps to the customer. Instead, we define MLOps as “the extension of the DevOps methodology to include Machine Learning and Data Science assets as first class citizens within the DevOps ecology”.
 
-MLOps should be viewed as a practice for consistently managing the ML aspects of products in a way that is unified with all of the other technical and non-technical elements necessary to successfully commercialise those products with maximum potential for viability in the marketplace.
+MLOps should be viewed as a practice for consistently managing the ML aspects of products in a way that is unified with all of the other technical and non-technical elements necessary to successfully commercialise those products with maximum potential for viability in the marketplace. This includes DataOps, too, as machine learning without complete, consistent, semantically valid, correct, timely, and unbiased data is problematic or leads to flawed solutions that can exacerbate built-in biases.
 
 
 > MLOps is not to be confused with "AIOps". AIOps often means an application of AI technologies to Ops data with sometimes unclear aims for gaining insights. These terms are still evolving, but for the purposes of this document we do not mean AIOps in the latter usage. Some organisations are more comfortable with the designation 'AI' rather than 'Machine Learning' and so it is to be expected that MLOps may be referred to by AIOps in those domains, however the reverse is not true as use of the term 'AIOps' may not refer to the MLOps methodology.
@@ -102,7 +102,7 @@ As a result, it will be necessary for MLOps to develop in a manner that facilita
 
 * Verifying that algorithms make decisions aligned to customer values
 
-* Tracking long term stability of ML asset performance
+* Tracking long-term stability of ML asset performance
 
 * Incorporate ethical governance into management of ML assets
 
@@ -110,7 +110,9 @@ As a result, it will be necessary for MLOps to develop in a manner that facilita
 
 * Ensuring explainability of decisions
 
-* Providing  transparency and audit-ability of ML assets
+* Ensuring fairness in decisions
+
+* Providing transparency and audit-ability of ML assets
 
 * Allowing for provability of decision-making algorithms
 
@@ -128,6 +130,11 @@ As a result, it will be necessary for MLOps to develop in a manner that facilita
 
 * Facilitating compliance verification against regional AI legislation
 
+* Enabling fast development life cycles by offering out-of-the-box (correlated) sampling of relevant data sets
+
+* Enabling online (streaming) and offline (batch) model predictions
+
+* Accelerating enterprise-wide development of models through ready-to-reuse features (i.e. feature stores)
 
 
 ## Vision
@@ -142,7 +149,17 @@ MLOps must be framework-agnostic. There are a plethora of different Machine Lear
 
 MLOps must be platform and infrastructure agnostic. Adoption of MLOps is predicated upon being able to operate using this approach within the constraints of previously defined corporate infrastructure. It should be presumed unlikely that MLOps alone is a sufficient driver to motivate fundamental change to infrastructure.
 
-MLOps should strive to be agnostic to target hardware. Models may expect to be trained or executed on CPU, GPU, TPU, dedicated ASICs or custom neuro-morphic silicon. It should be possible to use MLOps across the widest possible range of target hardware. In some scenarios, it may also be desirable to facilitate ‘cross-compilation’ where models are trained on one class of hardware to optimise for training speed and are deployed onto a different class of hardware to optimise for cost/performance.
+It is very important that MLOps should make no over-simplified assumptions with respect to hardware. To achieve currently known customer requirements in a range of ML fields, it will be necessary to achieve performance gains of at least three orders of magnitude. This can be expected to lead to significant change with respect to the hardware utilised to train and execute models.
+
+We make the following assertions:
+
+- Models may expect to be **trained** on various combinations CPU, GPU, TPU, dedicated ASICs or custom neuro-morphic silicon, with new hardware entering the market regularly.
+- Models may expect to be **executed** on various combinations CPU, GPU, TPU, dedicated ASICs or custom neuro-morphic silicon, again with new hardware entering the market regularly.
+- It **must not** be assumed that models will be executed on the same hardware as they are trained upon.
+
+It is desirable to have the ability to train once but run anywhere, that is, models are trained on specific hardware to minimise training time, and optimised for different target devices based on cost or performance considerations, however this aspiration may need to be tempered with a degree of pragmatism. The ability to train on a given hardware platform requires, at minimum, dedicated driver support, and in practice usually also necessitates extensive library / framework support. The ability to execute on a given hardware platform may involve having to significantly optimise resource usage to lower product cost or require the production of dedicated silicon specific to a single task.
+
+ Whilst there will undoubtedly be common scenarios, for example in Cloud deployment, where CPU -> CPU or GPU -> GPU is sufficient to meet requirements, MLOps must allow for a broad range of potential cross-compilation scenarios. 
 
 MLOps implementations should follow a ‘convention over configuration’ pattern, seeking to minimise the level of build-specific assets that need to be maintained on top of the desired solution. Where configuration is necessary, it should be synthesised where possible and operate on the principle of always creating working examples that can be modified incrementally by customers to meet their needs.
 
@@ -181,7 +198,7 @@ Demonstrate simple alternatives that are easy to use as part of an MLOps process
 Integrate ML assets with version control systems</td>
   </tr>
   <tr>
-    <td>Providing mechanisms by which training sets, training scripts and service wrappers may all be versioned appropriately</td>
+    <td>Providing mechanisms by which training/testing/validation data sets, training scripts, models, experiments, and service wrappers may all be versioned appropriately</td>
     <td>All assets under version control
 ML assets include sets of data
 Data volumes may be large
@@ -190,7 +207,7 @@ Data ownership may be complex
 Multiple platforms may be involved</td>
   </tr>
   <tr>
-    <td>Providing mechanisms by which changes to training sets, training scripts and service wrappers may all be auditable across their full lifecycle</td>
+    <td>Providing mechanisms by which changes to training/testing/validation data sets, training scripts, models, experiments, and service wrappers may all be auditable across their full lifecycle</td>
     <td>Models may be retrained based upon new training data
 Models may be retrained based upon new training approaches
 Models may be self-learning
@@ -201,8 +218,8 @@ Incidents may occur that require root cause analysis and change
 Corporate or government compliance may require audit or investigation</td>
   </tr>
   <tr>
-    <td>Treating training sets as managed assets under a MLOps workflow</td>
-    <td>Content of training sets is essential to audit process, root cause analysis
+    <td>Treating training/testing/validation data sets as managed assets under a MLOps workflow</td>
+    <td>Content of training/testing/validation data sets is essential to audit process, root cause analysis
 Data is not typically treated as a managed asset under conventional CI/CD
 Data may reside across multiple systems
 Data may only be able to reside in restricted jurisdictions
@@ -218,6 +235,7 @@ Migration of data into Cloud environments, particularly for training, may be pro
     <td>Implications of privacy, GDPR and the right to be forgotten upon training sets and deployed models</td>
     <td>The right to use data for training purposes may require audit
 Legal compliance may require removing data from audited training sets, which in turn implies the need to retrain and redeploy models built from that data.</td>
+    <td>The right to be forgotten or the right to opt out of certain data tracking may require per-user reset of model predictions</td>
   </tr>
   <tr>
     <td>Methods for wrapping trained models as deployable services in scenarios where data scientists training the models may not be experienced software developers with a background in service-oriented design</td>
@@ -268,6 +286,7 @@ Security testing</td>
     <td>Governance processes for managing the release cycle of MLOps assets, including Responsible AI principles</td>
     <td>Managing release of new training sets to data science team
 Establishing thresholds for acceptable models
+Monitoring model performance (and drift) over time to feed into thresholds for retraining and deployments
 Managing competitive training of model variants against each other in dev environments
 Managing release of preferred models into staging environments for integration and UAT
 Managing release of specific model versions into production environments for specific clients/deployments
@@ -400,6 +419,8 @@ The following cross-cutting concerns are identified:
 
 * Common testing aspects such as code coverage, code quality, licence tracking, CVE checking etc.
 
+* Data quality
+
 * Security
 
 
@@ -413,6 +434,5 @@ The following cross-cutting concerns are identified:
 # References
 
 > NOTES: List of references.
-
 
 
