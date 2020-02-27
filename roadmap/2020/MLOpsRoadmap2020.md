@@ -149,7 +149,17 @@ MLOps must be framework-agnostic. There are a plethora of different Machine Lear
 
 MLOps must be platform and infrastructure agnostic. Adoption of MLOps is predicated upon being able to operate using this approach within the constraints of previously defined corporate infrastructure. It should be presumed unlikely that MLOps alone is a sufficient driver to motivate fundamental change to infrastructure.
 
-MLOps should strive to be agnostic to hardware. Models may expect to be trained or executed on CPU, GPU, TPU, dedicated ASICs or custom neuro-morphic silicon. It should be possible to use MLOps across the widest possible range of hardware. It is also desirable to have the ability to train once but run anywhere, that is, models are trained on specific hardware to minimize training time, whereas they are optimized for different target devices based on cost or performance considerations.
+It is very important that MLOps should make no over-simplified assumptions with respect to hardware. To achieve currently known customer requirements in a range of ML fields, it will be necessary to achieve performance gains of at least three orders of magnitude. This can be expected to lead to significant change with respect to the hardware utilised to train and execute models.
+
+We make the following assertions:
+
+- Models may expect to be **trained** on various combinations CPU, GPU, TPU, dedicated ASICs or custom neuro-morphic silicon, with new hardware entering the market regularly.
+- Models may expect to be **executed** on various combinations CPU, GPU, TPU, dedicated ASICs or custom neuro-morphic silicon, again with new hardware entering the market regularly.
+- It **must not** be assumed that models will be executed on the same hardware as they are trained upon.
+
+It is desirable to have the ability to train once but run anywhere, that is, models are trained on specific hardware to minimise training time, and optimised for different target devices based on cost or performance considerations, however this aspiration may need to be tempered with a degree of pragmatism. The ability to train on a given hardware platform requires, at minimum, dedicated driver support, and in practice usually also necessitates extensive library / framework support. The ability to execute on a given hardware platform may involve having to significantly optimise resource usage to lower product cost or require the production of dedicated silicon specific to a single task.
+
+ Whilst there will undoubtedly be common scenarios, for example in Cloud deployment, where CPU -> CPU or GPU -> GPU is sufficient to meet requirements, MLOps must allow for a broad range of potential cross-compilation scenarios. 
 
 MLOps implementations should follow a ‘convention over configuration’ pattern, seeking to minimise the level of build-specific assets that need to be maintained on top of the desired solution. Where configuration is necessary, it should be synthesised where possible and operate on the principle of always creating working examples that can be modified incrementally by customers to meet their needs.
 
@@ -424,6 +434,5 @@ The following cross-cutting concerns are identified:
 # References
 
 > NOTES: List of references.
-
 
 
