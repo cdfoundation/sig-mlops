@@ -188,65 +188,65 @@ This is the first edition of the MLOps Roadmap and sets out the initial challeng
 <table>
   <tr>
     <td>Educating data science teams regarding the risks of trying to use Jupyter Notebooks in production</td>
-    <td>Communicating the SDLC and the lessons of DevOps in a way that is comfortable for the audience
-Highlighting the dangers of using RAD tools in production
-Demonstrate simple alternatives that are easy to use as part of an MLOps process</td>
+    <td>- Communicating the SDLC and the lessons of DevOps in a way that is comfortable for the audience<br/>
+- Highlighting the dangers of using RAD tools in production<br/>
+- Demonstrate simple alternatives that are easy to use as part of an MLOps process</td>
   </tr>
   <tr>
     <td>Treat ML assets as first class citizens in DevOps processes</td>
-    <td>Extend CI/CD tools to support ML assets
-Integrate ML assets with version control systems</td>
+    <td>- Extend CI/CD tools to support ML assets<br/>
+- Integrate ML assets with version control systems<br/></td>
   </tr>
   <tr>
     <td>Providing mechanisms by which training/testing/validation data sets, training scripts, models, experiments, and service wrappers may all be versioned appropriately</td>
-    <td>All assets under version control
-ML assets include sets of data
-Data volumes may be large
-Data may be sensitive
-Data ownership may be complex
-Multiple platforms may be involved</td>
+    <td>- All assets under version control<br/>
+- ML assets include sets of data<br/>
+- Data volumes may be large<br/>
+- Data may be sensitive<br/>
+- Data ownership may be complex<br/>
+- Multiple platforms may be involved<br/></td>
   </tr>
   <tr>
     <td>Providing mechanisms by which changes to training/testing/validation data sets, training scripts, models, experiments, and service wrappers may all be auditable across their full lifecycle</td>
-    <td>Models may be retrained based upon new training data
-Models may be retrained based upon new training approaches
-Models may be self-learning
-Models may degrade over time
-Models may be deployed in new applications
-Models may be subject to attack and require revision
-Incidents may occur that require root cause analysis and change
-Corporate or government compliance may require audit or investigation</td>
+    <td>- Models may be retrained based upon new training data<br/>
+- Models may be retrained based upon new training approaches<br/>
+- Models may be self-learning<br/>
+- Models may degrade over time<br/>
+- Models may be deployed in new applications<br/>
+- Models may be subject to attack and require revision<br/>
+- Incidents may occur that require root cause analysis and change<br/>
+- Corporate or government compliance may require audit or investigation<br/></td>
   </tr>
   <tr>
     <td>Treating training/testing/validation data sets as managed assets under a MLOps workflow</td>
-    <td>Content of training/testing/validation data sets is essential to audit process, root cause analysis
-Data is not typically treated as a managed asset under conventional CI/CD
-Data may reside across multiple systems
-Data may only be able to reside in restricted jurisdictions
-Data storage may not be immutable
-Data ownership may be a factor</td>
+    <td>- Content of training/testing/validation data sets is essential to audit process, root cause analysis<br/>
+- Data is not typically treated as a managed asset under conventional CI/CD<br/>
+- Data may reside across multiple systems<br/>
+- Data may only be able to reside in restricted jurisdictions<br/>
+- Data storage may not be immutable<br/>
+- Data ownership may be a factor<br/></td>
   </tr>
   <tr>
     <td>Managing the security of data in the MLOps process with particular focus upon the increased risk associated with aggregated data sets used for training or batch processing</td>
-    <td>Aggregated data carries additional risk and represents a higher value target
-Migration of data into Cloud environments, particularly for training, may be problematic</td>
+    <td>- Aggregated data carries additional risk and represents a higher value target<br/>
+- Migration of data into Cloud environments, particularly for training, may be problematic</td>
   </tr>
   <tr>
     <td>Implications of privacy, GDPR and the right to be forgotten upon training sets and deployed models</td>
-    <td>The right to use data for training purposes may require audit
-Legal compliance may require removing data from audited training sets, which in turn implies the need to retrain and redeploy models built from that data.</td>
-    <td>The right to be forgotten or the right to opt out of certain data tracking may require per-user reset of model predictions</td>
+    <td>- The right to use data for training purposes may require audit<br/>
+   - Legal compliance may require removing data from audited training sets, which in turn implies the need to retrain and redeploy models built from that data.<br/>
+   -  The right to be forgotten or the right to opt out of certain data tracking may require per-user reset of model predictions</td>
   </tr>
   <tr>
     <td>Methods for wrapping trained models as deployable services in scenarios where data scientists training the models may not be experienced software developers with a background in service-oriented design</td>
-    <td>Operational use of a model brings new architectural requirements that may sit outside the domain of expertise of the data scientists who created it
-Model developers may not be software developers and therefore experience challenges implementing APIs around their models and integrating within solutions</td>
+    <td>Operational use of a model brings new architectural requirements that may sit outside the domain of expertise of the data scientists who created it.<br/><br/>
+Model developers may not be software developers and therefore experience challenges implementing APIs around their models and integrating within solutions.<br/></td>
   </tr>
   <tr>
     <td>Approaches for enabling all Machine Learning frameworks to be used within the scope of MLOps, regardless of language or platform</td>
-    <td>Common mistake to assume ML = Python
-Many commonly used frameworks such as PyTorch and TensorFlow exist and can be expected to continue to proliferate
-MLOps must not be opinionated about frameworks or languages</td>
+    <td>Common mistake to assume ML = Python<br/><br/>
+Many commonly used frameworks such as PyTorch and TensorFlow exist and can be expected to continue to proliferate.<br/><br/>
+MLOps must not be opinionated about frameworks or languages.<br/></td>
   </tr>
   <tr>
     <td>Approaches for enabling MLOps to support a broad range of target platforms, including but not limited to CPU, GPU, TPU, custom ASICs and neuromorphic silicon.</td>
@@ -254,45 +254,45 @@ MLOps must not be opinionated about frameworks or languages</td>
   </tr>
   <tr>
     <td>Methods for ensuring efficient use of hardware in both training and operational scenarios</td>
-    <td>Hardware accelerators are expensive and difficult to virtualise
-Cadence of training activities impacts cost of ownership
-Elastic scaling of models against demand in operation is challenging when based upon hardware acceleration</td>
+    <td>- Hardware accelerators are expensive and difficult to virtualise<br/>
+- Cadence of training activities impacts cost of ownership<br/>
+- Elastic scaling of models against demand in operation is challenging when based upon hardware acceleration<br/></td>
   </tr>
   <tr>
     <td>Approaches for applying MLOps to very large scale problems at petabyte scale and beyond</td>
-    <td>Problems associated with moving and refreshing large training sets
-Problems associated with distributing training loads across hardware accelerators
-Problems with speed of distributing training data to correct hardware accelerators
-Problems of provisioning / releasing large pools of hardware resources</td>
+    <td>- Problems associated with moving and refreshing large training sets<br/>
+- Problems associated with distributing training loads across hardware accelerators<br/>
+- Problems with speed of distributing training data to correct hardware accelerators<br/>
+- Problems of provisioning / releasing large pools of hardware resources<br/></td>
   </tr>
   <tr>
     <td>Providing appropriate pipeline tools to manage MLOps workflows transparently as part of existing DevOps solutions</td>
-    <td>Integration of ML assets with existing CD/CD solutions
-Extending Cloud-native build tools to support allocation of ML assets, data and hardware during training builds
-Hardware pool management</td>
+    <td>- Integration of ML assets with existing CD/CD solutions<br/>
+- Extending Cloud-native build tools to support allocation of ML assets, data and hardware during training builds<br/>
+- Hardware pool management<br/></td>
   </tr>
   <tr>
     <td>Testing ML assets appropriately</td>
-    <td>Conventional Unit / Integration / BDD / UAT testing
-Adversarial testing
-Bias detection
-Fairness testing
-Ethics testing
-Interpretability
-Stress testing
-Security testing</td>
+    <td>- Conventional Unit / Integration / BDD / UAT testing<br/>
+- Adversarial testing<br/>
+- Bias detection<br/>
+- Fairness testing<br/>
+- Ethics testing<br/>
+- Interpretability<br/>
+- Stress testing<br/>
+- Security testing<br/></td>
   </tr>
   <tr>
     <td>Governance processes for managing the release cycle of MLOps assets, including Responsible AI principles</td>
-    <td>Managing release of new training sets to data science team
-Establishing thresholds for acceptable models
-Monitoring model performance (and drift) over time to feed into thresholds for retraining and deployments
-Managing competitive training of model variants against each other in dev environments
-Managing release of preferred models into staging environments for integration and UAT
-Managing release of specific model versions into production environments for specific clients/deployments
-Managing root cause analysis for incident investigation
-Observability / interpretability
-Explainability and compliance</td>
+    <td>- Managing release of new training sets to data science team<br/>
+- Establishing thresholds for acceptable models<br/>
+- Monitoring model performance (and drift) over time to feed into thresholds for retraining and deployments<br/>
+- Managing competitive training of model variants against each other in dev environments<br/>
+- Managing release of preferred models into staging environments for integration and UAT<br/>
+- Managing release of specific model versions into production environments for specific clients/deployments<br/>
+- Managing root cause analysis for incident investigation<br/>
+- Observability / interpretability<br/>
+- Explainability and compliance</td>
   </tr>
   <tr>
     <td>Management of shared dependencies between training and operational phases</td>
@@ -305,6 +305,23 @@ Explainability and compliance</td>
   <tr>
     <td>Longevity of ML assets</td>
     <td>Decision-making systems can be expected to require very long effective operating lifetimes. It will be necessary in some scenarios to be able to refer to instances of models across significant spans of time and therefore forward and backward compatability issues, storage formats and migration of long running transactions are all to be considered.</td>
+  </tr>
+  <tr>
+    <td>Managing and tracking trade-offs</td>
+    <td>Solutions including ML components will be required to manage trade-offs between multiple factors, for example in striking a balance between model accuracy and customer privacy, or explainability and the risk of revealing data about individuals in the data set. It may be necessary to provide intrinsic metrics to help customers balance these equations in production. It should also be anticipated that customers will need to be able to safely A/B test different scenarios to measure their impact upon this balance.</td>
+  </tr>
+  <tr>
+    <td>Escalation of data categories</td>
+    <td>As a side effect of applying governance processes to check for fairness and bias within models, it may become necessary to hold special category data providing information about race, religion or belief, sexual orientation, disability, pregnancy, or gender reassignment in order to detect such biases. As a result of this, there will be an escalation of data sensitivity and in the legal constraints that apply to the solution.</td>
+  </tr>
+  <tr>
+    <td>Intrinsic protection of models</td>
+    <td>Models are vulnerable to certain common classes of attack, such as:<br/>
+    &nbsp &nbsp- Black box attempts to reverse engineer them<br/>
+    &nbsp &nbsp- Model Inversion attacks attempting to extract data about individuals<br/>
+    &nbsp &nbsp- Membership Inference attacks attempting to verify the presence of individuals in data sets<br/>
+    &nbsp &nbsp- Adversarial attacks using tailored data to manipulate outcomes<br/>
+    It should be anticipated that there will be a need for generic protections against these classes of challenge across all deployed models.</td>
   </tr>
 </table>
 
@@ -385,6 +402,18 @@ Explainability and compliance</td>
   </tr>
   <tr>
     <td>Longevity of ML assets</td>
+    <td> TBD </td>
+  </tr>
+  <tr>
+    <td>Managing and tracking trade-offs</td>
+    <td> TBD </td>
+  </tr>
+  <tr>
+    <td>Escalation of data categories</td>
+    <td> TBD </td>
+  </tr>
+  <tr>
+    <td>Intrinsic protection of models</td>
     <td> TBD </td>
   </tr>
 
