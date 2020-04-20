@@ -18,6 +18,3 @@ OR
 For APAC / Oceania, 11:00 BST / 15:00 IST / 18:00 CST / 19:00 JST / 20:00 AEST, on Thursdays 
 
 -- [Zoom Meeting Link](https://zoom.us/j/95182588714?pwd=UVVUbVFHZWtDQytvNnJ3S3RUL09HQT09)
-
-Calendar invite: https://zoom.us/meeting/tJEsf-utpjMtG9Cm37to7mEo4TT-wJTpVKmM/ics?icsToken=98tyKuCtrzMoH9ydtxiDRowMBYqga-_xiFxajfp-kUyyFy8Ebyb5YtZ2f6VVJMjm
-
