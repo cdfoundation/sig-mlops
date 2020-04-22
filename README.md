@@ -6,6 +6,7 @@ CDF Special Interest Group - *MLOps*
 - Mail list: https://lists.cd.foundation/g/sig-mlops 
 - Email list: sig-mlops@lists.cd.foundation
 - Agenda and Meeting minutes: http://bit.ly/mlops-sig
+- [Slack community](https://join.slack.com/t/cdeliveryfdn/shared_invite/zt-ao8y4qhd-BQcTUg5l7m0HxXyBvJrT4w) be sure to join the `#sig-mlops` channel
 
 For USA, the MLOps SIG meets every other week at 9:30 AM Pacific, on Thursdays 
 
