@@ -334,7 +334,13 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
 <table>
   <tr>
     <td>Educating data science teams regarding the risks of trying to use Jupyter Notebooks in production</td>
-    <td> TBD </td>
+    <td>Jupyter Notebooks are the tool we use to train Data Scientists as they can easily be used to explore ad hoc ML problems incrementally on a laptop. Unfortunately, when all you have is a hammer, everything tends to look like a nail. </br></br>We see Jupyter Notebooks featuring in production scenarios, not because this are the best tool for the job, but because this is the tool we taught people to use and because we didn't teach about any of the problems inherent in using that tool. </br></br>This approach persists because of an ongoing gap in the tool chain.</br></br>
+- Improved technology solutions are required that enable Data Scientists to easily run experiments at scale on elastic Cloud resources in a consistent, audited and repeatable way.</br>
+- These solutions should integrate with existing Integrated Development Environments, Source Code Control and Quality Management tools.</br>
+- Solutions should integrate with CI/CD environments so as to facilitate Data Scientists setting up multiple variations on a training approach and launching these as parallel, audited activities on Cloud infrastructure.</br>
+- Working with the training of models and the consumption of trained models should be a seamless experience within a single toolchain.</br>
+- Tooling should introduce new Data Scientists to the core concepts of software asset management, quality management and automated testing.</br>
+- Tooling should enable appropriate governance processes around the release of ML assets into team environments.</br></td>
   </tr>
   <tr>
     <td>Treat ML assets as first class citizens in DevOps processes</td>
