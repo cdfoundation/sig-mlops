@@ -458,6 +458,18 @@ The following cross-cutting concerns are identified:
 
 > NOTES: Conclusions and recommendations for the current year.
 
+# Glossary
+
+Short definitions of terms used that aren't explained inline. 
+
+* Training: act of combining data with (hyper) parameters to yield a model
+* Model: A deployable (usually binary) artifact that is the result of training. Can be used at runtime to make predictions for example
+* Hyperparameter: parameters used during training of a model
+* Endpoint: typically a model is deployed to an endpoint which may be a HTTPS service which serves up predictions (models may be also deployed to devices and other places)
+* Training Pipeline: all the steps needed to prepare a model
+* Training set: a set of example data used for training a model
+
+
 
 
 # References
