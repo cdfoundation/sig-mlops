@@ -470,7 +470,8 @@ Short definitions of terms used that aren't explained inline.
 
 * Training: act of combining data with (hyper) parameters to yield a model
 * Model: A deployable (usually binary) artifact that is the result of training. Can be used at runtime to make predictions for example
-* Hyperparameter: parameters used during training of a model
+* Hyperparameter: parameters used during training of a model, typically set by a data scientist/human
+* Parameter: a configuration variable set after the training phase (usually part of a model)
 * Endpoint: typically a model is deployed to an endpoint which may be a HTTPS service which serves up predictions (models may be also deployed to devices and other places)
 * Training Pipeline: all the steps needed to prepare a model
 * Training set: a set of example data used for training a model
