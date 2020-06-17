@@ -366,11 +366,25 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
   </tr>
   <tr>
     <td>Implications of privacy, GDPR and the right to be forgotten upon training sets and deployed models</td>
-    <td> TBD </td>
+    <td>- Tooling should provide mechanisms for auditing individual permissions to use source data as part of training sets, with the assumption that permission may be withdrawn at any time</br></br>
+    - Tooling should provide mechanisms to invalidate the status of deployed models where permissions to use have been revoked</br></br>
+    - Tooling may optionally provide mechanisms to automatically retrain and revalidate models on the basis of revoked permissions</br></br>
+    - Tooling should facilitate user-specific exceptions to model invocation rules where this is necessary to enable the right to be forgotten or to support the right to opt out of certain types of data tracking
+    </td>
   </tr>
   <tr>
     <td>Methods for wrapping trained models as deployable services in scenarios where data scientists training the models may not be experienced software developers with a background in service-oriented design</td>
-    <td> TBD </td>
+    <td>Models that have been trained and which have passed acceptance testing need to be deployed as part of a broader application. This might take the form of elastically scalable Cloud services within a distributed web application, or as an embedded code/data bundle within a mobile application or other physical device. In some cases, it may be expected that models need to be translated to an alternate form prior to deployment, perhaps as components of a dedicated FPGA or ASIC in a hardware solution.</br></br>
+    - MLOps tooling should integrate and simplify the deployment of models into customer applications, according to the architecture specified by the customer.</br></br>
+    - MLOps tooling should not force a specific style of deployment for models, such as a dedicated, central 'model server'</br></br>
+    - Tooling should assume that model execution in Cloud environments must be able to scale elastically</br></br>
+    - Tooling should allow for careful management of execution cost of models in Cloud environments, to mitigate the risk of unexpected proliferation of consumption of expensive compute resources</br></br>
+    - Tooling should provide mechanisms for out-of-the-box deployment of models against common architectures, with the assumption that customers may not be expert service developers</br></br>
+    - Tooling should provide automated governance processes to manage the release of models into production environments in a controlled manner</br></br>
+    - Tooling should provide the facility to upgrade and roll-back deployed models across environments</br></br>
+    - It should be assumed that models represent reusable assets that may be deployed in the form of multiple instances at differing point release versions across many independent production environments</br></br>
+    - It should be assumed that more than one point release version of a model may be deployed concurrently in order to support phased upgrades of system functionality across customer environments
+    </td>
   </tr>
   <tr>
     <td>Approaches for enabling all Machine Learning frameworks to be used within the scope of MLOps, regardless of language or platform</td>
