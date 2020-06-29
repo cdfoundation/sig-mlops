@@ -346,11 +346,11 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
   </tr>
   <tr>
     <td>Treat ML assets as first class citizens in DevOps processes</td>
-    <td>ML assets include but are not training sets, training configurations (hyperparameters), scripts and models. Some of these assets can be large, some are more like source code assets. We should be able to track changes to all these assets, and see how the changes relate to each other. Reporting on popular devops "metrics" like "Change Failure Rate" and "Mean cycle time" should be possible if done correctly. Whilst some of these assets are large, they are not without precedent in the devops world. People have been handling changes to database configurations, copying and backup of data for some time, so they same should apply to all ML assets. In the following sections we can explore how this may be implemented.</td>
+    <td>ML assets include but are not limited to training sets, training configurations (hyperparameters), scripts and models. Some of these assets can be large, some are more like source code assets. We should be able to track changes to all these assets, and see how the changes relate to each other. Reporting on popular devops "metrics" like "Change Failure Rate" and "Mean cycle time" should be possible if done correctly. Whilst some of these assets are large, they are not without precedent in the devops world. People have been handling changes to database configurations, copying and backup of data for some time, so they same should apply to all ML assets. In the following sections we can explore how this may be implemented.</td>
   </tr>
   <tr>
     <td>Providing mechanisms by which training sets, training scripts and service wrappers may all be versioned appropriately</td>
-    <td> TBD </td>
+    <td>Training sets are prepared data sets which are extracted from production data. They may contain PII or sensitive information, so making the data available to developers in a way analagous to source code may be problematic. Training scripts are smaller artifacts but are sometimes coupled to the training sets. All scripts should be versioned in a way that makes the connected to the training sets that they are associated with. Scripts and training sets are also coupled to meta data, such as instructions as to how training sets are split up for testing and validation, so a model can be reproduced in ideally a deterministic manner if required.</td>
   </tr>
   <tr>
     <td>Providing mechanisms by which changes to training sets, training scripts and service wrappers may all be auditable across their full lifecycle</td>
