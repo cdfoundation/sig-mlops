@@ -431,7 +431,7 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
   </tr>
   <tr>
     <td>Longevity of ML assets</td>
-    <td> TBD </td>
+    <td>With traditional software assets, such as binaries, there is some expectation of backwards compatiblility (in the case of, for example, Java, this compatibility of binaries has spanned decades). ML Assets such as binaries will need to have some reasonable backwards compatiblity. Versioning of artifacts for serving the model are also important (but typically that is a better known challenge). In the case of backwards breaking changes, ML assets such as training scripts, tests and data sets will need to be accessed to reproduce a model for the new target runtime.</td>
   </tr>
   <tr>
     <td>Managing and tracking trade-offs</td>
