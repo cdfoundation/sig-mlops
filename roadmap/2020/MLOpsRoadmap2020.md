@@ -445,6 +445,11 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
     <td>Intrinsic protection of models</td>
     <td> TBD </td>
   </tr>
+  <tr>
+    <td>Emergency Cut out</td>
+    <td>In cases of runtime learning (either via automated model retraining and deployment, or reinforcement learning) then a service wrapper for a model should be able to "kill" the operation of a model in some cases (based on criteria defining unacceptable behavior). This may be achieved by rolling back rapidly to an earlier "safe" version of the model, or halting the service (deliberately causing an outage). Ideally the behavior would be capture before model deployment, and the training data filtered, or the model rejected, but in many cases the behavior may not manifest until production data is applied.</td>
+  </tr>
+  
 
 </table>
 
