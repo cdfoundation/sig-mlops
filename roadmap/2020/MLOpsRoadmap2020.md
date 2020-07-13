@@ -325,6 +325,12 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
     &nbsp &nbsp- Adversarial attacks using tailored data to manipulate outcomes<br/>
     It should be anticipated that there will be a need for generic protections against these classes of challenge across all deployed models.</td>
   </tr>
+  <tr>
+    <td>Protection from undesired model evolution during reinforcement learning</td>
+    <td>Models that use reinfocement learning are evolving at runtime. This can include models that are retrained periodically or on an event trigger. 
+     The challenge is that in this unsupervised scenario the model may learn offensive or undesirable behaviors from user input or external training data. Some have called this the "swearing problem" with chatbots.            
+     </td>
+   </tr>
 </table>
 
 
