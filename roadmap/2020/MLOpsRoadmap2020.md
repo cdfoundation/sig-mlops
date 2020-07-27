@@ -325,6 +325,13 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
     &nbsp &nbsp- Adversarial attacks using tailored data to manipulate outcomes<br/>
     It should be anticipated that there will be a need for generic protections against these classes of challenge across all deployed models.</td>
   </tr>
+ 
+  <tr> 
+   <td>Emergency cut out</td>
+   <td>As models are trained typically with production/runtime data, and act on production data, there can be cases where undesirable behaviour of a recently deployed model change is only apparent in a production environment. One example is a chat bot that uses appropriate language in reaction to some interactions and training sets. There is a need to have the ability to quickly cut out a model or roll back immediately to an earlier version should this happen.</td>
+ 
+  </tr>
+ 
 </table>
 
 
@@ -446,8 +453,8 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
     <td> TBD </td>
   </tr>
   <tr>
-    <td>Emergency Cut out</td>
-    <td>In cases of runtime learning (either via automated model retraining and deployment, or reinforcement learning) then a service wrapper for a model should be able to "kill" the operation of a model in some cases (based on criteria defining unacceptable behavior). This may be achieved by rolling back rapidly to an earlier "safe" version of the model, or halting the service (deliberately causing an outage). Ideally the behavior would be capture before model deployment, and the training data filtered, or the model rejected, but in many cases the behavior may not manifest until production data is applied.</td>
+    <td>Emergency cut out</td>
+    <td>As a model may need to abruptly be cut out, this may need to be done at the service wrapper level as an emergency measure. Rolling back to a previous version of the model and a service wrapper is desirable, but only if it is fast enough for safety reasons. At the very least, the ability to deny service in the span of monites in cases of misbehavior is required. This cut out needs to be human triggered at least, and possibly triggered via a live health check in the service wrapper. It is common in traditional service deployments to have health and liveness checks, a similar thing exists for deployed models where health includes acceptable behavior. 
   </tr>
   
 
