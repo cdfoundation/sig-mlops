@@ -441,7 +441,8 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
   </tr>
   <tr>
     <td>Abstraction layer for models</td>
-    <td> TBD </td>
+    <td>It is unsafe to assume that models will be deployed into environments that closely match those it which the model was originally trained. As a result, the use of object serialisation for model description is only viable in a narrow range of potential use cases. Typically, we need to be able to use a platform independent intermediate format to describe models so that this can act as a normalised form for data exchange between training and operational environments.</br></br>
+    This form must be machine readable and structured in such a way that it is extensible to support a wide range of evolving ML  techniques and can easily have new marshalling and unmarshalling components added as new source and target environments are adopted. The normalised form should be structured such that the training environment has no need to know about the target operational environment in advance.</td>
   </tr>
   <tr>
     <td>Longevity of ML assets</td>
