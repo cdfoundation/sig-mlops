@@ -334,7 +334,7 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
   
   <tr> 
    <td>Online learning</td>
-   <td>There are systems in use that use online learning, where a model or similar evolves in near real time with the data flowing in (and there is not necessarily a deploy stage). Systems also may modify themself at runtime in this case. These are out of scope for now of MLOps, however in the future may be addressed with CI/CD approaches that uses a pipeline to deploy changes in a batched fasion as the system evolves.</td>
+   <td>There are systems in use that use online learning, where a model or similar evolves in near real time with the data flowing in (and there is not necessarily a deploy stage). Systems also may modify themself at runtime in this case. These types of systems will be address in a future iteration of this MLOps Roadmap as we learn more about how they are used and governed in industry and what the underlying challenges are.</td>
  
   </tr>  
  
