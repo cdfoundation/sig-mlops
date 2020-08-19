@@ -458,7 +458,7 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
   </tr>
   <tr>
     <td>Intrinsic protection of models</td>
-    <td> TBD </td>
+    <td>Model inferencing will have to embrace modern application security techniuqes to protect the model against these kind of attacks. Inferencing might be protected through restriction of access(tokens), rate-limiting, and monitoring of incoming traffic. In addition, as part of the integration test pharse, there is a requirement to test the model against adversarial attacks(both common attacks, and domain specific attacks) in a sandboxed environment.</td>
   </tr>
   <tr>
     <td>Emergency cut out</td>
