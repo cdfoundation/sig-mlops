@@ -14,6 +14,12 @@ Current active contributors to the MLOps SIG Roadmap:
 
 Terry Cox, Bootstrap Ltd <terry@bootstrap.je>
 
+Michael Neale, CloudBees <michael.neale@gmail.com>
+
+Ian Hellström, D2IQ
+
+Almog Baku, Rimoto <almog.baku@gmail.com>
+
 > Amend list of contributors here
 
 
@@ -463,22 +469,26 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
   </tr>
   <tr>
     <td>Managing and tracking trade-offs</td>
-    <td> TBD </td>
+    <td>ML solutions always involve trade-offs between different compromises. A typical example might be the trade-off between model accuracy, model explainability and data privacy. Viewed as the points of a triangle, we can select for a model that fits some point within the triangle where its distance from each vertex represents proximity to that ideal case. Since we train models by discovery, we can only make changes to our training data sets and hyper-parameters and then evaluate the properties of any resulting model by testing against these desired properties. Because of this, it is important that MLOps tooling provides capabilities to automate much of the heavy lifting associated with managing trade-offs in general. This might take the form of automated training of variations upon a basic model which are subsequently tested against a panel of selection criteria, evaluated and presented to customers in such a way as to make their relevant properties easily interpretable.</td>
   </tr>
   <tr>
     <td>Escalation of data categories</td>
-    <td>To obtain an accurate model, or to prevent the production of models with undesirable biases, it may be necessary to store data of a very sensitive nature or legally protected categories. This data may be used to vet a model pre release, or for training, in any case it will likely be persisted along with training scripts. This will require strong data protections (as with any database of a sensitive nature) and auditability of access. MLOps systems are likely to be targets of attack to obtain this data, meaning stronger considerations for protections that just source code would be required.</td>
+    <td>To obtain an accurate model, or to prevent the production of models with undesirable biases, it may be necessary to store data of a very sensitive nature or legally protected categories. This data may be used to vet a model pre release, or for training, in any case it will likely be persisted along with training scripts. This will require strong data protections (as with any database of a sensitive nature) and auditability of access. MLOps systems are likely to be targets of attack to obtain this data, meaning stronger considerations for protections that just source code would be required.</br></br>
+    It is anticipated that regulatory requirements intended to reduce the impact of bias or fairness issues will have unintended consequences relating to the sensitivity of other data that must be collected to fulfil these requirements, creating additional privacy risks.</td>
   </tr>
   <tr>
     <td>Intrinsic protection of models</td>
-    <td>Model inferencing will have to embrace modern application security techniques to protect the model against these kinds of attacks. Inferencing might be protected through restriction of access(tokens), rate-limiting, and monitoring of incoming traffic. In addition, as part of the integration test phase, there is a requirement to test the model against adversarial attacks(both common attacks, and domain-specific attacks) in a sandboxed environment.</td>
+    <td>Model inferencing will have to embrace modern application security techniques to protect the model against these kinds of attacks. Inferencing might be protected through restriction of access(tokens), rate-limiting, and monitoring of incoming traffic. In addition, as part of the integration test phase, there is a requirement to test the model against adversarial attacks(both common attacks, and domain-specific attacks) in a sandboxed environment.</br></br>
+    It must also be recognised that Python, whilst convenient as a language for expressing ML concepts, is an interpreted scripting language that is intrinsically insecure in production environments since any ad-hoc Python source that can be injected into a Python environment can be executed without constraint, even if shell access is disabled. The long term use of Python to build mission-critical ML models should be discouraged in favour of more secure-by-design options.</td>
   </tr>
   <tr>
     <td>Emergency cut out</td>
-    <td>As a model may need to abruptly be cut out, this may need to be done at the service wrapper level as an emergency measure. Rolling back to a previous version of the model and a service wrapper is desirable, but only if it is fast enough for safety reasons. At the very least, the ability to deny service in the span of monites in cases of misbehavior is required. This cut out needs to be human triggered at least, and possibly triggered via a live health check in the service wrapper. It is common in traditional service deployments to have health and liveness checks, a similar thing exists for deployed models where health includes acceptable behavior.</td>
+    <td>As a model may need to abruptly be cut out, this may need to be done at the service wrapper level as an emergency measure. Rolling back to a previous version of the model and a service wrapper is desirable, but only if it is fast enough for safety reasons. At the very least, the ability to deny service in the span of minutes in cases of misbehavior is required. This cut out needs to be human triggered at least, and possibly triggered via a live health check in the service wrapper. It is common in traditional service deployments to have health and liveness checks, a similar thing exists for deployed models where health includes acceptable behavior.</td>
   </tr>
-  
-
+  <tr>
+    <td>Online learning</td>
+    <td>Self-learning ML techniques require that models are trained live in production environments, often continuously. This places the behaviour of such models outside the governance constraints of current MLOps platforms and introduces potentially unconstrained risk that must be managed in end user code. Further consideration must be given to identifying ways in which MLOps capabilities can be extended into this space in order to provide easier access to best known methods for mitigating the risk of degrading quality.</td>  
+  </tr>
 </table>
 
 

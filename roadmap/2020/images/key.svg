@@ -36,18 +36,18 @@
 </g>
 
 <g id='rowGroup4' transform='translate(0, 48)'>
-  <use x='0' y='0' href='#CI'/>
-  <use x='50' y='0' href='#item'/>
-  <text x='55' y='11' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
-  <tspan  x='55'>Continuous Improvement</tspan>
-  </text>
-</g>
-
-<g id='rowGroup5' transform='translate(0, 64)'>
   <use x='0' y='0' href='#QPP'/>
   <use x='50' y='0' href='#item'/>
   <text x='55' y='11' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
   <tspan  x='55'>Qualification / Pre-Production</tspan>
+  </text>
+</g>
+
+<g id='rowGroup5' transform='translate(0, 64)'>
+  <use x='0' y='0' href='#CI'/>
+  <use x='50' y='0' href='#item'/>
+  <text x='55' y='11' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='55'>Continuous Improvement</tspan>
   </text>
 </g>
 

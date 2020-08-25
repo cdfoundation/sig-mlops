@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 450 600">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 450 752">
 <defs>
   <rect id='TBD' width='50' height='16' fill='#fff598' stroke='black' stroke-width='0.4' vector-effect='non-scaling-stroke' shape-rendering='geometricPrecision' />
   <rect id='RR' width='50' height='16' fill='#000000' stroke='black' stroke-width='0.4' vector-effect='non-scaling-stroke' shape-rendering='geometricPrecision' />
@@ -271,6 +271,76 @@
   <use x='400' y='0' transform='scale(1, 2)' href='#TBD'/>
   <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
   <tspan  x='5' y='12'>Longevity of ML assets</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup19' transform='translate(0, 592)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Managing and tracking trade-offs</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup20' transform='translate(0, 624)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Escalation of data categories</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup21' transform='translate(0, 656)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Intrinsic protection of models</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup22' transform='translate(0, 688)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Emergency cut out</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup23' transform='translate(0, 720)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Online learning</tspan>
   <tspan  x='5' y='19'></tspan>
   <tspan  x='5' y='26'></tspan>
   </text>
