@@ -331,6 +331,12 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
    <td>As models are trained typically with production/runtime data, and act on production data, there can be cases where undesirable behaviour of a recently deployed model change is only apparent in a production environment. One example is a chat bot that uses appropriate language in reaction to some interactions and training sets. There is a need to have the ability to quickly cut out a model or roll back immediately to an earlier version should this happen.</td>
  
   </tr>
+  
+  <tr> 
+   <td>Online learning</td>
+   <td>There are systems in use that use online learning, where a model or similar evolves in near real time with the data flowing in (and there is not necessarily a deploy stage). Systems also may modify themself at runtime in this case without any sort of rebuilding or human approval. This will require further research and observation of ermerging practices and use cases of this approach to machine learning.</td>
+ 
+  </tr>  
  
 </table>
 
