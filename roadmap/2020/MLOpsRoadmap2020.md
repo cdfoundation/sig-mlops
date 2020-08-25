@@ -367,15 +367,19 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
   </tr>
   <tr>
     <td>Providing mechanisms by which changes to training sets, training scripts and service wrappers may all be auditable across their full lifecycle</td>
-    <td> TBD </td>
+    <td>It is an essential requirement that all changes to ML assets must result in a robust audit trail capable of meeting forensic standards of analysis. It must be possible to work backwards from a given deployment of assets at a specified time, tracing all changes to this set of assets and the originators of each change. Tooling supporting decision-making systems in applications working with sensitive personal data or life-threatening situations must support non-repudiation and immutable audit records.</br></br>
+    It should be anticipated that customers will be operating in environments subject to legal or regulatory compliance requirements that will vary by industry and jurisdiction that may require varying standards of audit transparency, including requirements for third party audit.</td>
   </tr>
   <tr>
     <td>Treating training sets as managed assets under a MLOps workflow</td>
-    <td> TBD </td>
+    <td>One of the difficult challenges for MLOps tooling is to be able to treat data as a managed asset in an MLOps workflow. Typically, it should be expected that traditional source code control techniques are inapplicable to data assets, which may be very large and reside in environments that are not amenable to tracking changes in the same manner as source code. New meta-data techniques must be created to effectively record and manage aggregates of data that represent specific versions of training, testing or validation sets. Given the variety of data storage mechanisms in common usage, this will likely necessitate pluggable extensions to tooling.</br></br>
+    It must be possible to define a specific set of data which can be introduced into MLOps tooling for a given training run to produce a model version, and to retrospecively inspect the set of data that was used to create a known model version in the past. Multiple model instances may share one data set and subsequent iterations of a model may be required to be regression tested against specific data set instances. It should be recognised that data sets are long-lived assets that may have compliance implications but which may also be required to be edited in response to data protection requests, invalidating all models based upon a set.
+    </td>
   </tr>
   <tr>
     <td>Managing the security of data in the MLOps process with particular focus upon the increased risk associated with aggregated data sets used for training or batch processing</td>
-    <td> TBD </td>
+    <td>The vast majority of MLOps use-cases can be expected to involve mission-critical applications, sensitive personal data and large aggregated data sets which all represent high value targets with high impact from a security breach. As a result, MLOps tooling must adopt a 'secure-by-design' position rather than assuming that customers will harden their deployments as part of their responsibilities.</br></br>
+    Solutions must not default to insecure configurations for convenience, nor should they provide user-facing options that invalidate system security as a side effect of adding functionality.</td>
   </tr>
   <tr>
     <td>Implications of privacy, GDPR and the right to be forgotten upon training sets and deployed models</td>
@@ -443,7 +447,10 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
   </tr>
   <tr>
     <td>Management of shared dependencies between training and operational phases</td>
-    <td> TBD </td>
+    <td>Appropriate separation of concerns should be facilitated in the impementation of training scripts so that aspects associated with the preprocessing of data are handled independently from the core training activities.</br></br>
+    Tooling should provide clean mechanisms for efficiently and safely deploying code associated with preprocessing activities to both training and service deployment environments. It is critical that preprocessing algorithms are kept consistent between these environments at all times and a change in one must trigger a change in the other or raise an alert status capable of blocking an accidental release of mismatched libraries.</br></br>
+    It should be considered that the target environment for deployment may differ from that of training so it may be necessary to support implementations of preprocessing functions in different languages or architectures. Under such circumstances, tooling should provide robust mechanisms for ensuring an ongoing link between the implementations of these algorithms, preferrably with a single, unified form of testing to prevent divergence.
+    </td>
   </tr>
   <tr>
     <td>Abstraction layer for models</td>
