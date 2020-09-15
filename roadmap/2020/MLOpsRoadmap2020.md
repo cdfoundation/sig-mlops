@@ -545,8 +545,5 @@ Short definitions of terms used that aren't explained inline.
 
 
 
-# References
-
-> NOTES: List of references.
 
 
