@@ -530,6 +530,14 @@ The following cross-cutting concerns are identified:
 
 > NOTES: Conclusions and recommendations for the current year.
 
+As of 2020 we believe that whilst technology exists for treating ML assets and practices as first class, they are not evenly applied, and should be continuously improved, applied and practiced.
+
+Throughout 2020 there have been interesting developments in the application of AI and ML, often negative (Knee jerk regulation reactions, bias and negative press and so on). Many of these could be addressed or improved (and in some cases prevented) with applications of MLOps practices discussed in this document. Some techniques require more research but many of them are already in existence by require continuous improvement. The one are we did not have a clear line of sight in was Online Learning (including but not limited to scenarios like model-less reinforcement learning). As of 2020 we consider this kind of online learning as not within the governance constraints of MLOps at the moment. 
+
+An area we recommend that development continue in the next year is auditability of changes training data, scripts and service wrappers across their full lifecycle (as AI powered systems mature there will be more requirement to treat models like other software assets through their lifecycle). Training data must become a managed asset like any other input to software development (in many cases it is, but this is an area that needs improved practice, as the technology exists). 
+
+An increasing area of development and refinement in the coming three years we expect to be security of data that is usef for training, and the sometimes conflicting aims of privacy, GDPR and the "right to be forgotten". We don't expect that issue to be resolved until well in 2022. 
+
 # Glossary
 
 Short definitions of terms used that aren't explained inline. 
