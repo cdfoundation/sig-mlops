@@ -8,7 +8,9 @@ This document sets out the current state of MLOps and provides a five year roadm
 
 It is intended that this document be iteratively refined by group consensus within the MLOps SIG across a series of regular meetings and then published annually whilst relevant.
 
-Acknowledgements
+<br>
+
+**Acknowledgements**
 
 Current active contributors to the MLOps SIG Roadmap: 
 
@@ -16,19 +18,21 @@ Terry Cox, Bootstrap Ltd <terry@bootstrap.je>
 
 Michael Neale, CloudBees <michael.neale@gmail.com>
 
+Kara de la Marck, CloudBees <kdelamarck@cloudbees.com>
+
 Ian Hellström, D2IQ
 
 Almog Baku, Rimoto <almog.baku@gmail.com>
 
-> Amend list of contributors here
+<!--Amend list of contributors here-->
 
-
+<br>
 
 # Introduction
 
 ## Current State of MLOps
 
-> NOTES: Overview of the current state of MLOps for this year - revised annually. Define principles and methodologies.
+<!--NOTES: Overview of the current state of MLOps for this year - revised annually. Define principles and methodologies.-->
 
 ### What is MLOps?
 
@@ -62,7 +66,7 @@ As a result, it will be necessary for MLOps to develop in a manner that facilita
 
 ## Drivers
 
-> NOTES: Driving forces for the current snapshot of the roadmap.
+<!--NOTES: Driving forces for the current snapshot of the roadmap.-->
 
 ### General DevOps drivers applied to MLOps
 
@@ -147,7 +151,7 @@ As a result, it will be necessary for MLOps to develop in a manner that facilita
 
 ## Vision
 
-> NOTES: Narrative vision for the future of MLOps.
+<!--NOTES: Narrative vision for the future of MLOps.-->
 
 An optimal MLOps experience is one where Machine Learning assets are treated consistently with all other software assets within a CI/CD environment. Machine Learning models can be deployed alongside the services that wrap them and the services that consume them as part of a unified release process.
 
@@ -173,25 +177,25 @@ MLOps implementations should follow a ‘convention over configuration’ patter
 
 The use of MLOps should teach best known methods of applying MLOps. It should be recognised that many customers will be experts in the field of Data Science but may have had relatively little exposure to DevOps or other SDLC principles. To minimise the learning curve, MLOps defaults should always align to best practice in production environments rather than ‘quick-and-dirty’ as might be the case for expert users wishing to trial an instance of the tooling in a test bench environment.
 
-
+<br>
 
 # Scope
 
 The focus of this roadmap is upon aspects relating to extending DevOps principles to the area of Machine Learning and does not discuss basic features of DevOps or CI/CD approaches that are common across both domains. The intention is for MLOps to decorate DevOps rather than differentiate.
 
-
+<br>
 
 # Summary and Updates
 
-> NOTES: Executive summary of the roadmap and what’s new in revised versions.
+<!--NOTES: Executive summary of the roadmap and what’s new in revised versions.-->
 
 This is the first edition of the MLOps Roadmap and sets out the initial challenges for the approach with suggested potential solutions.
 
-
+<br>
 
 # Challenges
 
-> NOTES: Identify challenges in the near and far term that constrain the customer from successfully adopting and benefiting from MLOps principles.
+In this section, we identify challenges in the near and far term that constrain the customer from successfully adopting and benefiting from MLOps principles:
 
 <table>
   <tr>
@@ -346,11 +350,11 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
  
 </table>
 
-
+<br>
 
 # Technology Requirements
 
-> NOTES: Identify specific technology requirements to enable progress against the challenges identified above.
+In this section, we capture specific technology requirements to enable progress against the challenges identified above:
 
 <table>
   <tr>
@@ -491,14 +495,14 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
   </tr>
 </table>
 
-
+<br>
 
 # Potential Solutions
 
-> NOTES: Identify potential solutions that could address the challenges above and meet technical requirements.
+<!--NOTES: Identify potential solutions that could address the challenges above and meet technical requirements.-->
 
 
-Show a timeline of potential solutions to set expectations.
+This section addresses a timeline of potential solutions to assist in understanding the relative maturity of each area of concern and to highlight where significant gaps exist:
 
 **Key:**
 
@@ -506,11 +510,11 @@ Show a timeline of potential solutions to set expectations.
 
 <img src="images/solutions.svg"/>
 
-
+<br>
 
 # Cross-Cutting Concerns
 
-> NOTES: Identify aspects of MLOps that overlap with issues covered by other SIGs and ensure alignment of work on cross-cutting concerns.
+The following areas represent aspects of MLOps that overlap with issues covered by other SIGs and indicate where we must act to ensure alignment of work on these elements:
 
 The following cross-cutting concerns are identified:
 
@@ -524,11 +528,11 @@ The following cross-cutting concerns are identified:
 
 * Security
 
-
+<br>
 
 # Conclusions and Recommendations
 
-> NOTES: Conclusions and recommendations for the current year.
+<!--NOTES: Conclusions and recommendations for the current year.-->
 
 As of 2020 we believe that, whilst some techniques exist for treating ML assets and practices as first class, they are not evenly applied, and should be widely adopted, practiced and continuously improved.
 
@@ -537,6 +541,8 @@ Throughout 2020 there have been interesting developments in the application of A
 We recommend that development continue in the next year toward improved auditability of changes to training data, scripts and service wrappers across their full lifecycle. As AI-powered systems mature there will be more requirement to treat models like other software assets through their lifecycle. Training data must become a managed asset like any other input to software development. 
 
 We anticipate that the security of data that is used for training, and the tension between the issues of machine learning, privacy, GDPR and the "right to be forgotten" will remain as ongoing challenges until well in 2022. 
+
+<br>
 
 # Glossary
 
@@ -549,7 +555,6 @@ Short definitions of terms used that aren't explained inline.
 * Endpoint: typically a model is deployed to an endpoint which may be a HTTPS service which serves up predictions (models may be also deployed to devices and other places)
 * Training Pipeline: all the steps needed to prepare a model
 * Training set: a set of example data used for training a model
-
 
 
 
