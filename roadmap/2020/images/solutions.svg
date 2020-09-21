@@ -222,11 +222,11 @@
 
 <g id='rowGroup15' transform='translate(0, 464)'>
   <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
-  <use x='200' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='250' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='300' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='350' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='400' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
   <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
   <tspan  x='5' y='12'>Governance processes for managing the release cycle of</tspan>
   <tspan  x='5' y='19'>MLOps assets, including Responsible AI principles</tspan>
@@ -236,11 +236,11 @@
 
 <g id='rowGroup16' transform='translate(0, 496)'>
   <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
-  <use x='200' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='250' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='300' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='350' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='400' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
   <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
   <tspan  x='5' y='12'>Management of shared dependencies between training and</tspan>
   <tspan  x='5' y='19'>operational phases</tspan>
@@ -250,11 +250,11 @@
 
 <g id='rowGroup17' transform='translate(0, 528)'>
   <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
-  <use x='200' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='250' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='300' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='350' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='400' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
   <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
   <tspan  x='5' y='12'>Abstraction layer for models</tspan>
   <tspan  x='5' y='19'></tspan>
@@ -264,11 +264,11 @@
 
 <g id='rowGroup18' transform='translate(0, 560)'>
   <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
-  <use x='200' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='250' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='300' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='350' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='400' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
   <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
   <tspan  x='5' y='12'>Longevity of ML assets</tspan>
   <tspan  x='5' y='19'></tspan>
@@ -278,11 +278,11 @@
 
 <g id='rowGroup19' transform='translate(0, 592)'>
   <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
-  <use x='200' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='250' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='300' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='350' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='400' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
   <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
   <tspan  x='5' y='12'>Managing and tracking trade-offs</tspan>
   <tspan  x='5' y='19'></tspan>
@@ -292,11 +292,11 @@
 
 <g id='rowGroup20' transform='translate(0, 624)'>
   <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
-  <use x='200' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='250' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='300' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='350' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='400' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#DU'/>
   <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
   <tspan  x='5' y='12'>Escalation of data categories</tspan>
   <tspan  x='5' y='19'></tspan>
@@ -306,11 +306,11 @@
 
 <g id='rowGroup21' transform='translate(0, 656)'>
   <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
-  <use x='200' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='250' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='300' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='350' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='400' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#QPP'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
   <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
   <tspan  x='5' y='12'>Intrinsic protection of models</tspan>
   <tspan  x='5' y='19'></tspan>
@@ -320,11 +320,11 @@
 
 <g id='rowGroup22' transform='translate(0, 688)'>
   <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
-  <use x='200' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='250' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='300' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='350' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='400' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
   <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
   <tspan  x='5' y='12'>Emergency cut out</tspan>
   <tspan  x='5' y='19'></tspan>
@@ -334,11 +334,11 @@
 
 <g id='rowGroup23' transform='translate(0, 720)'>
   <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
-  <use x='200' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='250' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='300' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='350' y='0' transform='scale(1, 2)' href='#TBD'/>
-  <use x='400' y='0' transform='scale(1, 2)' href='#TBD'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#RR'/>
   <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
   <tspan  x='5' y='12'>Online learning</tspan>
   <tspan  x='5' y='19'></tspan>
