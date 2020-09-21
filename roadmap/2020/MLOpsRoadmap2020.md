@@ -62,7 +62,7 @@ As these decision-making solutions increasingly displace human decision-makers i
 
 As a result, it will be necessary for MLOps to develop in a manner that facilitates complex and sensitive governance processes that are of a standard appropriate to what is expected to become a highly regulated area.
 
-
+<br>
 
 ## Drivers
 
@@ -148,6 +148,7 @@ As a result, it will be necessary for MLOps to develop in a manner that facilita
 
 * Accelerating enterprise-wide development of models through ready-to-reuse features (i.e. feature stores)
 
+<br>
 
 ## Vision
 
@@ -551,6 +552,8 @@ Throughout 2020 there have been interesting developments in the application of A
 We recommend that development continue in the next year toward improved auditability of changes to training data, scripts and service wrappers across their full lifecycle. As AI-powered systems mature there will be more requirement to treat models like other software assets through their lifecycle. Training data must become a managed asset like any other input to software development. 
 
 We anticipate that the security of data that is used for training, and the tension between the issues of machine learning, privacy, GDPR and the "right to be forgotten" will remain as ongoing challenges until well in 2022. 
+
+<br>
 
 # Glossary
 
