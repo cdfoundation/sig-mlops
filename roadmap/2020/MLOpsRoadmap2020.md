@@ -317,7 +317,7 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
   </tr>
   <tr>
     <td>Longevity of ML assets</td>
-    <td>Decision-making systems can be expected to require very long effective operating lifetimes. It will be necessary in some scenarios to be able to refer to instances of models across significant spans of time and therefore forward and backward compatability issues, storage formats and migration of long running transactions are all to be considered.</td>
+    <td>Decision-making systems can be expected to require very long effective operating lifetimes. It will be necessary in some scenarios to be able to refer to instances of models across significant spans of time and therefore forward and backward compatibility issues, storage formats and migration of long running transactions are all to be considered.</td>
   </tr>
   <tr>
     <td>Managing and tracking trade-offs</td>
@@ -345,7 +345,7 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
   
   <tr> 
    <td>Online learning</td>
-   <td>There are systems in use that use online learning, where a model or similar evolves in near real time with the data flowing in (and there is not necessarily a deploy stage). Systems also may modify themself at runtime in this case without any sort of rebuilding or human approval. This will require further research and observation of ermerging practices and use cases of this approach to machine learning.</td>
+   <td>There are systems in use that use online learning, where a model or similar evolves in near real time with the data flowing in (and there is not necessarily a deploy stage). Systems also may modify themselves at runtime in this case without any sort of rebuilding or human approval. This will require further research and observation of emerging practices and use cases of this approach to machine learning.</td>
  
   </tr>  
  
@@ -370,11 +370,11 @@ In this section, we capture specific technology requirements to enable progress 
   </tr>
   <tr>
     <td>Treat ML assets as first class citizens in DevOps processes</td>
-    <td>ML assets include but are not limited to training sets, training configurations (hyperparameters), scripts and models. Some of these assets can be large, some are more like source code assets. We should be able to track changes to all these assets, and see how the changes relate to each other. Reporting on popular devops "metrics" like "Change Failure Rate" and "Mean cycle time" should be possible if done correctly. Whilst some of these assets are large, they are not without precedent in the devops world. People have been handling changes to database configurations, copying and backup of data for some time, so they same should apply to all ML assets. In the following sections we can explore how this may be implemented.</td>
+    <td>ML assets include but are not limited to training sets, training configurations (hyper-parameters), scripts and models. Some of these assets can be large, some are more like source code assets. We should be able to track changes to all these assets, and see how the changes relate to each other. Reporting on popular DevOps "metrics" like "Change Failure Rate" and "Mean cycle time" should be possible if done correctly. Whilst some of these assets are large, they are not without precedent in the DevOps world. People have been handling changes to database configurations, copying and backup of data for some time, so they same should apply to all ML assets. In the following sections we can explore how this may be implemented.</td>
   </tr>
   <tr>
     <td>Providing mechanisms by which training sets, training scripts and service wrappers may all be versioned appropriately</td>
-    <td>Training sets are prepared data sets which are extracted from production data. They may contain PII or sensitive information, so making the data available to developers in a way analagous to source code may be problematic. Training scripts are smaller artifacts but are sometimes coupled to the training sets. All scripts should be versioned in a way that makes the connected to the training sets that they are associated with. Scripts and training sets are also coupled to meta data, such as instructions as to how training sets are split up for testing and validation, so a model can be reproduced in ideally a deterministic manner if required.</td>
+    <td>Training sets are prepared data sets which are extracted from production data. They may contain PII or sensitive information, so making the data available to developers in a way analogous to source code may be problematic. Training scripts are smaller artefacts but are sometimes coupled to the training sets. All scripts should be versioned in a way that makes the connected to the training sets that they are associated with. Scripts and training sets are also coupled to meta data, such as instructions as to how training sets are split up for testing and validation, so a model can be reproduced in ideally a deterministic manner if required.</td>
   </tr>
   <tr>
     <td>Providing mechanisms by which changes to training sets, training scripts and service wrappers may all be auditable across their full lifecycle</td>
@@ -384,7 +384,7 @@ In this section, we capture specific technology requirements to enable progress 
   <tr>
     <td>Treating training sets as managed assets under a MLOps workflow</td>
     <td>One of the difficult challenges for MLOps tooling is to be able to treat data as a managed asset in an MLOps workflow. Typically, it should be expected that traditional source code control techniques are inapplicable to data assets, which may be very large and reside in environments that are not amenable to tracking changes in the same manner as source code. New meta-data techniques must be created to effectively record and manage aggregates of data that represent specific versions of training, testing or validation sets. Given the variety of data storage mechanisms in common usage, this will likely necessitate pluggable extensions to tooling.</br></br>
-    It must be possible to define a specific set of data which can be introduced into MLOps tooling for a given training run to produce a model version, and to retrospecively inspect the set of data that was used to create a known model version in the past. Multiple model instances may share one data set and subsequent iterations of a model may be required to be regression tested against specific data set instances. It should be recognised that data sets are long-lived assets that may have compliance implications but which may also be required to be edited in response to data protection requests, invalidating all models based upon a set.
+    It must be possible to define a specific set of data which can be introduced into MLOps tooling for a given training run to produce a model version, and to retrospectively inspect the set of data that was used to create a known model version in the past. Multiple model instances may share one data set and subsequent iterations of a model may be required to be regression tested against specific data set instances. It should be recognised that data sets are long-lived assets that may have compliance implications but which may also be required to be edited in response to data protection requests, invalidating all models based upon a set.
     </td>
   </tr>
   <tr>
@@ -449,7 +449,7 @@ In this section, we capture specific technology requirements to enable progress 
     <td>Governance processes for managing the release cycle of MLOps assets, including Responsible AI principles</td>
     <td>MLOps as a process extends governance requirements into areas beyond those typically considered as part of conventional DevOps practices. It is necessary to be able to extend auditing and traceability of MLOps assets all the way back into the data that is chosen for the purposes of training models in the first instance. MLOps tooling will need to provide mechanisms for managing the release of new training sets for the purposes of training, with the consideration that many data scientists may be working on a given model, and more than one model may be trained against a specific instance of a training data set. Customers must have the capability to retain a history of prior versions of training data and be able to recreate specific environments as the basis of new avenues of investigation, remedial work or root cause analysis, potentially under forensic conditions.</br></br>
     The training process is predicated upon the idea of setting predefined success criteria for a given training session. Tooling should make it easy for data science teams to clearly and expressively declare success criteria against which an automated training execution will be evaluated, such that no manual intervention is required to determine when a particular training run meets the standard required for promotion to a staging environment.</br></br>
-    Tooling should also offer the ability to manage competitive training of model variants against each other as part of automated batch training activities. This could involve predefined sets of hyperparameters to test in parallel training executions, use of smart hyperparameter tuning libraries as part of training scripts, or evolutionary approaches to iteratively creating model variants.</br></br>
+    Tooling should also offer the ability to manage competitive training of model variants against each other as part of automated batch training activities. This could involve predefined sets of hyper-parameters to test in parallel training executions, use of smart hyper-parameter tuning libraries as part of training scripts, or evolutionary approaches to iteratively creating model variants.</br></br>
     It should be possible to promote preferred candidate models into staging environments for integration and acceptance testing using a defined set of automated governance criteria and providing a full audit trail that can be retained across the lifetime of the ML asset being created.</br></br>
     Tooling should permit the selective promotion of specific model versions into target production environments with the assumption that customers may need to manage multiple live versions of any given model in production for multiple client environments. Again, this requires a persistent audit trail for each deployment.</br></br>
 	It should be assumed that the decision-making nature of ML-based products will require that any incident or defect in a production environment may result in the need for a formal investigation or root-cause analysis, potentially as part of a compliance audit or litigation case. Tooling should facilitate the ability to easily walk backwards through audit trail pathways to establish the full state of all assets associated with a given deployment and all governance decisions associated. This should be implemented in such a way as to be easily initiated by non-technical staff and provide best efforts at non-repudiation and tamper protection of any potential evidence.</br></br>
@@ -458,9 +458,9 @@ In this section, we capture specific technology requirements to enable progress 
   </tr>
   <tr>
     <td>Management of shared dependencies between training and operational phases</td>
-    <td>Appropriate separation of concerns should be facilitated in the impementation of training scripts so that aspects associated with the preprocessing of data are handled independently from the core training activities.</br></br>
+    <td>Appropriate separation of concerns should be facilitated in the implementation of training scripts so that aspects associated with the preprocessing of data are handled independently from the core training activities.</br></br>
     Tooling should provide clean mechanisms for efficiently and safely deploying code associated with preprocessing activities to both training and service deployment environments. It is critical that preprocessing algorithms are kept consistent between these environments at all times and a change in one must trigger a change in the other or raise an alert status capable of blocking an accidental release of mismatched libraries.</br></br>
-    It should be considered that the target environment for deployment may differ from that of training so it may be necessary to support implementations of preprocessing functions in different languages or architectures. Under such circumstances, tooling should provide robust mechanisms for ensuring an ongoing link between the implementations of these algorithms, preferrably with a single, unified form of testing to prevent divergence.
+    It should be considered that the target environment for deployment may differ from that of training so it may be necessary to support implementations of preprocessing functions in different languages or architectures. Under such circumstances, tooling should provide robust mechanisms for ensuring an ongoing link between the implementations of these algorithms, preferably with a single, unified form of testing to prevent divergence.
     </td>
   </tr>
   <tr>
@@ -470,7 +470,7 @@ In this section, we capture specific technology requirements to enable progress 
   </tr>
   <tr>
     <td>Longevity of ML assets</td>
-    <td>With traditional software assets, such as binaries, there is some expectation of backwards compatiblility (in the case of, for example, Java, this compatibility of binaries has spanned decades). ML Assets such as binaries will need to have some reasonable backwards compatiblity. Versioning of artifacts for serving the model are also important (but typically that is a better known challenge). In the case of backwards breaking changes, ML assets such as training scripts, tests and data sets will need to be accessed to reproduce a model for the new target runtime.</td>
+    <td>With traditional software assets, such as binaries, there is some expectation of backwards compatibility (in the case of, for example, Java, this compatibility of binaries has spanned decades). ML Assets such as binaries will need to have some reasonable backwards compatibility. Versioning of artefacts for serving the model are also important (but typically that is a better known challenge). In the case of backwards breaking changes, ML assets such as training scripts, tests and data sets will need to be accessed to reproduce a model for the new target runtime.</td>
   </tr>
   <tr>
     <td>Managing and tracking trade-offs</td>
@@ -488,7 +488,7 @@ In this section, we capture specific technology requirements to enable progress 
   </tr>
   <tr>
     <td>Emergency cut out</td>
-    <td>As a model may need to abruptly be cut out, this may need to be done at the service wrapper level as an emergency measure. Rolling back to a previous version of the model and a service wrapper is desirable, but only if it is fast enough for safety reasons. At the very least, the ability to deny service in the span of minutes in cases of misbehavior is required. This cut out needs to be human triggered at least, and possibly triggered via a live health check in the service wrapper. It is common in traditional service deployments to have health and liveness checks, a similar thing exists for deployed models where health includes acceptable behavior.</td>
+    <td>As a model may need to abruptly be cut out, this may need to be done at the service wrapper level as an emergency measure. Rolling back to a previous version of the model and a service wrapper is desirable, but only if it is fast enough for safety reasons. At the very least, the ability to deny service in the span of minutes in cases of misbehaviour is required. This cut out needs to be human triggered at least, and possibly triggered via a live health check in the service wrapper. It is common in traditional service deployments to have health and liveness checks, a similar thing exists for deployed models where health includes acceptable behaviour.</td>
   </tr>
   <tr>
     <td>Online learning</td>
@@ -545,23 +545,13 @@ We anticipate that the security of data that is used for training, and the tensi
 
 <br>
 
-As of 2020 we believe that, whilst some techniques exist for treating ML assets and practices as first class, they are not evenly applied, and should be widely adopted, practiced and continuously improved.
-
-Throughout 2020 there have been interesting developments in the application of AI and ML, often negative, in the case of knee jerk regulation, bias and negative press for example. Many of these could be addressed or improved (and in some cases prevented) with the application of the MLOps practices discussed in this document. Some techniques require more research, however many of them are already in existence in some form and merely require continuous improvement in the future. The one area we do not have a clear line of sight in is Online Learning (including but not limited to scenarios like model-less reinforcement learning) and more work must be done to understand how we can further governance goals in this context.
-
-We recommend that development continue in the next year toward improved auditability of changes to training data, scripts and service wrappers across their full lifecycle. As AI-powered systems mature there will be more requirement to treat models like other software assets through their lifecycle. Training data must become a managed asset like any other input to software development. 
-
-We anticipate that the security of data that is used for training, and the tension between the issues of machine learning, privacy, GDPR and the "right to be forgotten" will remain as ongoing challenges until well in 2022. 
-
-<br>
-
 # Glossary
 
 Short definitions of terms used that aren't explained inline. 
 
 * Training: act of combining data with (hyper) parameters to yield a model
-* Model: A deployable (usually binary) artifact that is the result of training. Can be used at runtime to make predictions for example
-* Hyperparameter: parameters used during training of a model, typically set by a data scientist/human
+* Model: A deployable (usually binary) artefact that is the result of training. Can be used at runtime to make predictions for example
+* Hyper-parameter: parameters used during training of a model, typically set by a data scientist/human
 * Parameter: a configuration variable set after the training phase (usually part of a model)
 * Endpoint: typically a model is deployed to an endpoint which may be a HTTPS service which serves up predictions (models may be also deployed to devices and other places)
 * Training Pipeline: all the steps needed to prepare a model
