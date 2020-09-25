@@ -1,8 +1,8 @@
 <img src="images/mlops-horizontal-color.svg"/>
 
-# MLOps SIG Roadmap Draft 2020
+# MLOps Roadmap 2020
 
-## NOT YET PUBLISHED
+## About this document
 
 This document sets out the current state of MLOps and provides a five year roadmap for future customer needs which is intended to support pre-competitive collaboration across the industry with a view to improving the overall state of MLOps as a capability for all.
 
@@ -25,6 +25,9 @@ Ian Hellström, D2IQ
 Almog Baku, Rimoto <almog.baku@gmail.com>
 
 <!--Amend list of contributors here-->
+
+
+*Initial publication -  Sept 25th, 2020*
 
 <br>
 
