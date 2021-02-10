@@ -16,6 +16,6 @@ Calendar invite: https://zoom.us/meeting/tZwlf-6orzsubcRZxykyjaEa3v90b2nOlA/ics?
 
 OR
 
-For APAC / Oceania, the MLOps SIG meets every other week on Thursdays, at 10:00 UTC (*See your timezone [here](https://time.is/1000_in_UTC)*)
+For APAC / Oceania, the MLOps SIG meets every four weeks on Thursdays, at 10:00 UTC, commencing 25th Feb 2021 (*See your timezone [here](https://time.is/1000_in_UTC)*)
 
 -- [Zoom Meeting Link](https://zoom.us/j/95182588714?pwd=UVVUbVFHZWtDQytvNnJ3S3RUL09HQT09)
