@@ -18,4 +18,8 @@ OR
 
 For APAC / Oceania, the MLOps SIG meets every four weeks on Thursdays, at 10:00 UTC, commencing 25th Feb 2021 (*See your timezone [here](https://time.is/1000_in_UTC)*)
 
--- [Zoom Meeting Link](https://zoom.us/j/95182588714?pwd=UVVUbVFHZWtDQytvNnJ3S3RUL09HQT09)
+ [Zoom Meeting Link](https://zoom.us/j/95182588714?pwd=UVVUbVFHZWtDQytvNnJ3S3RUL09HQT09)
+
+ [CDF Public Calendar - Google](https://calendar.google.com/calendar/embed?src=linuxfoundation.org_mhf0kmgedn67ihni8r129avp24%40group.calendar.google.com&ctz=Europe%2FLondon)
+
+ [CDF Public Calendar - ICS version](https://calendar.google.com/calendar/ical/linuxfoundation.org_mhf0kmgedn67ihni8r129avp24%40group.calendar.google.com/public/basic.ics)
