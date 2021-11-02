@@ -351,7 +351,36 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
    <td>There are systems in use that use online learning, where a model or similar evolves in near real time with the data flowing in (and there is not necessarily a deploy stage). Systems also may modify themselves at runtime in this case without any sort of rebuilding or human approval. This will require further research and observation of emerging practices and use cases of this approach to machine learning.</td>
  
   </tr>  
- 
+ <tr> 
+   <td>Prioritising training activities</td>
+   <td>Training activities are time-consuming. In scenarios where systems support the simultaneous queuing and/or processing of multiple training activities, it must be possible to prioritise those activities to prevent long-running trainings from blocking the deployment of other processes such as security or bug fixes.</td>
+  </tr>  
+ <tr> 
+   <td>Guardrail metrics</td>
+   <td>MLOps processes always carry inherent risk so systems should support the use of guardrail metrics to aid in mitigating these risks.</td>
+  </tr>  
+ <tr> 
+   <td>Government regulation of AI</td>
+   <td>Proposed legislation on AI introduces the power to regulate or prohibit certain classes of products.<br/><br/>
+   
+    Regulation introduces:<br/>
+    &nbsp &nbsp- Mandatory data quality controls<br/>
+    &nbsp &nbsp- Mandatory end-to-end compliance documentation<br/>
+    &nbsp &nbsp- Transparency of system decisions<br/>
+    &nbsp &nbsp- Human oversight over functioning<br/>
+    &nbsp &nbsp- Ongoing publication of accuracy metrics<br/>
+    &nbsp &nbsp- Proof of resilience against error or attack<br/><br/>
+
+Compliance requires:<br/>
+    &nbsp &nbsp- Third party conformity assessment prior to release<br/>
+    &nbsp &nbsp- A new conformity assessment for each change<br/>
+    &nbsp &nbsp- Post-market monitoring<br/>
+    &nbsp &nbsp- Mandatory incident reporting<br/>
+    &nbsp &nbsp- Traceability throughout the system’s lifecycle<br/><br/>
+
+Government agencies, third party accreditation businesses and their subcontractors are required to have access to confidential intellectual property.<br/><br/>Surveillance authorities shall be granted full access to the training, validation and testing datasets used.
+</td>
+  </tr>  
 </table>
 
 <br>
@@ -497,7 +526,20 @@ In this section, we capture specific technology requirements to enable progress 
     <td>Online learning</td>
     <td>Self-learning ML techniques require that models are trained live in production environments, often continuously. This places the behaviour of such models outside the governance constraints of current MLOps platforms and introduces potentially unconstrained risk that must be managed in end user code. Further consideration must be given to identifying ways in which MLOps capabilities can be extended into this space in order to provide easier access to best known methods for mitigating the risk of degrading quality.</td>  
   </tr>
-</table>
+  <tr>
+    <td>Prioritising training activities</td>
+    <td>The requirement to prioritise training activities implies the need for prioritisation of pipeline tasks within MLOps tooling, along with management tools to support the maintenance of these priorities.</td>  
+  </tr>
+  <tr>
+    <td>Guardrail metrics</td>
+    <td>It is necessary that solutions support automated protection against predictable risks. For example, a runaway training process may demand many costly instances of training hardware, or extended processing times that tend towards months or years. Small changes in training data may introduce significant regressions in patch releases of models that would be harmful in production.</br></br>
+Solutions should provide the ability to specify guardrail metrics and facilitate the controlled interruption of processing in the event of these guards being triggered.</td>  
+  </tr>
+    <tr>
+    <td>Government regulation of AI</td>
+    <td>Proposed regulation creates an urgent requirement for the implementation of many of the technology requirements outlined in the roadmap as existing approaches will cease to be viable upon introduction. This in turn also introduces the need to provide traceable reporting to third parties whilst protecting intellectual property as part of the daily function of regulatory compliance.</td>  
+  </tr>
+  </table>
 
 <br>
 
@@ -538,14 +580,15 @@ The following cross-cutting concerns are identified:
 
 <!--NOTES: Conclusions and recommendations for the current year.-->
 
-As of 2020 we believe that, whilst some techniques exist for treating ML assets and practices as first class, they are not evenly applied, and should be widely adopted, practiced and continuously improved.
+A meta-study of 769 Machine Learning papers, published in 2021 by Benjamin, et al (https://arxiv.org/pdf/2106.15195.pdf), showed multiple failings of scientific rigor in validating the results of many projects. It is clear that a more mature process and availability of suitable tooling is essential for the successful management of machine learning products.
 
-Throughout 2020 there have been interesting developments in the application of AI and ML, often negative, in the case of knee jerk regulation, bias and negative press for example. Many of these could be addressed or improved (and in some cases prevented) with the application of the MLOps practices discussed in this document. Some techniques require more research, however many of them are already in existence in some form and merely require continuous improvement in the future. The one area we do not have a clear line of sight in is Online Learning (including but not limited to scenarios like model-less reinforcement learning) and more work must be done to understand how we can further governance goals in this context.
+Of similar concern is the ongoing lack of understanding of the issues associated with the use of Jupyter Notebooks in building ML assets. A large scale study by Pimentel et al (http://www.ic.uff.br/~leomurta/papers/pimentel2019a.pdf) looked at 1.4 million Jupyter Notebooks from GitHub. They found that only 24% could be executed without errors and that a mere 4% produced repeatable results, with only 1.5% having any form of testing implemented. As a result, it is to be expected that the mortality rate of ML products will continue to be excessively high due to the high likelihood of multiple failures of reproducibility of core assets in production.
 
-We recommend that development continue in the next year toward improved auditability of changes to training data, scripts and service wrappers across their full lifecycle. As AI-powered systems mature there will be more requirement to treat models like other software assets through their lifecycle. Training data must become a managed asset like any other input to software development. 
+This year has brought increasing government interest in the application of machine learning with significant signals of sweeping regulation to be introduced in 2022. The impact of mandatory compliance for a wide range of ML products will be considerable as it is clear from draft regulations that common practice in ML development is woefully inadequate to meet the upcoming demands of regulators. It becomes of ever growning importance, therefore, that vendors consider their approach to addressing the challenges listed here, so that customers have time to migrate their processes onto tooling that can be considered compliant, prior to any deadlines for the implementation of legislation.
 
-We anticipate that the security of data that is used for training, and the tension between the issues of machine learning, privacy, GDPR and the "right to be forgotten" will remain as ongoing challenges until well in 2022. 
+Clearly, it will not be possible to meet the demands of imminent legislation with the tools and approaches being used today and there is an urgent need for the widespread adoption of more formal MLOps methods. One of the key bottlenecks in this area is the lack of availability of appropriate tooling in public cloud environments. We appear to be in a chicken-and-egg situation where ML teams are learning how to build ML assets based upon the capabilities available to them from their cloud providers, but the cloud providers are offering ML products based upon demand from their customer base. As a result of this interdependency, much of the consideration of the asset management requirements of MLOps seems to fall between the cracks.
 
+It is critical that we address this before regulation begins to reveal widespread gaps across the field of machine learning in general, creating an additional moral panic in a field that is already broadly feared.
 <br>
 
 # Glossary
