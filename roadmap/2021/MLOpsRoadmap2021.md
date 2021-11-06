@@ -1,6 +1,6 @@
 <img src="images/mlops-horizontal-color.svg"/>
 
-# MLOps Roadmap 2021 - DRAFT VERSION
+# MLOps Roadmap 2021
 
 ## About this document
 
@@ -27,7 +27,7 @@ Almog Baku, Rimoto <almog.baku@gmail.com>
 <!--Amend list of contributors here-->
 
 
-*Initial publication -  Sept 25th, 2020*
+*Update publication -  Nov 6th, 2021*
 
 <br>
 
@@ -193,7 +193,9 @@ The focus of this roadmap is upon aspects relating to extending DevOps principle
 
 <!--NOTES: Executive summary of the roadmap and what’s new in revised versions.-->
 
-This is the first edition of the MLOps Roadmap and sets out the initial challenges for the approach with suggested potential solutions.
+This is the second edition of the MLOps Roadmap and the focus this year has been upon communicating the challenges to a wider audience. Progress in the MLOps space has been slow, perhaps because so few projects are currently making it to the point where they gain first-hand experience of the larger challenges. Increasing the number of products that safely traverse the valley of death is going to be heavily reliant upon the widespread availability of better tooling so that more teams are automatically working within best practice guidelines before they ever get to the point where they have a learning experience that underlines the need for a particular way of working.
+
+Notable this year, has been Apple's strategic move towards a common, integrated ML acceleration technology, embedded within all processor cores across its product range. The provision of direct access to all of system memory at very high data rates has demonstrated significant efficiencies compared to a discrete GPU approach and introduces a new platform class that must be considered from an MLOps perspective.
 
 <br>
 
@@ -572,7 +574,9 @@ The following cross-cutting concerns are identified:
 
 * Data quality
 
-* Security
+* Security and Supply Chain management
+
+* Legislative compliance
 
 <br>
 
@@ -580,11 +584,11 @@ The following cross-cutting concerns are identified:
 
 <!--NOTES: Conclusions and recommendations for the current year.-->
 
-A meta-study of 769 Machine Learning papers, published in 2021 by Benjamin, et al (https://arxiv.org/pdf/2106.15195.pdf), showed multiple failings of scientific rigor in validating the results of many projects. It is clear that a more mature process and availability of suitable tooling is essential for the successful management of machine learning products.
+A meta-study of 769 Machine Learning papers, published in 2021 by Benjamin, et al (https://arxiv.org/pdf/2106.15195.pdf), showed multiple failings of scientific rigour in validating the results of many projects. It is clear that a more mature process and availability of suitable tooling is essential for the successful management of machine learning products.
 
 Of similar concern is the ongoing lack of understanding of the issues associated with the use of Jupyter Notebooks in building ML assets. A large scale study by Pimentel et al (http://www.ic.uff.br/~leomurta/papers/pimentel2019a.pdf) looked at 1.4 million Jupyter Notebooks from GitHub. They found that only 24% could be executed without errors and that a mere 4% produced repeatable results, with only 1.5% having any form of testing implemented. As a result, it is to be expected that the mortality rate of ML products will continue to be excessively high due to the high likelihood of multiple failures of reproducibility of core assets in production.
 
-This year has brought increasing government interest in the application of machine learning with significant signals of sweeping regulation to be introduced in 2022. The impact of mandatory compliance for a wide range of ML products will be considerable as it is clear from draft regulations that common practice in ML development is woefully inadequate to meet the upcoming demands of regulators. It becomes of ever growning importance, therefore, that vendors consider their approach to addressing the challenges listed here, so that customers have time to migrate their processes onto tooling that can be considered compliant, prior to any deadlines for the implementation of legislation.
+This year has brought increasing government interest in the application of machine learning with significant signals of sweeping regulation to be introduced in 2022. The impact of mandatory compliance for a wide range of ML products will be considerable as it is clear from draft regulations that common practice in ML development is woefully inadequate to meet the upcoming demands of regulators. It becomes of ever growing importance, therefore, that vendors consider their approach to addressing the challenges listed here, so that customers have time to migrate their processes onto tooling that can be considered compliant, prior to any deadlines for the implementation of legislation.
 
 Clearly, it will not be possible to meet the demands of imminent legislation with the tools and approaches being used today and there is an urgent need for the widespread adoption of more formal MLOps methods. One of the key bottlenecks in this area is the lack of availability of appropriate tooling in public cloud environments. We appear to be in a chicken-and-egg situation where ML teams are learning how to build ML assets based upon the capabilities available to them from their cloud providers, but the cloud providers are offering ML products based upon demand from their customer base. As a result of this interdependency, much of the consideration of the asset management requirements of MLOps seems to fall between the cracks.
 
