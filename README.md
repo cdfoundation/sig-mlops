@@ -8,7 +8,9 @@ CDF Special Interest Group - *MLOps*
 - Agenda and Meeting minutes: http://bit.ly/mlops-sig
 - [Slack community](https://join.slack.com/t/cdeliveryfdn/shared_invite/zt-nwc0jjd0-G65oEpv5ynFfPD5oOX5Ogg) be sure to join the `#sig-mlops` channel
 
-For USA, the MLOps SIG meets every other week at 9:30 AM Pacific, on Thursdays 
+MLOps SIG meetings are on winter break and will resume in the spring. Please feel free to continue the conversation offline in the Slack channel.
+
+<!-- For USA, the MLOps SIG meets every other week at 9:30 AM Pacific, on Thursdays 
 
 -- [Zoom Meeting Link](https://zoom.us/j/888870104)
 
@@ -23,3 +25,4 @@ For APAC / Oceania, the MLOps SIG meets every four weeks on Thursdays, at 10:00 
  [CDF Public Calendar - Google](https://calendar.google.com/calendar/embed?src=linuxfoundation.org_mhf0kmgedn67ihni8r129avp24%40group.calendar.google.com&ctz=Europe%2FLondon)
 
  [CDF Public Calendar - ICS version](https://calendar.google.com/calendar/ical/linuxfoundation.org_mhf0kmgedn67ihni8r129avp24%40group.calendar.google.com/public/basic.ics)
+-->
