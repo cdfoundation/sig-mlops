@@ -57,7 +57,7 @@ RAD tools like Jupyter Notebooks can be extremely useful, both in classroom envi
 
 In the next section, we will discuss the key drivers for MLOps and expand upon the requirements for a true DevOps approach to managing ML assets. At this point in the development of the practice, it perhaps helps to understand that much of ML and AI research and development activity has been driven by Data Science rather than Computer Science teams. This specialisation has enabled great leaps in the ML field but at the same time means that a significant proportion of ML practitioners have never been exposed to the lessons of the past seventy years of managing software assets in commercial environments.
 
-As we shall see, this can result in large conceptual gaps between what is involved in creating a viable proof of concept of a trained ML model on a Data Scientist’s laptop vs what it subsequently takes to be able to safely transition that asset into a commercial product in production environments. It is not therefore unfair to describe the current state of MLOps in 2020 as still on the early path towards maturity and to consider that much of the early challenge for adoption will be one of education and communication rather than purely technical refinements to tooling.
+As we shall see, this can result in large conceptual gaps between what is involved in creating a viable proof of concept of a trained ML model on a Data Scientist’s laptop vs what it subsequently takes to be able to safely transition that asset into a commercial product in production environments. It is not therefore unfair to describe the current state of MLOps in 2021 as still on the early path towards maturity and to consider that much of the early challenge for adoption will be one of education and communication rather than purely technical refinements to tooling.
 
 Compounding this challenge, Machine Learning solutions tend to be decision-making systems rather than just data processing systems and thus will be required to be held accountable to much higher standards than those applied to the best quality software delivery projects. The bar for quality and governance processes is therefore very high, in many cases representing legal compliance processes mandated by regional legislation.
 
@@ -364,7 +364,6 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
  <tr> 
    <td>Government regulation of AI</td>
    <td>Proposed legislation on AI introduces the power to regulate or prohibit certain classes of products.<br/><br/>
-   
     Regulation introduces:<br/>
     &nbsp &nbsp- Mandatory data quality controls<br/>
     &nbsp &nbsp- Mandatory end-to-end compliance documentation<br/>
@@ -372,16 +371,15 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
     &nbsp &nbsp- Human oversight over functioning<br/>
     &nbsp &nbsp- Ongoing publication of accuracy metrics<br/>
     &nbsp &nbsp- Proof of resilience against error or attack<br/><br/>
-
-Compliance requires:<br/>
+    Compliance requires:<br/>
     &nbsp &nbsp- Third party conformity assessment prior to release<br/>
     &nbsp &nbsp- A new conformity assessment for each change<br/>
     &nbsp &nbsp- Post-market monitoring<br/>
     &nbsp &nbsp- Mandatory incident reporting<br/>
     &nbsp &nbsp- Traceability throughout the system’s lifecycle<br/><br/>
-
-Government agencies, third party accreditation businesses and their subcontractors are required to have access to confidential intellectual property.<br/><br/>Surveillance authorities shall be granted full access to the training, validation and testing datasets used.
-</td>
+    Government agencies, third party accreditation businesses and their subcontractors are required to have access to confidential intellectual property.<br/><br/>
+    Surveillance authorities shall be granted full access to the training, validation and testing datasets used.
+    </td>
   </tr>  
 </table>
 
@@ -466,7 +464,7 @@ In this section, we capture specific technology requirements to enable progress 
   </tr>
   <tr>
     <td>Approaches for applying MLOps to very large scale problems at petabyte scale and beyond</td>
-    <td>As of 2020, large ML data sets are considered to start at around 50TB and very large data sets may derive from petabytes of source data, especially in visual applications such as autonomous vehicle control. At these scales, it becomes necessary to spread ML workloads across thousands of GPU instances in order to keep overall training times within acceptable elapsed time windows (less than a week per run).</br></br>
+    <td>As of 2022, large ML data sets are considered to start at around 50TB and very large data sets may derive from petabytes of source data, especially in visual applications such as autonomous vehicle control. At these scales, it becomes necessary to spread ML workloads across thousands of GPU instances in order to keep overall training times within acceptable elapsed time windows (less than a week per run).</br></br>
     Individual GPUs are currently able to process in the order of 1-10GB of data per second but only have around 40GB of local RAM. An individual server can be expected to have around 1TB of conventional RAM and around 15TB of local high speed storage as cache for around 8 GPUs, so may be able to transfer data between these and the compute units at high hundreds of GB/s with upstream connections to network storage running at low hundreds of GB/s.</br></br>
     Efficient workflows rely upon being able to reduce problems into smaller sub-units with constrained data requirements or systems start to become I/O bound. MLOps tooling for large problems must be able to efficiently decompose training and inferencing workloads into individual operations and data sets that can be effectively distributed as parallel activities across a homogeneous infrastructure with a supercomputing-style architecture. This can be expected to exceed the capabilities of conventional Cloud computing infrastructure and require dedicated hardware components and architecture so any MLOps tooling must have appropriate awareness of the target architecture in order to optimise deployments.</br></br>
     At this scale, it is not feasible to create multiple physical copies of petabytes of training data due to storage capacity constraints and limitations of data transfer rates, so strategies for versioning sets of data with metadata against an incrementally growing pool will be necessary.</td>
