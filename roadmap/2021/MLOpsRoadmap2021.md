@@ -364,7 +364,6 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
  <tr> 
    <td>Government regulation of AI</td>
    <td>Proposed legislation on AI introduces the power to regulate or prohibit certain classes of products.<br/><br/>
-   
     Regulation introduces:<br/>
     &nbsp &nbsp- Mandatory data quality controls<br/>
     &nbsp &nbsp- Mandatory end-to-end compliance documentation<br/>
@@ -372,17 +371,15 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
     &nbsp &nbsp- Human oversight over functioning<br/>
     &nbsp &nbsp- Ongoing publication of accuracy metrics<br/>
     &nbsp &nbsp- Proof of resilience against error or attack<br/><br/>
-
 Compliance requires:<br/>
     &nbsp &nbsp- Third party conformity assessment prior to release<br/>
     &nbsp &nbsp- A new conformity assessment for each change<br/>
     &nbsp &nbsp- Post-market monitoring<br/>
     &nbsp &nbsp- Mandatory incident reporting<br/>
     &nbsp &nbsp- Traceability throughout the system’s lifecycle<br/><br/>
-
-Government agencies, third party accreditation businesses and their subcontractors are required to have access to confidential intellectual property.<br/><br/>Surveillance authorities shall be granted full access to the training, validation and testing datasets used.
+Government agencies, third party accreditation businesses and their subcontractors are required to have access to confidential intellectual property.<br/><br/>Surveillance authorities shall be granted full access to the training, validation and testing datasets used.
 </td>
-  </tr>  
+</tr>  
 </table>
 
 <br>
