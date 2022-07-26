@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 450 80">
+<defs>
+  <rect id='TBD' width='50' height='16' fill='#fff598' stroke='black' stroke-width='0.4' vector-effect='non-scaling-stroke' shape-rendering='geometricPrecision' />
+  <rect id='RR' width='50' height='16' fill='#000000' stroke='black' stroke-width='0.4' vector-effect='non-scaling-stroke' shape-rendering='geometricPrecision' />
+  <rect id='DU' width='50' height='16' fill='#2861ff' stroke='black' stroke-width='0.4' vector-effect='non-scaling-stroke' shape-rendering='geometricPrecision' />
+  <rect id='CI' width='50' height='16' fill='#999999' stroke='black' stroke-width='0.4' vector-effect='non-scaling-stroke' shape-rendering='geometricPrecision' />
+  <rect id='QPP' width='50' height='16' fill='#ffffff' stroke='black' stroke-width='0.4' vector-effect='non-scaling-stroke' shape-rendering='geometricPrecision' />
+  <rect id='item' width='100' height='16' fill='none' stroke='black' stroke-width='0.4' vector-effect='non-scaling-stroke' shape-rendering='geometricPrecision' />
+</defs>
+
+<title>Key</title>
+
+<g id='rowGroup1' transform='translate(0, 0)'>
+  <use x='0' y='0' href='#TBD'/>
+  <use x='50' y='0' href='#item'/>
+  <text x='55' y='11' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='55'>To Be Determined</tspan>
+  </text>
+</g>
+
+<g id='rowGroup' transform='translate(0, 16)'>
+  <use x='0' y='0' href='#RR'/>
+  <use x='50' y='0' href='#item'/>
+  <text x='55' y='11' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='55'>Research Required</tspan>
+  </text>
+</g>
+
+<g id='rowGroup3' transform='translate(0, 32)'>
+  <use x='0' y='0' href='#DU'/>
+  <use x='50' y='0' href='#item'/>
+  <text x='55' y='11' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='55'>Development Underway</tspan>
+  </text>
+</g>
+
+<g id='rowGroup4' transform='translate(0, 48)'>
+  <use x='0' y='0' href='#QPP'/>
+  <use x='50' y='0' href='#item'/>
+  <text x='55' y='11' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='55'>Qualification / Pre-Production</tspan>
+  </text>
+</g>
+
+<g id='rowGroup5' transform='translate(0, 64)'>
+  <use x='0' y='0' href='#CI'/>
+  <use x='50' y='0' href='#item'/>
+  <text x='55' y='11' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='55'>Continuous Improvement</tspan>
+  </text>
+</g>
+
+</svg>

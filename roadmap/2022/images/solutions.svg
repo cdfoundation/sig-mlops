@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 450 848">
+<defs>
+  <rect id='TBD' width='50' height='16' fill='#fff598' stroke='black' stroke-width='0.4' vector-effect='non-scaling-stroke' shape-rendering='geometricPrecision' />
+  <rect id='RR' width='50' height='16' fill='#000000' stroke='black' stroke-width='0.4' vector-effect='non-scaling-stroke' shape-rendering='geometricPrecision' />
+  <rect id='DU' width='50' height='16' fill='#2861ff' stroke='black' stroke-width='0.4' vector-effect='non-scaling-stroke' shape-rendering='geometricPrecision' />
+  <rect id='CI' width='50' height='16' fill='#999999' stroke='black' stroke-width='0.4' vector-effect='non-scaling-stroke' shape-rendering='geometricPrecision' />
+  <rect id='QPP' width='50' height='16' fill='#ffffff' stroke='black' stroke-width='0.4' vector-effect='non-scaling-stroke' shape-rendering='geometricPrecision' />
+  <rect id='item' width='200' height='16' fill='none' stroke='black' stroke-width='0.4' vector-effect='non-scaling-stroke' shape-rendering='geometricPrecision' />
+</defs>
+
+<title>Potential Solutions</title>
+
+<g id='headerGroup' transform='translate(0, 0)'>
+  <rect x='0' y='0' width='200' height='16' fill='none' stroke='black' stroke-width='0.4'/>
+  <rect x='200' y='0' width='50' height='16' fill='none' stroke='black' stroke-width='0.4'/>
+  <rect x='250' y='0' width='50' height='16' fill='none' stroke='black' stroke-width='0.4'/>
+  <rect x='300' y='0' width='50' height='16' fill='none' stroke='black' stroke-width='0.4'/>
+  <rect x='350' y='0' width='50' height='16' fill='none' stroke='black' stroke-width='0.4'/>
+  <rect x='400' y='0' width='50' height='16' fill='none' stroke='black' stroke-width='0.4'/>
+  <text x='0' y='12' font-family="Arial" font-size='10px' text-anchor='left' role="row">
+  <tspan  x='5'>Solution</tspan>
+  <tspan  x='205'>2021</tspan>
+  <tspan  x='255'>2022</tspan>
+  <tspan  x='305'>2023</tspan>
+  <tspan  x='355'>2024</tspan>
+  <tspan  x='405'>2025</tspan>
+  </text>
+</g>
+
+<g id='rowGroup1' transform='translate(0, 16)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Educating data science teams regarding the risks of trying</tspan>
+  <tspan  x='5' y='19'>to use Jupyter Notebooks in production</tspan>
+  </text>
+</g>
+
+<g id='rowGroup2' transform='translate(0, 48)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Treat ML assets as first class citizens in DevOps processes</tspan>
+  </text>
+</g>
+
+<g id='rowGroup3' transform='translate(0, 80)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Providing mechanisms by which training sets, training scripts</tspan>
+  <tspan  x='5' y='19'>and service wrappers may all be versioned appropriately</tspan>
+  </text>
+</g>
+
+<g id='rowGroup4' transform='translate(0, 112)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Providing mechanisms by which changes to training sets,</tspan>
+  <tspan  x='5' y='19'>training scripts and service wrappers may all be auditable</tspan>
+  <tspan  x='5' y='26'>across their full lifecycle</tspan>
+  </text>
+</g>
+
+<g id='rowGroup5' transform='translate(0, 144)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Treating training sets as managed assets under a MLOps</tspan>
+  <tspan  x='5' y='19'>workflow</tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup6' transform='translate(0, 176)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#QPP'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Managing the security of data in the MLOps process with</tspan>
+  <tspan  x='5' y='19'>particular focus upon the increased risk associated with</tspan>
+  <tspan  x='5' y='26'>aggregated data sets used for training or batch processing</tspan>
+  </text>
+</g>
+
+<g id='rowGroup7' transform='translate(0, 208)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#QPP'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Implications of privacy, GDPR and the right to be forgotten</tspan>
+  <tspan  x='5' y='19'>upon training sets and deployed models</tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup8' transform='translate(0, 240)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Methods for wrapping trained models as deployable services</tspan>
+  <tspan  x='5' y='19'>in scenarios where data scientists training the models may not</tspan>
+  <tspan  x='5' y='26'>be experienced software developers</tspan>
+  </text>
+</g>
+
+<g id='rowGroup9' transform='translate(0, 272)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Approaches for enabling all Machine Learning frameworks to</tspan>
+  <tspan  x='5' y='19'>be used within the scope of MLOps, regardless of language or</tspan>
+  <tspan  x='5' y='26'>platform</tspan>
+  </text>
+</g>
+
+<g id='rowGroup10' transform='translate(0, 304)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#DU'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Approaches for enabling MLOps to support a broad range of</tspan>
+  <tspan  x='5' y='19'>target platforms, including but not limited to CPU, GPU, TPU,</tspan>
+  <tspan  x='5' y='26'>custom ASICs and neuromorphic silicon</tspan>
+  </text>
+</g>
+
+<g id='rowGroup11' transform='translate(0, 336)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Methods for ensuring efficient use of hardware in both training</tspan>
+  <tspan  x='5' y='19'>and operational scenarios</tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup12' transform='translate(0, 368)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Approaches for applying MLOps to very large scale problems</tspan>
+  <tspan  x='5' y='19'>at petabyte scale and beyond</tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup13' transform='translate(0, 400)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Providing appropriate pipeline tools to manage MLOps</tspan>
+  <tspan  x='5' y='19'>workflows transparently as part of existing DevOps solutions</tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup14' transform='translate(0, 432)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Testing ML assets appropriately</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup15' transform='translate(0, 464)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Governance processes for managing the release cycle of</tspan>
+  <tspan  x='5' y='19'>MLOps assets, including Responsible AI principles</tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup16' transform='translate(0, 496)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Management of shared dependencies between training and</tspan>
+  <tspan  x='5' y='19'>operational phases</tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup17' transform='translate(0, 528)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Abstraction layer for models</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup18' transform='translate(0, 560)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Longevity of ML assets</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup19' transform='translate(0, 592)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Managing and tracking trade-offs</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup20' transform='translate(0, 624)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#DU'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Escalation of data categories</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup21' transform='translate(0, 656)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#QPP'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Intrinsic protection of models</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup22' transform='translate(0, 688)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Emergency cut out</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup23' transform='translate(0, 720)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#RR'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Online learning</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup24' transform='translate(0, 752)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Prioritising training activities</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup25' transform='translate(0, 784)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#QPP'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Guardrail metrics</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup26' transform='translate(0, 816)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#QPP'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#QPP'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Government regulation of AI</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+</svg>
