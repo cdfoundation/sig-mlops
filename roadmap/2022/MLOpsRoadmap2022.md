@@ -1,3 +1,4 @@
+<!-- cSpell:locale en-GB -->
 <img src="images/mlops-horizontal-color.svg"/>
 
 # MLOps Roadmap 2022 - DRAFT COPY
@@ -57,7 +58,7 @@ RAD tools like Jupyter Notebooks can be extremely useful, both in classroom envi
 
 In the next section, we will discuss the key drivers for MLOps and expand upon the requirements for a true DevOps approach to managing ML assets. At this point in the development of the practice, it perhaps helps to understand that much of ML and AI research and development activity has been driven by Data Science rather than Computer Science teams. This specialisation has enabled great leaps in the ML field but at the same time means that a significant proportion of ML practitioners have never been exposed to the lessons of the past seventy years of managing software assets in commercial environments.
 
-As we shall see, this can result in large conceptual gaps between what is involved in creating a viable proof of concept of a trained ML model on a Data Scientist’s laptop vs what it subsequently takes to be able to safely transition that asset into a commercial product in production environments. It is not therefore unfair to describe the current state of MLOps in 2020 as still on the early path towards maturity and to consider that much of the early challenge for adoption will be one of education and communication rather than purely technical refinements to tooling.
+As we shall see, this can result in large conceptual gaps between what is involved in creating a viable proof of concept of a trained ML model on a Data Scientist’s laptop vs what it subsequently takes to be able to safely transition that asset into a commercial product in production environments. MLOps in practice is still on the early path towards maturity and it is likely that many practices that are commonly seen today, will be abandoned for better approaches over the next few years as teams get more exposure to the full scope of this problem domain.
 
 Compounding this challenge, Machine Learning solutions tend to be decision-making systems rather than just data processing systems and thus will be required to be held accountable to much higher standards than those applied to the best quality software delivery projects. The bar for quality and governance processes is therefore very high, in many cases representing legal compliance processes mandated by regional legislation.
 
@@ -193,9 +194,17 @@ The focus of this roadmap is upon aspects relating to extending DevOps principle
 
 <!--NOTES: Executive summary of the roadmap and what’s new in revised versions.-->
 
-This is the second edition of the MLOps Roadmap and the focus this year has been upon communicating the challenges to a wider audience. Progress in the MLOps space has been slow, perhaps because so few projects are currently making it to the point where they gain first-hand experience of the larger challenges. Increasing the number of products that safely traverse the valley of death is going to be heavily reliant upon the widespread availability of better tooling so that more teams are automatically working within best practice guidelines before they ever get to the point where they have a learning experience that underlines the need for a particular way of working.
+This is the third edition of the MLOps Roadmap and this year the accelerated adoption of ML and AI solutions has become much more visible across multiple market segments. Autonomous Machine Computing and Cyber-Physical Systems are rapidly expanding areas as 5G networks are rolled out broadly and work on 6G progresses with enabling technologies for cooperative autonomous machines.
 
-Notable this year, has been Apple's strategic move towards a common, integrated ML acceleration technology, embedded within all processor cores across its product range. The provision of direct access to all of system memory at very high data rates has demonstrated significant efficiencies compared to a discrete GPU approach and introduces a new platform class that must be considered from an MLOps perspective.
+Demand for compute resources for ML training is currently doubling every three months. Over the course of the current roadmap, we should see the performance of the highest end compute facilities increase to performance per socket of greater than 100 TFlops (FP64) with memory bandwidth greater than 5 TB/s. A benchmark point of reference is 50,000 compute nodes of around 11 TFlops/node to simulate a realtime cerebellum.
+
+Performance of real world systems in this space are currently limited by network and memory bandwidth, so the careful decomposition of workloads into optimised deployments aligned to target hardware constraints is significant to overall training cycle time. Greater gains can be realised by improving the efficiency of tooling to distribute pipeline workloads more effectively, compared to the expected growth rate in raw compute performance.
+
+We are entering a 'cambrian explosion' period of extreme diversity in new application devices, so it is very important that we set aside habitual biases about considering the target of any product deployment as a conventional server or Cloud environment. The target of an ML asset is now much more likely to be a very specialised architecture, in a vehicle, a personal augmentation device or as part of a distributed mesh of edge compute devices. 'Train in the Cloud, deploy in the World' is going to be the challenge facing us over the next few years.
+
+Many businesses are now beginning the transition from Decision-Support Systems to Decision-Making Systems. This increasingly puts the quality of the organisation's Continuous Delivery processes at the core of maintaining the reputation and the operational effectiveness of these organisations in the future. An integrated MLOps process will become critical to survival over the next few years.
+
+The Continuous Delivery Foundation has recently published a best practices guide to implementing Continuous Delivery, which takes into consideration the challenges raised in this document as part of a practical approach to the problem space. See [https://bestpractices.cd.foundation](https://bestpractices.cd.foundation)
 
 <br>
 
@@ -463,7 +472,7 @@ In this section, we capture specific technology requirements to enable progress 
   </tr>
   <tr>
     <td>Approaches for applying MLOps to very large scale problems at petabyte scale and beyond</td>
-    <td>As of 2020, large ML data sets are considered to start at around 50TB and very large data sets may derive from petabytes of source data, especially in visual applications such as autonomous vehicle control. At these scales, it becomes necessary to spread ML workloads across thousands of GPU instances in order to keep overall training times within acceptable elapsed time windows (less than a week per run).</br></br>
+    <td>As of 2022, large ML data sets are considered to start at around 50TB and very large data sets may derive from petabytes of source data, especially in visual applications such as autonomous vehicle control. At these scales, it becomes necessary to spread ML workloads across thousands of GPU instances in order to keep overall training times within acceptable elapsed time windows (less than a week per run).</br></br>
     Individual GPUs are currently able to process in the order of 1-10GB of data per second but only have around 40GB of local RAM. An individual server can be expected to have around 1TB of conventional RAM and around 15TB of local high speed storage as cache for around 8 GPUs, so may be able to transfer data between these and the compute units at high hundreds of GB/s with upstream connections to network storage running at low hundreds of GB/s.</br></br>
     Efficient workflows rely upon being able to reduce problems into smaller sub-units with constrained data requirements or systems start to become I/O bound. MLOps tooling for large problems must be able to efficiently decompose training and inferencing workloads into individual operations and data sets that can be effectively distributed as parallel activities across a homogeneous infrastructure with a supercomputing-style architecture. This can be expected to exceed the capabilities of conventional Cloud computing infrastructure and require dedicated hardware components and architecture so any MLOps tooling must have appropriate awareness of the target architecture in order to optimise deployments.</br></br>
     At this scale, it is not feasible to create multiple physical copies of petabytes of training data due to storage capacity constraints and limitations of data transfer rates, so strategies for versioning sets of data with metadata against an incrementally growing pool will be necessary.</td>
@@ -575,21 +584,24 @@ The following cross-cutting concerns are identified:
 
 * Legislative compliance
 
+* SBOMs
+
 <br>
 
 # Conclusions and Recommendations
 
 <!--NOTES: Conclusions and recommendations for the current year.-->
 
+Progress in the MLOps space has been slow, with many ML products continuing down the path of implementing isolated, run-time stores, manually deploying ML assets into live production environments without automated governance processes. Meanwhile, pressure for sweeping government regulation in the field of AI grows across multiple jurisdictions. There is increasing concern that it will not be possible to meet the demands of imminent legislation with the tools and approaches being used today and there is an urgent need for the widespread adoption of more formal MLOps methods.
+
+Concerns have been raised that some of the proposed legislation would negatively impact Open Source projects, making it cost-prohibitive to create open, ML-based solutions in some regions, and exposing contributors to potential risk of prosecution, if their projects are used in regions where this legislation is in force.
+
+Another emerging requirement is the need for products to provide a Software Bill of Materials (SBOM) for audit and compliance purposes. As this becomes a legislative requirement in some markets, it will become increasingly important to include ML assets within the BOM for a given product.
+
 A meta-study of 769 Machine Learning papers, published in 2021 by Benjamin, et al (https://arxiv.org/pdf/2106.15195.pdf), showed multiple failings of scientific rigour in validating the results of many projects. It is clear that a more mature process and availability of suitable tooling is essential for the successful management of machine learning products.
 
 Of similar concern is the ongoing lack of understanding of the issues associated with the use of Jupyter Notebooks in building ML assets. A large scale study by Pimentel et al (http://www.ic.uff.br/~leomurta/papers/pimentel2019a.pdf) looked at 1.4 million Jupyter Notebooks from GitHub. They found that only 24% could be executed without errors and that a mere 4% produced repeatable results, with only 1.5% having any form of testing implemented. As a result, it is to be expected that the mortality rate of ML products will continue to be excessively high due to the high likelihood of multiple failures of reproducibility of core assets in production.
 
-This year has brought increasing government interest in the application of machine learning with significant signals of sweeping regulation to be introduced in 2022. The impact of mandatory compliance for a wide range of ML products will be considerable as it is clear from draft regulations that common practice in ML development is woefully inadequate to meet the upcoming demands of regulators. It becomes of ever growing importance, therefore, that vendors consider their approach to addressing the challenges listed here, so that customers have time to migrate their processes onto tooling that can be considered compliant, prior to any deadlines for the implementation of legislation.
-
-Clearly, it will not be possible to meet the demands of imminent legislation with the tools and approaches being used today and there is an urgent need for the widespread adoption of more formal MLOps methods. One of the key bottlenecks in this area is the lack of availability of appropriate tooling in public cloud environments. We appear to be in a chicken-and-egg situation where ML teams are learning how to build ML assets based upon the capabilities available to them from their cloud providers, but the cloud providers are offering ML products based upon demand from their customer base. As a result of this interdependency, much of the consideration of the asset management requirements of MLOps seems to fall between the cracks.
-
-It is critical that we address this before regulation begins to reveal widespread gaps across the field of machine learning in general, creating an additional moral panic in a field that is already broadly feared.
 <br>
 
 # Glossary
