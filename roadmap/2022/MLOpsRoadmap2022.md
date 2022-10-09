@@ -56,21 +56,28 @@ For example, MLOps is not "putting Jupyter Notebooks into production environment
 
 RAD tools like Jupyter Notebooks can be extremely useful, both in classroom environments and in exploring problem spaces to understand potential approaches to mathematical problems. However, like all Rapid Application Development tools, they achieve the rapid element of their name by trading off other key non-functional requirements like maintainability, testability and scalability.
 
-In the next section, we will discuss the key drivers for MLOps and expand upon the requirements for a true DevOps approach to managing ML assets. At this point in the development of the practice, it perhaps helps to understand that much of ML and AI research and development activity has been driven by Data Science rather than Computer Science teams. This specialisation has enabled great leaps in the ML field but at the same time means that a significant proportion of ML practitioners have never been exposed to the lessons of the past seventy years of managing software assets in commercial environments.
-
-As we shall see, this can result in large conceptual gaps between what is involved in creating a viable proof of concept of a trained ML model on a Data Scientist’s laptop vs what it subsequently takes to be able to safely transition that asset into a commercial product in production environments. MLOps in practice is still on the early path towards maturity and it is likely that many practices that are commonly seen today, will be abandoned for better approaches over the next few years as teams get more exposure to the full scope of this problem domain.
-
-Compounding this challenge, Machine Learning solutions tend to be decision-making systems rather than just data processing systems and thus will be required to be held accountable to much higher standards than those applied to the best quality software delivery projects. The bar for quality and governance processes is therefore very high, in many cases representing legal compliance processes mandated by regional legislation.
-
-As these decision-making solutions increasingly displace human decision-makers in commerce and government, we encounter a new class of governance problems, collectively known as ‘Responsible AI’. These introduce a range of challenges around complex issues such as ethics, fairness and bias in ML models and often fall under government regulation requiring interpretability and explainability of models, often to a standard higher than that applied to human staff.
-
-As a result, it will be necessary for MLOps to develop in a manner that facilitates complex and sensitive governance processes that are of a standard appropriate to what is expected to become a highly regulated area.
-
-<br>
-
 ## Drivers
 
 <!--NOTES: Driving forces for the current snapshot of the roadmap.-->
+
+### Overview
+In this section, we discuss the key drivers for MLOps and detail the requirements for a true DevOps approach to managing ML assets. 
+
+As context, it helps to understand that much of ML and AI research and development activity has been driven by Data Science rather than Computer Science teams. This specialisation has enabled great leaps in the ML field.  The majority of Data Scientists are not trained in software engineering best practices, which means that a significant proportion of ML practitioners have never been exposed to the 70+ years of lessons from managing software assets in commercial environments.
+
+This results in large conceptual gaps between what is required to create a viable proof of concept of a Trained Model on a Data Scientist’s laptop vs what is subsequently required to safely transition that Trained Model and its Features into a commercial product with SLAs in production environments. 
+
+MLOps in practice is still on the early path towards maturity. We believe many commonly seen practices today will be abandoned for better approaches over the next few years as teams get more exposure to the full scope of this problem domain and the tooling matures.
+
+### Responsible AI
+
+MLOps is made more challenging because Machine Learning solutions tend to be *decision-making systems* rather than just *data processing systems.*   Thus, ML solutions should be held accountable to higher standards than those applied to the best quality software delivery projects.  The bar for quality and governance processes is therefore very high, in many cases representing legal compliance processes mandated by regional legislation (for example, for credit decisioning models).
+
+A simple analogy is how the need for quality control processes is significantly greater for air plane manufacturers than furniture manufacturers.  
+
+As these ML-based decision-making solutions increasingly displace human decision-makers in commerce and government, we encounter a new class of governance problems, collectively known as *Responsible AI*. There are a range of challenges around complex issues such as ethics, fairness and bias in ML Models and their input Features that often fall under government regulation requiring interpretability and explainability of models, often (and rightly so) to a standard higher than that applied to human staff.
+
+As a result, it will be necessary for MLOps to develop in a manner that facilitates complex and sensitive governance processes that are of a standard appropriate to what is expected to become a highly regulated area.
 
 ### General DevOps drivers applied to MLOps
 
