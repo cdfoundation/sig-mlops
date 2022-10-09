@@ -80,7 +80,8 @@ Rapid Application Development (RAD) tools like Jupyter Notebooks can be extremel
 
 **2. MLOps is not a purely technical or infrastructure solution**
 
-MLOps, similar to DevOps, includes a combination of enabling technology and infrastructure, but also requires people-based processes to be successfully implemented.
+MLOps, as an extension to DevOps, includes a combination of enabling technology and infrastructure, but also requires people-based processes to be successfully implemented.
+
 
 In the next section, we will discuss the key drivers for MLOps and expand upon the requirements for a true DevOps approach to managing ML assets. At this point in the development of the practice, it perhaps helps to understand that much of ML and AI research and development activity has been driven by Data Science rather than Computer Science teams. This specialisation has enabled great leaps in the ML field but at the same time means that a significant proportion of ML practitioners have never been exposed to the lessons of the past seventy years of managing software assets in commercial environments.
 
