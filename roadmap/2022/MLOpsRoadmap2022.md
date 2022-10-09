@@ -72,85 +72,59 @@ As a result, it will be necessary for MLOps to develop in a manner that facilita
 
 <!--NOTES: Driving forces for the current snapshot of the roadmap.-->
 
-### General DevOps drivers applied to MLOps
 
-* Optimising the process of taking ML features into production by reducing Lead Time
+### If we implement MLOps correctly, we will achieve the following goals:
 
-* Optimising the feedback loop between production and development for ML assets
+**General DevOps goals applied to MLOps**
+1. Reduced lead time to put Trained Models and their Features into production
 
-* Supporting the problem-solving cycle of experimentation and feedback for ML applications
+2. Short feedback and experimentation loop between ML development and production phases
 
-* Unifying the release cycle for ML and conventional assets
+3. Unified, standardized release cycle for ML assets and conventional software assets, where ML assets are first class citizens within CI/CD systems
 
-* Enabling automated testing of ML assets
+4. Automated testing of ML assets before release 
 
-* Application of Agile principles to ML projects
+5. Shift-left on security includes ML assets with best practices such as Static Analysis, Dynamic Analysis, Dependency Scanning and Integrity Checking applied to those ML assets
 
-* Supporting ML assets as first class citizens within CI/CD systems
+6. Agile principles from software development can be applied to ML projects
 
-* Enabling shift-left on Security to include ML assets
+7. Mean Time To Restore and Change Fail Percentage for ML applications on-par with best-in-class software applications
 
-* Improving quality through standardisation across conventional and ML assets
+8. Easy to measure the total-cost-of-ownership (TCO) for each ML application
 
-* Applying Static Analysis, Dynamic Analysis, Dependency Scanning and Integrity Checking to ML assets
+9. IT management overhead for ML applications is the same that of software applications
 
-* Reducing Mean Time To Restore for ML applications
+10. ML applications can easily re-use and share common code through template or `quickstart` projects
 
-* Reducing Change Fail Percentage for ML applications
+11. ML application releases are subject to the appropriate governance processes
 
-* Management of technical debt across ML assets
+12. Systematic management of technical debt across ML assets (as tickets, etc)
 
-* Enabling whole-of-life cost savings at a product level
+**Goals unique to mitigating the risks associated with producing decision-making products**
 
-* Reducing overheads of IT management through economies of scale
+1.  Specific testing support for:
+    - Detecting ML-specific errors (e.g., data or model drift, data quality issues, etc)
+    - Verification that models make decisions aligned to customer values including:
+        - Bias detection 
+        - Compliance with regional AI legislation
+        - Decision fairness
+2. Ethical governance processes incorporated into the management and release of ML applications
+3. Complete transparency and audit-ability for each decision made by an ML application, including the explainability and provability of the decisions AND a complete audit trail from development to production of all ML assets involved with the decision (training data, training code, feature code, etc)
+4. Mitigated liability and economic risks through appropriate due-diligence on ML assets involved with decision-making
+5. Clear action paths (playbooks) to quickly suspend or revert failed ML assets in production environments
+   - This applied to any ML application but is particularly important for decision-making applications
 
-* Facilitating the re-use of ML approaches through template or ‘quickstart’ projects
+**Goals unique to Machine Learning solutions**
 
-* Managing risk by aligning ML deliveries to appropriate governance processes
+1. Accelerated enterprise-wide development lifecycle for ML applications through ready-to-reuse ML assets (e.g., Trained Models, Features, Model Servers, Model Training Pipeline, etc) and
 
+2. Easy to track the long-term stability of ML asset performance
 
+3. Easy to manage & maintain long-lived ML assets
 
-### Drivers unique to Machine Learning solutions that represent MLOps requirements
+4. Easy to manage ML-specific security risks such as adversarial attacks
 
-* Mitigating the risks associated with producing decision-making products
-
-* Provide specific testing support for detecting ML-specific errors
-
-* Verifying that algorithms make decisions aligned to customer values
-
-* Tracking long-term stability of ML asset performance
-
-* Incorporate ethical governance into management of ML assets
-
-* Enabling automated bias detection testing
-
-* Ensuring explainability of decisions
-
-* Ensuring fairness in decisions
-
-* Providing transparency and audit-ability of ML assets
-
-* Allowing for provability of decision-making algorithms
-
-* Ensuring long term supportability of long-lived ML assets
-
-* Manage ML-specific security risks such as adversarial attacks
-
-* Providing clear action paths to suspend or revert failed ML assets in production environments
-
-* Managing economic risks associated with deployment of key decision-making systems on customer infrastructure
-
-* Leveraging ML techniques to improve MLOps solutions
-
-* Mitigating liability risk and accountability through appropriate due-diligence over ML assets
-
-* Facilitating compliance verification against regional AI legislation
-
-* Enabling fast development life cycles by offering out-of-the-box (correlated) sampling of relevant data sets
-
-* Enabling online (streaming) and offline (batch) model predictions
-
-* Accelerating enterprise-wide development of models through ready-to-reuse features (i.e. feature stores)
+5. Ability to use ML techniques to improve MLOps processes
 
 <br>
 
