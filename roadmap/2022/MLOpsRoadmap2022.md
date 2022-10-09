@@ -40,21 +40,47 @@ Almog Baku, Rimoto <almog.baku@gmail.com>
 
 ### What is MLOps?
 
-MLOps could be narrowly defined as "the ability to apply DevOps principles to Machine Learning applications" however as we shall see shortly, this narrow definition misses the true value of MLOps to the customer. Instead, we define MLOps as “the extension of the DevOps methodology to include Machine Learning and Data Science assets as first class citizens within the DevOps ecology”.
+MLOps is often narrowly defined as:
+>*The ability to apply DevOps principles to Machine Learning applications.*
 
-MLOps should be viewed as a practice for consistently managing the ML aspects of products in a way that is unified with all of the other technical and non-technical elements necessary to successfully commercialise those products with maximum potential for viability in the marketplace. This includes DataOps, too, as machine learning without complete, consistent, semantically valid, correct, timely, and unbiased data is problematic or leads to flawed solutions that can exacerbate built-in biases.
+This narrow definition misses the true value of MLOps to the data scientist and engineers supporting data scientists.
 
+MLOps should be viewed as a practice for consistently managing the ML aspects of products in a way that is unified with all of the other technical and non-technical elements necessary to successfully commercialise those products with maximum potential for viability in the marketplace. 
 
-> MLOps is not to be confused with "AIOps". AIOps often means an application of AI technologies to Ops data with sometimes unclear aims for gaining insights. These terms are still evolving, but for the purposes of this document we do not mean AIOps in the latter usage. Some organisations are more comfortable with the designation 'AI' rather than 'Machine Learning' and so it is to be expected that MLOps may be referred to by AIOps in those domains, however the reverse is not true as use of the term 'AIOps' may not refer to the MLOps methodology.
+Accordingly, we believe a better definition of MLOps is:
+> *The extension of the DevOps methodology to include Machine Learning and Data Science Assets and the interdependencies between those Assets as first class citizens within the DevOps ecology.*
 
+Some ML & DS Assets require new extensions to DevOps practices:
+* Features [1]
+* Trained Models [2]
+
+Some ML & DS Assets can be handled by existing software DevOps practices, but must be linkable to the other ML Assets
+* Model Servers [3]
+* Model Training Pipelines [4]
+
+MLOps must have first-class integration with existing DataOps processes since well-performing machine learning relies on complete, consistent, semantically valid, correct, timely, and unbiased **Input Data**.  Without this clean, accurate data, ML solutions can be problematic or lead to flawed outcomes that exacerbate biases.
+
+*[1] A Feature is a specific individual measurable property or characteristic that is used as input to a Trained Model.  By definition, the same Feature must be used as training data and inference input data. This definition intentionally includes both embedded features (e.g., vectors of floating point numbers from transformers, etc models) and traditionally engineered features (e.g.,  transformed or aggregated data using SQL, Python, etc). It includes a systematic link to the required Input Data Sources (schema, etc), any required code (Python, SQL, etc), and any required Trained Models (in the case of an embedding).*
+
+*[2] A Trained Model includes the model artifact (e.g., the model weights or colloquially, the Pickle file), the required Model Server, and a systematic link to the model's required Features.*
+
+*[3] A Model Server includes the compute environment (e.g., Docker containers, K8S YAMLs, etc), any required code or binaries.  A Model Server could range from a simple FastAPI based container, to a Seldon or KServe configuration, or a fully custom serving environment.*
+
+*[4] A Model Training Pipeline includes the compute environment (e.g., Docker containers, K8S YAMLs, etc), model training code, and a systematic link to the Features (packaged as training data) required to train the model.  A Model Training Pipeline could range from a simple Python script to a complex DAG (e.g., Airflow, Kubeflow, Metaflow, etc).*
+ 
+> **MLOps is not to be confused with "AIOps".** AIOps often means an application of AI technologies to help improve the effectiveness of IT or Cloud operations (e.g., AI-based monitoring of logs, etc). This term is still evolving, but for the purposes of this document, we do include AIOps as defined here. Adding to the confusion is that some organisations are more comfortable with the designation 'AI' rather than 'Machine Learning' and thus call their internal 'MLOps" as 'AIOps'. 
 
 ### What is MLOps not?
 
 It sometimes helps to consider what anti-patterns exist around a concept in order to better understand it.
 
-For example, MLOps is not "putting Jupyter Notebooks into production environments".
+**1. MLOps is not "putting Jupyter Notebooks into production environments".**
 
-RAD tools like Jupyter Notebooks can be extremely useful, both in classroom environments and in exploring problem spaces to understand potential approaches to mathematical problems. However, like all Rapid Application Development tools, they achieve the rapid element of their name by trading off other key non-functional requirements like maintainability, testability and scalability.
+Rapid Application Development (RAD) tools like Jupyter Notebooks can be extremely useful, both in classroom environments and in exploring problem spaces to understand potential approaches to mathematical problems. However, like all RAD tools, they achieve the rapid element of their name by trading off other key non-functional requirements like maintainability, testability and scalability.  
+
+**2. MLOps is not a purely technical or infrastructure solution**
+
+MLOps, similar to DevOps, includes a combination of enabling technology and infrastructure, but also requires people-based processes to be successfully implemented.
 
 In the next section, we will discuss the key drivers for MLOps and expand upon the requirements for a true DevOps approach to managing ML assets. At this point in the development of the practice, it perhaps helps to understand that much of ML and AI research and development activity has been driven by Data Science rather than Computer Science teams. This specialisation has enabled great leaps in the ML field but at the same time means that a significant proportion of ML practitioners have never been exposed to the lessons of the past seventy years of managing software assets in commercial environments.
 
