@@ -225,16 +225,18 @@ In this section, we identify challenges in the near and far term that constrain 
 - Integrate ML assets with version control systems<br/></td>
   </tr>
   <tr>
-    <td>Providing mechanisms by which training/testing/validation data sets, training scripts, models, experiments, and service wrappers may all be versioned appropriately</td>
+    <td>Providing mechanisms by which training/testing/validation data sets, feature engineering code, training scripts, models, experiments, and service wrappers may all be versioned appropriately</td>
     <td>- All assets under version control<br/>
 - ML assets include sets of data<br/>
 - Data volumes may be large<br/>
 - Data may be sensitive<br/>
 - Data ownership may be complex<br/>
-- Multiple platforms may be involved<br/></td>
+- Multiple platforms may be involved<br/>
+- Each version of an asset has strong dependencies with other types of assets (e.g., model vN depends on feature engineering code vN, etc)<br/>
+</td>
   </tr>
   <tr>
-    <td>Providing mechanisms by which changes to training/testing/validation data sets, training scripts, models, experiments, and service wrappers may all be auditable across their full lifecycle</td>
+    <td>Providing mechanisms by which changes to training/testing/validation data sets, feature engineering code, training scripts, models, experiments, and service wrappers may all be auditable across their full lifecycle</td>
     <td>- Models may be retrained based upon new training data<br/>
 - Models may be retrained based upon new training approaches<br/>
 - Models may be self-learning<br/>
@@ -242,16 +244,21 @@ In this section, we identify challenges in the near and far term that constrain 
 - Models may be deployed in new applications<br/>
 - Models may be subject to attack and require revision<br/>
 - Incidents may occur that require root cause analysis and change<br/>
-- Corporate or government compliance may require audit or investigation<br/></td>
+- Corporate or government compliance may require audit or investigation<br/>
+- Training/testing/validation data sets require both the raw/input/source data *and* the feature engineering code (e.g., SQL, Python, etc) to be fully auditable<br/>
+</td>
   </tr>
   <tr>
-    <td>Treating training/testing/validation data sets as managed assets under a MLOps workflow</td>
+    <td>Treating training/testing/validation data sets (including the raw/source/input data, the feature engineering logic/code, and the resulting model ready data) as managed assets under a MLOps workflow.</td>
     <td>- Content of training/testing/validation data sets is essential to audit process, root cause analysis<br/>
 - Data is not typically treated as a managed asset under conventional CI/CD<br/>
 - Data may reside across multiple systems<br/>
 - Data may only be able to reside in restricted jurisdictions<br/>
 - Data storage may not be immutable<br/>
-- Data ownership may be a factor<br/></td>
+- Data ownership may be a factor<br/>
+- Feature engineering code may be different between dev & prod environments (e.g., SQL query vs. Python code in an API, etc)<br/>
+- Input data sources may be different between dev & prod environments (e.g., Kafka stream vs. DWH table with the stream's data, etc)<br/>
+</td>
   </tr>
   <tr>
     <td>Managing the security of data in the MLOps process with particular focus upon the increased risk associated with aggregated data sets used for training or batch processing</td>
