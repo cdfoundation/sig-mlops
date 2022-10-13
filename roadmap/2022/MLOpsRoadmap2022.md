@@ -389,6 +389,12 @@ Compliance requires:<br/>
 Government agencies, third party accreditation businesses and their subcontractors are required to have access to confidential intellectual property.<br/><br/>Surveillance authorities shall be granted full access to the training, validation and testing datasets used.
 </td>
 </tr>  
+<tr> 
+   <td>Educating data science practitioners on production techniques & best practices while simultaneously educating software practitioners on data science techniques & best practices.</td>
+   <td>As ML approaches and techniques mature to the point where the vast majority of business challenges can be addressed with “off the shelf” approaches, the use of ML will become a defacto standard part of every software application.<br/>
+   This implies that the data scientist and software engineer will need to participate in the same application development process, which implies a need for a development process that has empathy with the respective challenges faced by software and machine learning.
+</td>
+</tr>  
 </table>
 
 <br>
@@ -547,6 +553,15 @@ Solutions should provide the ability to specify guardrail metrics and facilitate
     <td>Government regulation of AI</td>
     <td>Proposed regulation creates an urgent requirement for the implementation of many of the technology requirements outlined in the roadmap as existing approaches will cease to be viable upon introduction. This in turn also introduces the need to provide traceable reporting to third parties whilst protecting intellectual property as part of the daily function of regulatory compliance.</td>  
   </tr>
+<tr> 
+   <td>Educating data science practitioners on production techniques & best practices while simultaneously educating software practitioners on data science techniques & best practices.</td>
+   <td>Beyond education, a solution should make it easy for both groups to follow best practices of the other group:<br/><br/>
+&nbsp &nbsp- Tooling should naturally enable data science practitioners to follow production best practices without needing to learn these best practices from the ground up (e.g., scalability, reliability, etc)
+&nbsp &nbsp- Tooling should naturally enable software practitioners to follow data science best practices without needing to learn these best practices from the ground up (e.g., proper statistical methodologies, etc)<br/><br/>
+This is similar to how various software frameworks encode best practices.
+</td>
+</tr>  
+
   </table>
 
 <br>
