@@ -390,9 +390,13 @@ Government agencies, third party accreditation businesses and their subcontracto
 </td>
 </tr>  
 <tr> 
-   <td>Educating data science practitioners on production techniques & best practices while simultaneously educating software practitioners on data science techniques & best practices.</td>
-   <td>As ML approaches and techniques mature to the point where the vast majority of business challenges can be addressed with “off the shelf” approaches, the use of ML will become a defacto standard part of every software application.<br/>
-   This implies that the data scientist and software engineer will need to participate in the same application development process, which implies a need for a development process that has empathy with the respective challenges faced by software and machine learning.
+   <td>Educating data science and software practitioners on the respective techniques & best practices used by each other's field.</td>
+   <td>As ML approaches and techniques mature to the point where the vast majority of business challenges can be addressed with “off the shelf” approaches, the use of ML will become a defacto standard part of every software application.<br/><br/>
+   Accordingly, data scientists and software engineers will need to participate in the same application development process.<br/><br/>
+   Creating a unified development process that delivers upon the unique needs and best practices of each respective domain is challenging:<br/>
+   &nbsp &nbsp- software development<br/>
+   &nbsp &nbsp- data science development<br/>
+   &nbsp &nbsp- production applications (security, reliability, version control, etc)<br/>
 </td>
 </tr>  
 </table>
@@ -555,10 +559,14 @@ Solutions should provide the ability to specify guardrail metrics and facilitate
   </tr>
 <tr> 
    <td>Educating data science practitioners on production techniques & best practices while simultaneously educating software practitioners on data science techniques & best practices.</td>
-   <td>Beyond education, a solution should make it easy for both groups to follow best practices of the other group:<br/><br/>
-&nbsp &nbsp- Tooling should naturally enable data science practitioners to follow production best practices without needing to learn these best practices from the ground up (e.g., scalability, reliability, etc)
-&nbsp &nbsp- Tooling should naturally enable software practitioners to follow data science best practices without needing to learn these best practices from the ground up (e.g., proper statistical methodologies, etc)<br/><br/>
-This is similar to how various software frameworks encode best practices.
+   <td>-Educational material that develops a shared understanding between different skill sets and roles should complement the technology-based solution.<br/><br/>
+   A technical solution should enable any developer, irregardless of experience, to naturally follow the best practices of each respective field (similar in concept to how a software framework such as React encodes best practices):<br/><br/>
+   &nbsp &nbsp- software development (unit testing, use of functions, control structures, etc)<br/>
+   &nbsp &nbsp- data science development (proper statistical methodologies, data encoding, etc)<br/>
+   &nbsp &nbsp- production applications (security, reliability, version control, etc)<br/><br/>
+The solution should also:<br/>
+&nbsp &nbsp- streamline collaboration between the various roles and skill sets<br/>
+&nbsp &nbsp- prevent "gotchas" that are well-known to experienced practitioners (but non-obvious to less experienced practitioners)<br/>
 </td>
 </tr>  
 
