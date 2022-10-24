@@ -25,6 +25,8 @@ Ian Hellström, D2IQ
 
 Almog Baku, Rimoto <almog.baku@gmail.com>
 
+Eric Peter <eric@ericpeter.me>
+
 <!--Amend list of contributors here-->
 
 
@@ -390,13 +392,13 @@ Government agencies, third party accreditation businesses and their subcontracto
 </td>
 </tr>  
 <tr> 
-   <td>Providing mechanisms to treat ML models as part of the broader product/system in which they reside, rather than as independent products.</td>
-   <td>While significantly more complex in practice, at the simplest level, an ML model can be thought of as a function that takes a set of data inputs and produces a data output (prediction).  ML predictions are always exposed within the context of a broader user experience (interface), whether that experience is an application, report, or other UI/UX.  Futher complicating the challenge is that sometimes multiple ML models are used in a single user-facing feature or a single ML model is used in multiple user-facing features.<br/>
-   Specific challenges include:<br/>
-&nbsp &nbsp- Associating specific ML assets with the end system(s)/application(s) in which their predictions are used (both for auditability purposes and practical purposes such as release coordination)<br/>
-&nbsp &nbsp- Associating multiple ML assets that depend upon each other<br/>
-&nbsp &nbsp- Enabling re-use of ML assets across multiple discrete systems/applications<br/>
-&nbsp &nbsp- Testing, releasing, and deploying ML assets in tandem with their system/application’s test, release and deployment schedule<br/>
+<td>Understanding ML models as a part of the broader product(s) in which they reside (rather than as independent products).</td>
+   <td>ML predictions are always exposed within the context of a broader user experience (interface), whether that experience is an application, report, or other UI/UX.<br/><br/>  
+  This creates a challenge to manage the ML assets of a product in such a way that:<br/>
+&nbsp &nbsp- ML assets can be associated with a product so that consistent governance processes can be applied to the product & its ML assets<br/>
+&nbsp &nbsp- ML assets can be sold / transferred as a block of IP or re-used in other systems/applications<br/><br/>
+  Furthering this challenge is that sometimes multiple ML models are used in a single user-facing feature or a single ML model is used in multiple applications.<br/><br/>
+Other challenges address the technical concerns (linking & releasing ML assets in tandem with software assets, etc).
 </td>
 </tr>  
 </table>
@@ -559,12 +561,12 @@ Solutions should provide the ability to specify guardrail metrics and facilitate
   </tr>
 
   <tr> 
-   <td>Providing mechanisms to treat ML models as part of the broader product/system in which they reside, rather than as independent products.</td>
-   <td>Tooling should enable models (and their supporting assets) to be distributed as reusable components within a larger system/application (similar to dependency management for software).<br/><br/>
+   <td>Understanding ML models as a part of the broader product(s) in which they reside (rather than as independent products).</td>
+   <td>Tooling should enable management of ML assets as reusable components within a larger system/application (similar to dependency management for software).<br/><br/>
 Tooling should enable explicit dependency management between:<br/>
 &nbsp &nbsp- Models that depend upon other models<br/>
 &nbsp &nbsp- Applications that depend upon models<br/><br/>
-While covered in detail elsewhere in this roadmap, a specific requirement here is that tooling enables the same release and deployment process for software and ML assets that are used together.
+The tooling should enable operational changes to an ML asset in a way that downstream impacts to the dependent applications can be managed.
 </td>
 </tr>
   </table>
