@@ -390,13 +390,11 @@ Government agencies, third party accreditation businesses and their subcontracto
 </td>
 </tr>  
 <tr> 
-   <td>Educating data science and software practitioners on the respective techniques & best practices used by each other's field.</td>
-   <td>As ML approaches and techniques mature to the point where the vast majority of business challenges can be addressed with “off the shelf” approaches, the use of ML will become a defacto standard part of every software application.<br/><br/>
-   Accordingly, data scientists and software engineers will need to participate in the same application development process.<br/><br/>
-   Creating a unified development process that delivers upon the unique needs and best practices of each respective domain is challenging:<br/>
-   &nbsp &nbsp- software development<br/>
-   &nbsp &nbsp- data science development<br/>
-   &nbsp &nbsp- production applications (security, reliability, version control, etc)<br/>
+   <td>Educating data science practitioners on the approaches & best practices used in product development, while educating product development teams on the requirements of machine learning.</td>
+   <td>Many best practices and approaches exist for delivering software products (Product/Customer Discovery, Lean Startups, Agile Development, Product Lifecycle Management, DevOps, Shift Left, etc).  These approaches are well-understood and engrained in the culture of most product-led organizations.<br/><br/>
+   As ML matures to the point where the vast majority of business challenges can be addressed with “off the shelf” ML approaches, the use of ML will become a defacto standard part of every software application.<br/><br/>
+   Accordingly, data scientists will need to build ML models as a participant in the software development processes where these approaches are applied (rather than as a separate process).<br/><br/>
+   The challenge is to educate data scientists on established product processes and to communicate the additional requirements that ML brings to asset management.<br/>
 </td>
 </tr>  
 </table>
@@ -558,18 +556,11 @@ Solutions should provide the ability to specify guardrail metrics and facilitate
     <td>Proposed regulation creates an urgent requirement for the implementation of many of the technology requirements outlined in the roadmap as existing approaches will cease to be viable upon introduction. This in turn also introduces the need to provide traceable reporting to third parties whilst protecting intellectual property as part of the daily function of regulatory compliance.</td>  
   </tr>
 <tr> 
-   <td>Educating data science practitioners on production techniques & best practices while simultaneously educating software practitioners on data science techniques & best practices.</td>
-   <td>-Educational material that develops a shared understanding between different skill sets and roles should complement the technology-based solution.<br/><br/>
-   A technical solution should enable any developer, irregardless of experience, to naturally follow the best practices of each respective field (similar in concept to how a software framework such as React encodes best practices):<br/><br/>
-   &nbsp &nbsp- software development (unit testing, use of functions, control structures, etc)<br/>
-   &nbsp &nbsp- data science development (proper statistical methodologies, data encoding, etc)<br/>
-   &nbsp &nbsp- production applications (security, reliability, version control, etc)<br/><br/>
-The solution should also:<br/>
-&nbsp &nbsp- streamline collaboration between the various roles and skill sets<br/>
-&nbsp &nbsp- prevent "gotchas" that are well-known to experienced practitioners (but non-obvious to less experienced practitioners)<br/>
-</td>
-</tr>  
-
+   <td>Educating data science practitioners on the approaches & best practices used in product development, while educating product development teams on the requirements of machine learning.</td>
+   <td>Adapting existing educational material that discusses product development to be easily understood/resonate with data scientists.  This should complement a technology-based solution to help data scientists to understand how product teams (currently) function so they can fit into these processes.<br/><br/>
+   The technology solution should enable a data scientist to build ML models as a direct participant in the existing product design & development processes.  While detailed in other challenges, these tools should enable ML assets to be treated in the same way as conventional software assets.
+</td> 
+</tr>
   </table>
 
 <br>
