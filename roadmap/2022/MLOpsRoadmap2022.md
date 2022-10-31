@@ -25,6 +25,8 @@ Ian Hellström, D2IQ
 
 Almog Baku, Rimoto <almog.baku@gmail.com>
 
+Eric Peter <eric@ericpeter.me>
+
 <!--Amend list of contributors here-->
 
 
@@ -390,7 +392,16 @@ Government agencies, third party accreditation businesses and their subcontracto
 </td>
 </tr>  
 <tr> 
-   <td>Educating data science practitioners on the approaches & best practices used in product development, while educating product development teams on the requirements of machine learning.</td>
+<td>Understanding ML models as a part of the broader product(s) in which they reside (rather than as independent products).</td>
+   <td>ML predictions are always exposed within the context of a broader user experience (interface), whether that experience is an application, report, or other UI/UX.<br/><br/>  
+  This creates a challenge to manage the ML assets of a product in such a way that:<br/>
+&nbsp &nbsp- ML assets can be associated with a product so that consistent governance processes can be applied to the product & its ML assets<br/>
+&nbsp &nbsp- ML assets can be sold / transferred as a block of IP or re-used in other systems/applications<br/><br/>
+  Furthering this challenge is that sometimes multiple ML models are used in a single user-facing feature or a single ML model is used in multiple applications.<br/><br/>
+Other challenges address the technical concerns (linking & releasing ML assets in tandem with software assets, etc).</td>
+</tr>  
+<tr> 
+<td>Educating data science practitioners on the approaches & best practices used in product development, while educating product development teams on the requirements of machine learning.</td>
    <td>Many best practices and approaches exist for delivering software products (Product/Customer Discovery, Lean Startups, Agile Development, Product Lifecycle Management, DevOps, Shift Left, etc).  These approaches are well-understood and engrained in the culture of most product-led organizations.<br/><br/>
    As ML matures to the point where the vast majority of business challenges can be addressed with “off the shelf” ML approaches, the use of ML will become a defacto standard part of every software application.<br/><br/>
    Accordingly, data scientists will need to build ML models as a participant in the software development processes where these approaches are applied (rather than as a separate process).<br/><br/>
@@ -555,6 +566,15 @@ Solutions should provide the ability to specify guardrail metrics and facilitate
     <td>Government regulation of AI</td>
     <td>Proposed regulation creates an urgent requirement for the implementation of many of the technology requirements outlined in the roadmap as existing approaches will cease to be viable upon introduction. This in turn also introduces the need to provide traceable reporting to third parties whilst protecting intellectual property as part of the daily function of regulatory compliance.</td>  
   </tr>
+  <tr> 
+   <td>Understanding ML models as a part of the broader product(s) in which they reside (rather than as independent products).</td>
+   <td>Tooling should enable management of ML assets as reusable components within a larger system/application (similar to dependency management for software).<br/><br/>
+Tooling should enable explicit dependency management between:<br/>
+&nbsp &nbsp- Models that depend upon other models<br/>
+&nbsp &nbsp- Applications that depend upon models<br/><br/>
+The tooling should enable operational changes to an ML asset in a way that downstream impacts to the dependent applications can be managed.
+</td>
+</tr>
 <tr> 
    <td>Educating data science practitioners on the approaches & best practices used in product development, while educating product development teams on the requirements of machine learning.</td>
    <td>Adapting existing educational material that discusses product development to be easily understood/resonate with data scientists.  This should complement a technology-based solution to help data scientists to understand how product teams (currently) function so they can fit into these processes.<br/><br/>
