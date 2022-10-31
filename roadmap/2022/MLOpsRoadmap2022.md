@@ -389,6 +389,14 @@ Compliance requires:<br/>
 Government agencies, third party accreditation businesses and their subcontractors are required to have access to confidential intellectual property.<br/><br/>Surveillance authorities shall be granted full access to the training, validation and testing datasets used.
 </td>
 </tr>  
+<tr> 
+   <td>Educating data science practitioners on the approaches & best practices used in product development, while educating product development teams on the requirements of machine learning.</td>
+   <td>Many best practices and approaches exist for delivering software products (Product/Customer Discovery, Lean Startups, Agile Development, Product Lifecycle Management, DevOps, Shift Left, etc).  These approaches are well-understood and engrained in the culture of most product-led organizations.<br/><br/>
+   As ML matures to the point where the vast majority of business challenges can be addressed with “off the shelf” ML approaches, the use of ML will become a defacto standard part of every software application.<br/><br/>
+   Accordingly, data scientists will need to build ML models as a participant in the software development processes where these approaches are applied (rather than as a separate process).<br/><br/>
+   The challenge is to educate data scientists on established product processes and to communicate the additional requirements that ML brings to asset management.<br/>
+</td>
+</tr>  
 </table>
 
 <br>
@@ -547,6 +555,12 @@ Solutions should provide the ability to specify guardrail metrics and facilitate
     <td>Government regulation of AI</td>
     <td>Proposed regulation creates an urgent requirement for the implementation of many of the technology requirements outlined in the roadmap as existing approaches will cease to be viable upon introduction. This in turn also introduces the need to provide traceable reporting to third parties whilst protecting intellectual property as part of the daily function of regulatory compliance.</td>  
   </tr>
+<tr> 
+   <td>Educating data science practitioners on the approaches & best practices used in product development, while educating product development teams on the requirements of machine learning.</td>
+   <td>Adapting existing educational material that discusses product development to be easily understood/resonate with data scientists.  This should complement a technology-based solution to help data scientists to understand how product teams (currently) function so they can fit into these processes.<br/><br/>
+   The technology solution should enable a data scientist to build ML models as a direct participant in the existing product design & development processes.  While detailed in other challenges, these tools should enable ML assets to be treated in the same way as conventional software assets.
+</td> 
+</tr>
   </table>
 
 <br>
