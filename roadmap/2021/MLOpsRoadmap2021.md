@@ -3,7 +3,7 @@
 # MLOps Roadmap 2021
 
 > **Warning**
-> ###This document is now outdated. Please see [the 2022 edition](../2022/MLOpsRoadmap2022.md)
+> This document is now outdated. Please see [the 2022 edition](../2022/MLOpsRoadmap2022.md)
 
 
 ## About this document
