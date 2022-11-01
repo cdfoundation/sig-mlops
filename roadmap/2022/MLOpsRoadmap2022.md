@@ -1,7 +1,7 @@
 <!-- cSpell:locale en-GB -->
 <img src="images/mlops-horizontal-color.svg"/>
 
-# MLOps Roadmap 2022 - DRAFT COPY
+# MLOps Roadmap 2022
 
 ## About this document
 
@@ -30,7 +30,7 @@ Eric Peter <eric@ericpeter.me>
 <!--Amend list of contributors here-->
 
 
-*Update publication -  UNPUBLISHED WORKING COPY*
+*Update publication -  Nov 1st, 2022*
 
 <br>
 
@@ -109,6 +109,8 @@ As a result, it will be necessary for MLOps to develop in a manner that facilita
 * Facilitating the re-use of ML approaches through template or ‘quickstart’ projects
 
 * Managing risk by aligning ML deliveries to appropriate governance processes
+
+* SBOMs, asset signing, chain-of-custody
 
 
 
@@ -392,7 +394,7 @@ Government agencies, third party accreditation businesses and their subcontracto
 </td>
 </tr>  
 <tr> 
-<td>Understanding ML models as a part of the broader product(s) in which they reside (rather than as independent products).</td>
+<td>Understanding ML models as a part of the broader product(s) in which they reside (rather than as independent products)</td>
    <td>ML predictions are always exposed within the context of a broader user experience (interface), whether that experience is an application, report, or other UI/UX.<br/><br/>  
   This creates a challenge to manage the ML assets of a product in such a way that:<br/>
 &nbsp &nbsp- ML assets can be associated with a product so that consistent governance processes can be applied to the product & its ML assets<br/>
@@ -401,7 +403,7 @@ Government agencies, third party accreditation businesses and their subcontracto
 Other challenges address the technical concerns (linking & releasing ML assets in tandem with software assets, etc).</td>
 </tr>  
 <tr> 
-<td>Educating data science practitioners on the approaches & best practices used in product development, while educating product development teams on the requirements of machine learning.</td>
+<td>Educating data science practitioners on the approaches & best practices used in product development while educating product development teams on the requirements of ML</td>
    <td>Many best practices and approaches exist for delivering software products (Product/Customer Discovery, Lean Startups, Agile Development, Product Lifecycle Management, DevOps, Shift Left, etc).  These approaches are well-understood and engrained in the culture of most product-led organizations.<br/><br/>
    As ML matures to the point where the vast majority of business challenges can be addressed with “off the shelf” ML approaches, the use of ML will become a defacto standard part of every software application.<br/><br/>
    Accordingly, data scientists will need to build ML models as a participant in the software development processes where these approaches are applied (rather than as a separate process).<br/><br/>
@@ -567,7 +569,7 @@ Solutions should provide the ability to specify guardrail metrics and facilitate
     <td>Proposed regulation creates an urgent requirement for the implementation of many of the technology requirements outlined in the roadmap as existing approaches will cease to be viable upon introduction. This in turn also introduces the need to provide traceable reporting to third parties whilst protecting intellectual property as part of the daily function of regulatory compliance.</td>  
   </tr>
   <tr> 
-   <td>Understanding ML models as a part of the broader product(s) in which they reside (rather than as independent products).</td>
+   <td>Understanding ML models as a part of the broader product(s) in which they reside (rather than as independent products)</td>
    <td>Tooling should enable management of ML assets as reusable components within a larger system/application (similar to dependency management for software).<br/><br/>
 Tooling should enable explicit dependency management between:<br/>
 &nbsp &nbsp- Models that depend upon other models<br/>
@@ -576,7 +578,7 @@ The tooling should enable operational changes to an ML asset in a way that downs
 </td>
 </tr>
 <tr> 
-   <td>Educating data science practitioners on the approaches & best practices used in product development, while educating product development teams on the requirements of machine learning.</td>
+   <td>Educating data science practitioners on the approaches & best practices used in product development while educating product development teams on the requirements of ML</td>
    <td>Adapting existing educational material that discusses product development to be easily understood/resonate with data scientists.  This should complement a technology-based solution to help data scientists to understand how product teams (currently) function so they can fit into these processes.<br/><br/>
    The technology solution should enable a data scientist to build ML models as a direct participant in the existing product design & development processes.  While detailed in other challenges, these tools should enable ML assets to be treated in the same way as conventional software assets.
 </td> 
@@ -635,6 +637,8 @@ Another emerging requirement is the need for products to provide a Software Bill
 A meta-study of 769 Machine Learning papers, published in 2021 by Benjamin, et al (https://arxiv.org/pdf/2106.15195.pdf), showed multiple failings of scientific rigour in validating the results of many projects. It is clear that a more mature process and availability of suitable tooling is essential for the successful management of machine learning products.
 
 Of similar concern is the ongoing lack of understanding of the issues associated with the use of Jupyter Notebooks in building ML assets. A large scale study by Pimentel et al (http://www.ic.uff.br/~leomurta/papers/pimentel2019a.pdf) looked at 1.4 million Jupyter Notebooks from GitHub. They found that only 24% could be executed without errors and that a mere 4% produced repeatable results, with only 1.5% having any form of testing implemented. As a result, it is to be expected that the mortality rate of ML products will continue to be excessively high due to the high likelihood of multiple failures of reproducibility of core assets in production.
+
+Market forces are inexorably moving us to an imminent need for MLOps tooling that is Product-focused, rather than ML-focused.
 
 <br>
 
