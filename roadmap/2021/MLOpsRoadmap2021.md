@@ -22,7 +22,7 @@ Terry Cox, Bootstrap Ltd <terry@bootstrap.je>
 
 Michael Neale, CloudBees <michael.neale@gmail.com>
 
-Kara de la Marck, CloudBees <kdelamarck@cloudbees.com>
+Kara de la Marck, CDF <karadelamarck@gmail.com>
 
 Ian Hellström, D2IQ
 
