@@ -62,13 +62,44 @@ In the next section, we will discuss the key drivers for MLOps and expand upon t
 
 As we shall see, this can result in large conceptual gaps between what is involved in creating a viable proof of concept of a trained ML model on a Data Scientist’s laptop vs what it subsequently takes to be able to safely transition that asset into a commercial product in production environments. MLOps in practice is still on the early path towards maturity and it is likely that many practices that are commonly seen today, will be abandoned for better approaches over the next few years as teams get more exposure to the full scope of this problem domain.
 
-Compounding this challenge, Machine Learning solutions tend to be decision-making systems rather than just data processing systems and thus will be required to be held accountable to much higher standards than those applied to the best quality software delivery projects. The bar for quality and governance processes is therefore very high, in many cases representing legal compliance processes mandated by regional legislation.
+<!-- Compounding this challenge, Machine Learning solutions tend to be decision-making systems rather than just data processing systems and thus will be required to be held accountable to much higher standards than those applied to the best quality software delivery projects. The bar for quality and governance processes is therefore very high, in many cases representing legal compliance processes mandated by regional legislation. -->
 
-As these decision-making solutions increasingly displace human decision-makers in commerce and government, we encounter a new class of governance problems, collectively known as ‘Responsible AI’. These introduce a range of challenges around complex issues such as ethics, fairness and bias in ML models and often fall under government regulation requiring interpretability and explainability of models, often to a standard higher than that applied to human staff.
+<!-- As these decision-making solutions increasingly displace human decision-makers in commerce and government, we encounter a new class of governance problems, collectively known as ‘Responsible AI’. These introduce a range of challenges around complex issues such as ethics, fairness and bias in ML models and often fall under government regulation requiring interpretability and explainability of models, often to a standard higher than that applied to human staff. -->
 
-As a result, it will be necessary for MLOps to develop in a manner that facilitates complex and sensitive governance processes that are of a standard appropriate to what is expected to become a highly regulated area.
+<!-- As a result, it will be necessary for MLOps to develop in a manner that facilitates complex and sensitive governance processes that are of a standard appropriate to what is expected to become a highly regulated area. -->
+
+
+### Constraints
+
+<!-- NOTES: Constraints evolving in tandem with both the current state of  MLOps outlined above, and the Driving forces listed below. -->
+
+#### Machine Learning solutions as decision-making systems:
+
+Machine Learning solutions tend to be decision-making systems, rather than just data processing systems, and thus are increasingly required to be held accountable to much higher standards than those applied to the best quality software delivery projects. The bar for quality and governance processes is therefore very high, in many cases representing legal compliance processes mandated by legislation spanning various levels of governmental and intergovernmental entities. 
+
+In addition, this is a space of rapidly changing legal compliance; therefore, in order to maintain deployment frequency and lead-time metrics, it will be necessary for MLOps to develop in a manner that facilitates automation of governance processes within release processes. 
+ 
+
+#### Current and future governance and legal risks associated with producing decision-making systems:
+
+As MLOps decision-making solutions increasingly displace human decision-makers in commerce and government, we encounter a new class of governance problems, collectively known as ‘Responsible AI’. These governance problems introduce a range of challenges around complex issues such as ethics, fairness and bias in ML models. They often fall under government regulation that requires interpretability and explainability of models, often to a standard higher than that applied to human staff. 
+
+It is therefore necessary for MLOps to develop in a manner that:
+
+* Facilitates Responsible AI governance in areas such as ethics, fairness and bias.
+
+* Facilitate existing and future complex governance processes mandated by legislation that potentially spans multiple levels of government, including intergovernmental entities.
+
+#### Current and future governance and legal risks associated with security and data privacy:
+
+Legal compliance processes exist at various levels of government and intergovernmental oversight. These processes may include ethics, fairness, bias, data privacy, and security. It is therefore necessary for MLOps to develop in a manner that:
+
+* Facilitates both existing and expected future requirements of oversight, transparency audits, privacy, and security.
+
+* Facilitates the complex array of both existing governance processes and potential future governance processes. This may require high level, complex, interpretability and explainability of models.
 
 <br>
+
 
 ## Drivers
 
