@@ -15,7 +15,7 @@ It is intended that this document be iteratively refined by group consensus with
 
 Current active contributors to the MLOps SIG Roadmap: 
 
-Terry Cox, Cognitional Ltd <terry@cognitional.ltd>
+Terry Cox, Cognitional <terry@cognitional.ltd>
 
 Michael Neale, CloudBees <michael.neale@gmail.com>
 
@@ -26,6 +26,8 @@ Ian Hellström, D2IQ
 Almog Baku, Rimoto <almog.baku@gmail.com>
 
 Eric Peter <eric@ericpeter.me>
+
+Kim Scofield, Space42 <kscofield@space42.ca>
 
 <!--Amend list of contributors here-->
 
@@ -42,7 +44,7 @@ Eric Peter <eric@ericpeter.me>
 
 ### What is MLOps?
 
-MLOps could be narrowly defined as "the ability to apply DevOps principles to Machine Learning applications" however as we shall see shortly, this narrow definition misses the true value of MLOps to the customer. Instead, we define MLOps as “the extension of the DevOps methodology to include Machine Learning and Data Science assets as first class citizens within the DevOps ecology”.
+MLOps could be narrowly defined as "the ability to apply DevOps principles to Machine Learning applications" however as we shall see shortly, this narrow definition misses the true value of MLOps to the customer. Instead, we define MLOps as “the extension of the DevOps methodology to include Machine Learning and Data Science assets as part of a Continuous Delivery process”.
 
 MLOps should be viewed as a practice for consistently managing the ML aspects of products in a way that is unified with all of the other technical and non-technical elements necessary to successfully commercialise those products with maximum potential for viability in the marketplace. This includes DataOps, too, as machine learning without complete, consistent, semantically valid, correct, timely, and unbiased data is problematic or leads to flawed solutions that can exacerbate built-in biases.
 
@@ -58,48 +60,9 @@ For example, MLOps is not "putting Jupyter Notebooks into production environment
 
 RAD tools like Jupyter Notebooks can be extremely useful, both in classroom environments and in exploring problem spaces to understand potential approaches to mathematical problems. However, like all Rapid Application Development tools, they achieve the rapid element of their name by trading off other key non-functional requirements like maintainability, testability and scalability.
 
-In the next section, we will discuss the key drivers for MLOps and expand upon the requirements for a true DevOps approach to managing ML assets. At this point in the development of the practice, it perhaps helps to understand that much of ML and AI research and development activity has been driven by Data Science rather than Computer Science teams. This specialisation has enabled great leaps in the ML field but at the same time means that a significant proportion of ML practitioners have never been exposed to the lessons of the past seventy years of managing software assets in commercial environments.
+In the next section, we will discuss the key drivers and constraints for MLOps and expand upon the requirements for a true Continuous Delivery approach to managing ML assets. At this point in the development of the practice, it perhaps helps to understand that much of ML and AI research and development activity has been driven by Data Science rather than Computer Science teams. This specialisation has enabled great leaps in the ML field but at the same time means that a significant proportion of ML practitioners have never been exposed to the lessons of the past seventy years of managing software assets in commercial environments.
 
 As we shall see, this can result in large conceptual gaps between what is involved in creating a viable proof of concept of a trained ML model on a Data Scientist’s laptop vs what it subsequently takes to be able to safely transition that asset into a commercial product in production environments. MLOps in practice is still on the early path towards maturity and it is likely that many practices that are commonly seen today, will be abandoned for better approaches over the next few years as teams get more exposure to the full scope of this problem domain.
-
-<!-- Compounding this challenge, Machine Learning solutions tend to be decision-making systems rather than just data processing systems and thus will be required to be held accountable to much higher standards than those applied to the best quality software delivery projects. The bar for quality and governance processes is therefore very high, in many cases representing legal compliance processes mandated by regional legislation. -->
-
-<!-- As these decision-making solutions increasingly displace human decision-makers in commerce and government, we encounter a new class of governance problems, collectively known as ‘Responsible AI’. These introduce a range of challenges around complex issues such as ethics, fairness and bias in ML models and often fall under government regulation requiring interpretability and explainability of models, often to a standard higher than that applied to human staff. -->
-
-<!-- As a result, it will be necessary for MLOps to develop in a manner that facilitates complex and sensitive governance processes that are of a standard appropriate to what is expected to become a highly regulated area. -->
-
-
-### Constraints
-
-<!-- NOTES: Constraints evolving in tandem with both the current state of  MLOps outlined above, and the Driving forces listed below. -->
-
-#### Machine Learning solutions as decision-making systems:
-
-Machine Learning solutions tend to be decision-making systems, rather than just data processing systems, and thus are increasingly required to be held accountable to much higher standards than those applied to the best quality software delivery projects. The bar for quality and governance processes is therefore very high, in many cases representing legal compliance processes mandated by legislation spanning various levels of governmental and intergovernmental entities. 
-
-In addition, this is a space of rapidly changing legal compliance; therefore, in order to maintain deployment frequency and lead-time metrics, it will be necessary for MLOps to develop in a manner that facilitates automation of governance processes within release processes. 
- 
-
-#### Current and future governance and legal risks associated with producing decision-making systems:
-
-As MLOps decision-making solutions increasingly displace human decision-makers in commerce and government, we encounter a new class of governance problems, collectively known as ‘Responsible AI’. These governance problems introduce a range of challenges around complex issues such as ethics, fairness and bias in ML models. They often fall under government regulation that requires interpretability and explainability of models, often to a standard higher than that applied to human staff. 
-
-It is therefore necessary for MLOps to develop in a manner that:
-
-* Facilitates Responsible AI governance in areas such as ethics, fairness and bias.
-
-* Facilitate existing and future complex governance processes mandated by legislation that potentially spans multiple levels of government, including intergovernmental entities.
-
-#### Current and future governance and legal risks associated with security and data privacy:
-
-Legal compliance processes exist at various levels of government and intergovernmental oversight. These processes may include ethics, fairness, bias, data privacy, and security. It is therefore necessary for MLOps to develop in a manner that:
-
-* Facilitates both existing and expected future requirements of oversight, transparency audits, privacy, and security.
-
-* Facilitates the complex array of both existing governance processes and potential future governance processes. This may require high level, complex, interpretability and explainability of models.
-
-<br>
-
 
 ## Drivers
 
@@ -189,6 +152,38 @@ Legal compliance processes exist at various levels of government and intergovern
 
 <br>
 
+## Constraints
+
+<!-- NOTES: Constraints evolving as society adapts to Machine Learning in everyday use. -->
+
+### Machine Learning solutions as decision-making systems:
+
+Machine Learning solutions tend to be decision-making systems, rather than just data processing systems, and thus are increasingly required to be held accountable to much higher standards than those applied to the best quality software delivery projects. The bar for quality and governance processes is therefore very high, in many cases representing legal compliance processes mandated by legislation spanning various levels of governmental and intergovernmental entities. 
+
+In addition, this is a space of rapidly changing legal compliance; therefore, in order to maintain deployment frequency and lead-time metrics, it will be necessary for MLOps to develop in a manner that facilitates automation of governance processes within release processes. 
+ 
+
+### Current and future governance and legal risks associated with producing decision-making systems:
+
+As MLOps decision-making solutions increasingly displace human decision-makers in commerce and government, we encounter a new class of governance problems, collectively known as ‘Responsible AI’. These governance problems introduce a range of challenges around complex issues such as ethics, fairness and bias in ML models. They often fall under government regulation that requires interpretability and explainability of models, often to a standard higher than that applied to human staff. 
+
+It is therefore necessary for MLOps to develop in a manner that:
+
+* Facilitates Responsible AI governance in areas such as ethics, fairness and bias.
+
+* Facilitates existing and future complex governance processes mandated by legislation that potentially spans multiple levels of government, including intergovernmental entities.
+
+### Current and future governance and legal risks associated with security and data privacy:
+
+Legal compliance processes exist at various levels of government and intergovernmental oversight. These processes may include ethics, fairness, bias, data privacy, and security. It is therefore necessary for MLOps to develop in a manner that:
+
+* Facilitates both existing and expected future requirements of oversight, transparency audits, privacy, and security.
+
+* Facilitates the complex array of both existing governance processes and potential future governance processes. This may require high level, complex, interpretability and explainability of models.
+
+<br>
+
+
 ## Vision
 
 <!--NOTES: Narrative vision for the future of MLOps.-->
@@ -229,17 +224,19 @@ The focus of this roadmap is upon aspects relating to extending DevOps principle
 
 <!--NOTES: Executive summary of the roadmap and what’s new in revised versions.-->
 
-This is the third edition of the MLOps Roadmap and this year the accelerated adoption of ML and AI solutions has become much more visible across multiple market segments. Autonomous Machine Computing and Cyber-Physical Systems are rapidly expanding areas as 5G networks are rolled out broadly and work on 6G progresses with enabling technologies for cooperative autonomous machines.
+This is the fourth edition of the MLOps Roadmap and this year the adoption of ML and AI solutions has become ubiquitous across the majority of industries. The fear of missing out has led to 'AI' becoming a cure-all marketing phrase being applied to pocket warmers and bottled water, placing the subject at the peak of inflated expectations and on the slippery slope towards the trough of disillusionment.
 
-Demand for compute resources for ML training is currently doubling every three months. Over the course of the current roadmap, we should see the performance of the highest end compute facilities increase to performance per socket of greater than 100 TFlops (FP64) with memory bandwidth greater than 5 TB/s. A benchmark point of reference is 50,000 compute nodes of around 11 TFlops/node to simulate a realtime cerebellum.
+Demand for compute resources for ML training has now outstripped supply, with leading edge devices now selling out a year in advance of production capacity. Performance is improving slightly ahead of predictions with current systems reaching 90 TFlops (FP64) with memory bandwidth around 16 TB/s. A benchmark point of reference is 50,000 compute nodes of around 11 TFlops/node to simulate a realtime cerebellum.
 
-Performance of real world systems in this space are currently limited by network and memory bandwidth, so the careful decomposition of workloads into optimised deployments aligned to target hardware constraints is significant to overall training cycle time. Greater gains can be realised by improving the efficiency of tooling to distribute pipeline workloads more effectively, compared to the expected growth rate in raw compute performance.
+Performance of real world systems in this space remain limited by network and memory bandwidth, so the careful decomposition of workloads into optimised deployments aligned to target hardware constraints is significant to overall training cycle time. Greater gains can be realised by improving the efficiency of tooling to distribute pipeline workloads more effectively, compared to the expected growth rate in raw compute performance.
 
 We are entering a 'cambrian explosion' period of extreme diversity in new application devices, so it is very important that we set aside habitual biases about considering the target of any product deployment as a conventional server or Cloud environment. The target of an ML asset is now much more likely to be a very specialised architecture, in a vehicle, a personal augmentation device or as part of a distributed mesh of edge compute devices. 'Train in the Cloud, deploy in the World' is going to be the challenge facing us over the next few years.
 
-Many businesses are now beginning the transition from Decision-Support Systems to Decision-Making Systems. This increasingly puts the quality of the organisation's Continuous Delivery processes at the core of maintaining the reputation and the operational effectiveness of these organisations in the future. An integrated MLOps process will become critical to survival over the next few years.
+Many businesses are now committed to the transition from Decision-Support Systems to Decision-Making Systems. This increasingly puts the quality of the organisation's Continuous Delivery processes at the core of maintaining the reputation and the operational effectiveness of these organisations in the future. An integrated MLOps process is now critical to survival over the next few years.
 
-The Continuous Delivery Foundation has recently published a best practices guide to implementing Continuous Delivery, which takes into consideration the challenges raised in this document as part of a practical approach to the problem space. See [https://bestpractices.cd.foundation](https://bestpractices.cd.foundation)
+The Continuous Delivery Foundation continues to publish a best practices guide to implementing Continuous Delivery, which takes into consideration the challenges raised in this document as part of a practical approach to the problem space. See [https://bestpractices.cd.foundation](https://bestpractices.cd.foundation)
+
+What is new for this edition is the formal adoption of AI regulations across a number of jurisdictions with many now in force in transitional form, such as those in the EU, and others passing into law in the coming year. This will negatively impact a large number of products which currently lack appropriate governance processes, and which may be forced to withdraw from these markets as a result.
 
 <br>
 
@@ -311,7 +308,7 @@ Many commonly used frameworks such as PyTorch and TensorFlow exist and can be ex
 MLOps must not be opinionated about frameworks or languages.<br/></td>
   </tr>
   <tr>
-    <td>Approaches for enabling MLOps to support a broad range of target platforms, including but not limited to CPU, GPU, TPU, custom ASICs and neuromorphic silicon.</td>
+    <td>Approaches for enabling MLOps to support a broad range of target platforms, including but not limited to CPU, GPU, TPU, custom ASICs and neuro-morphic silicon.</td>
     <td>Choice of training platform and operational platform may be varied and could be different for separate models in a single project</td>
   </tr>
   <tr>
@@ -328,7 +325,7 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
 - Problems of provisioning / releasing large pools of hardware resources<br/></td>
   </tr>
   <tr>
-    <td>Providing appropriate pipeline tools to manage MLOps workflows transparently as part of existing DevOps solutions</td>
+    <td>Providing appropriate pipeline tools to manage MLOps workflows transparently as part of existing Continuous Delivery solutions</td>
     <td>- Integration of ML assets with existing CD/CD solutions<br/>
 - Extending Cloud-native build tools to support allocation of ML assets, data and hardware during training builds<br/>
 - Hardware pool management<br/></td>
@@ -407,8 +404,9 @@ MLOps must not be opinionated about frameworks or languages.<br/></td>
   </tr>  
  <tr> 
    <td>Government regulation of AI</td>
-   <td>Proposed legislation on AI introduces the power to regulate or prohibit certain classes of products.<br/><br/>
+   <td>Newly adopted legislation on AI introduces the power to regulate or prohibit certain classes of products.<br/><br/>
     Regulation introduces:<br/>
+    &nbsp &nbsp- Prohibition on certain use cases for ML<br/>
     &nbsp &nbsp- Mandatory data quality controls<br/>
     &nbsp &nbsp- Mandatory end-to-end compliance documentation<br/>
     &nbsp &nbsp- Transparency of system decisions<br/>
@@ -435,12 +433,62 @@ Other challenges address the technical concerns (linking & releasing ML assets i
 </tr>  
 <tr> 
 <td>Educating data science practitioners on the approaches & best practices used in product development while educating product development teams on the requirements of ML</td>
-   <td>Many best practices and approaches exist for delivering software products (Product/Customer Discovery, Lean Startups, Agile Development, Product Lifecycle Management, DevOps, Shift Left, etc).  These approaches are well-understood and engrained in the culture of most product-led organizations.<br/><br/>
-   As ML matures to the point where the vast majority of business challenges can be addressed with “off the shelf” ML approaches, the use of ML will become a defacto standard part of every software application.<br/><br/>
+   <td>Many best practices and approaches exist for delivering software products (Product/Customer Discovery, Lean Startups, Agile Development, Product Lifecycle Management, DevOps, Shift Left, etc).  These approaches are well-understood and engrained in the culture of most product-led organisations.<br/><br/>
+   As ML matures to the point where the vast majority of business challenges can be addressed with “off the shelf” ML approaches, the use of ML will become a de-facto standard part of every software application.<br/><br/>
    Accordingly, data scientists will need to build ML models as a participant in the software development processes where these approaches are applied (rather than as a separate process).<br/><br/>
    The challenge is to educate data scientists on established product processes and to communicate the additional requirements that ML brings to asset management.<br/>
 </td>
-</tr>  
+</tr>
+<tr> 
+<td>Vulnerability to Supply Chain attacks</td>
+<td>ML applications rely upon many third party dependencies in order to operate. Since these are outside of the control of local teams, they introduce the risk that they may be subverted as part of a widespread, or targeted attack on local systems.<br/>
+</td>
+</tr>
+<tr> 
+<td>Understanding the chain of responsibility associated with ML assets</td>
+<td>Under some regulatory systems, the responsibility for the correctness of any AI component falls legally upon the final deployer, meaning that the last entity in the chain of responsibility carries the brunt of any legal challenges.<br/><br/>
+Each third party ML asset adopted by a solution integrator becomes their legal liability in practical terms.<br/>
+</td>
+</tr>
+<tr> 
+<td>Managing ethical and legal issues in the supply chain</td>
+<td>Some ML-related services are currently sold with the implication that they are automated, but in practice are implemented using teams of people operating in abusive or unfair conditions in violation of labour regulations.<br/><br/>
+This can lead to legal ramifications or reputational damage to teams downstream from these services.<br/>
+</td>
+</tr>
+<tr> 
+<td>Loss of control over IP</td>
+<td>The status of intellectual property created by ML is currently poorly defined. Anything created by a third party model can be replicated by the owner of that model (or any other customer) and claimed as their IP.<br/><br/>
+This can result in a situation where generated content produced and distributed by one party can legally be copyright claimed by a third party after the fact and revenue streams redirected.<br/>
+</td>
+</tr>
+<tr> 
+<td>Risk of overspend on Cloud resources</td>
+<td>ML assets are often trained and operated using on-demand Cloud resources such as GPUs. Poor configuration or implementation can lead to uncontrolled consumption of these resources, leading to very high usage charges.<br/>
+</td>
+</tr>
+<tr> 
+<td>Energy usage and sustainability</td>
+<td>ML model training and inferencing can be extremely costly in terms of energy consumption. As a rule of thumb, training a billion parameter model currently consumes about one gigawatt of power.<br/><br/>
+Energy demand is on a course to outstrip generating capacity in only a decade or so, which implies that caps on consumption must be expected in the near future.<br/>
+</td>
+</tr>
+<tr> 
+<td>Availability of critical hardware</td>
+<td>The supply of GPU accelerators is currently outstripping supply, which will lead to widespread disruption in the ability to train or operate models.<br/>
+</td>
+</tr>
+<tr> 
+<td>Risks of feedback loops</td>
+<td>Providing the output of ML models as training data for subsequent models leads to rapid degradation in efficacy. It is important to ensure that this does not occur in an uncontrolled manner, or through unintended consequences of a business application.<br/>
+</td>
+</tr>
+<tr> 
+<td>Mistaking plausibility for reasoning</td>
+<td>Large model instances can produce experiences that are perceived as real and relevant to users interacting with the model. This greatly magnifies the plausibility of any given result as being accurate due to being well expressed.<br/><br/>
+It is critical to keep in mind that current large models are not capable of reasoning on facts presented to them, only to return output that is plausibly associated with such facts.<br/>
+</td>
+</tr>
 </table>
 
 <br>
@@ -512,7 +560,7 @@ In this section, we capture specific technology requirements to enable progress 
     It should be possible to use MLOps tooling to deploy solution components utilising different languages or frameworks using loosely-coupled principles to provide compatibility layers.</td>
   </tr>
   <tr>
-    <td>Approaches for enabling MLOps to support a broad range of target platforms, including but not limited to CPU, GPU, TPU, custom ASICs and neuromorphic silicon.</td>
+    <td>Approaches for enabling MLOps to support a broad range of target platforms, including but not limited to CPU, GPU, TPU, custom ASICs and neuro-morphic silicon.</td>
     <td>MLOps should be considered as a cross-compilation problem where the architectures of the source and target platforms may be different. In trivial cases, models may be trained on say CPU or GPU and deployed to execute on the same CPU or GPU architecture, however other scenarios already exist and should be expected to be increasingly likely in the future. This may include training on GPU / TPU and executing on CPU or, in edge devices, training on any architecture and then translating the models into physical logic that can be implemented at very low cost / size / power directly on FPGA or ASIC devices.</br></br>
     This implies the need for architecture-independent intermediate formats to facilitate cross-deployment or cross-compilation onto target platforms.</td>
   </tr>
@@ -525,21 +573,21 @@ In this section, we capture specific technology requirements to enable progress 
   <tr>
     <td>Approaches for applying MLOps to very large scale problems at petabyte scale and beyond</td>
     <td>As of 2022, large ML data sets are considered to start at around 50TB and very large data sets may derive from petabytes of source data, especially in visual applications such as autonomous vehicle control. At these scales, it becomes necessary to spread ML workloads across thousands of GPU instances in order to keep overall training times within acceptable elapsed time windows (less than a week per run).</br></br>
-    Individual GPUs are currently able to process in the order of 1-10GB of data per second but only have around 40GB of local RAM. An individual server can be expected to have around 1TB of conventional RAM and around 15TB of local high speed storage as cache for around 8 GPUs, so may be able to transfer data between these and the compute units at high hundreds of GB/s with upstream connections to network storage running at low hundreds of GB/s.</br></br>
+    Individual GPUs are currently able to process in the order of 1-10GB of data per second but only have around 40GB of local RAM. An individual server can be expected to have around 1TB of conventional RAM and around 15TB of local high speed storage as cache for around 8 GPUs, so may be able to transfer data between these and the compute units at high hundreds of GB/s with upstream connections to network storage running at low hundreds of GB/s. The next generation of devices increase this to around 3-400GB on device with fast access to around 1.5TB of coherent memory.</br></br>
     Efficient workflows rely upon being able to reduce problems into smaller sub-units with constrained data requirements or systems start to become I/O bound. MLOps tooling for large problems must be able to efficiently decompose training and inferencing workloads into individual operations and data sets that can be effectively distributed as parallel activities across a homogeneous infrastructure with a supercomputing-style architecture. This can be expected to exceed the capabilities of conventional Cloud computing infrastructure and require dedicated hardware components and architecture so any MLOps tooling must have appropriate awareness of the target architecture in order to optimise deployments.</br></br>
     At this scale, it is not feasible to create multiple physical copies of petabytes of training data due to storage capacity constraints and limitations of data transfer rates, so strategies for versioning sets of data with metadata against an incrementally growing pool will be necessary.</td>
   </tr>
   <tr>
-    <td>Providing appropriate pipeline tools to manage MLOps workflows transparently as part of existing DevOps solutions</td>
-    <td>Existing projects using DevOps practices typically will have pipelines and delivery automated. Ideally MLOps solutions would extend this rather than replace it. In some cases it may be necessary to have a ML model (for example) have its own tooling and pipeline, but that should be the exception (as typically there is a non trivial amount of source code that goes along with the training and model for scripts and endpoints, as covered previously).</td>
+    <td>Providing appropriate pipeline tools to manage MLOps workflows transparently as part of existing Continuous Delivery solutions</td>
+    <td>Existing projects using Continuous Delivery practices typically will have pipelines and delivery automated. Ideally MLOps solutions would extend this rather than replace it. In some cases it may be necessary to have a ML model (for example) have its own tooling and pipeline, but that should be the exception (as typically there is a non trivial amount of source code that goes along with the training and model for scripts and endpoints, as covered previously).</td>
   </tr>
   <tr>
     <td>Testing ML assets appropriately</td>
-    <td>ML assets should be considered at least at the same level as traditional source code in terms of testing (unit, integration, end to end, acceptance etc). Metrics like coverage may still apply to scripts and service endpoints, it not for the model itself (as it isn't derived from source code). Further to this, typically models when deployed are used in decision making capacities where the stakes are higher, or there are potential governance or compliance or bias risks. This implies that testing will need to cover far more than source code, but actively show in a way suitable to a variety of stakeholders, how it was tested (for example was socioeconomic bias testing included). The testing involved should be in an accessible fashion so it is not only available for developers to audit.</td>
+    <td>ML assets should be considered at least at the same level as traditional source code in terms of testing (unit, integration, end to end, acceptance etc). Metrics like coverage may still apply to scripts and service endpoints, if not for the model itself (as it isn't derived from source code). Further to this, typically models when deployed are used in decision making capacities where the stakes are higher, or there are potential governance or compliance or bias risks. This implies that testing will need to cover far more than source code, but actively show in a way suitable to a variety of stakeholders, how it was tested (for example was socioeconomic bias testing included). The testing involved should be in an accessible fashion so it is not only available for developers to audit.</td>
   </tr>
   <tr>
     <td>Governance processes for managing the release cycle of MLOps assets, including Responsible AI principles</td>
-    <td>MLOps as a process extends governance requirements into areas beyond those typically considered as part of conventional DevOps practices. It is necessary to be able to extend auditing and traceability of MLOps assets all the way back into the data that is chosen for the purposes of training models in the first instance. MLOps tooling will need to provide mechanisms for managing the release of new training sets for the purposes of training, with the consideration that many data scientists may be working on a given model, and more than one model may be trained against a specific instance of a training data set. Customers must have the capability to retain a history of prior versions of training data and be able to recreate specific environments as the basis of new avenues of investigation, remedial work or root cause analysis, potentially under forensic conditions.</br></br>
+    <td>MLOps as a process extends governance requirements into areas beyond those typically considered as part of conventional Continuous Delivery practices. It is necessary to be able to extend auditing and traceability of MLOps assets all the way back into the data that is chosen for the purposes of training models in the first instance. MLOps tooling will need to provide mechanisms for managing the release of new training sets for the purposes of training, with the consideration that many data scientists may be working on a given model, and more than one model may be trained against a specific instance of a training data set. Customers must have the capability to retain a history of prior versions of training data and be able to recreate specific environments as the basis of new avenues of investigation, remedial work or root cause analysis, potentially under forensic conditions.</br></br>
     The training process is predicated upon the idea of setting predefined success criteria for a given training session. Tooling should make it easy for data science teams to clearly and expressively declare success criteria against which an automated training execution will be evaluated, such that no manual intervention is required to determine when a particular training run meets the standard required for promotion to a staging environment.</br></br>
     Tooling should also offer the ability to manage competitive training of model variants against each other as part of automated batch training activities. This could involve predefined sets of hyper-parameters to test in parallel training executions, use of smart hyper-parameter tuning libraries as part of training scripts, or evolutionary approaches to iteratively creating model variants.</br></br>
     It should be possible to promote preferred candidate models into staging environments for integration and acceptance testing using a defined set of automated governance criteria and providing a full audit trail that can be retained across the lifetime of the ML asset being created.</br></br>
@@ -614,7 +662,63 @@ The tooling should enable operational changes to an ML asset in a way that downs
    The technology solution should enable a data scientist to build ML models as a direct participant in the existing product design & development processes.  While detailed in other challenges, these tools should enable ML assets to be treated in the same way as conventional software assets.
 </td> 
 </tr>
-  </table>
+<tr> 
+<td>Vulnerability to Supply Chain attacks</td>
+<td>It is essential to have clear visibility of all dependencies within the supply chain of a product. Adopting dependency management tools and Software Bill of Materials (SBoM) techniques can help to track changes in the supply chain.<br/><br/>
+Use of certified images within the build and deploy process can greatly improve supply chain vulnerability management.<br/>
+</td>
+</tr>
+<tr> 
+<td>Understanding the chain of responsibility associated with ML assets</td>
+<td>The introduction of formal regulations in the AI space brings a new set of legal liabilities that must be managed as part of the product lifecycle. Within the current legal frameworks, the responsibility for compliance is being placed upon the last actor in the chain, with little recourse to hold upstream vendors to account for non-compliant components.<br/><br/>
+It is therefore critical to ensure that only tested and approved ML assets are included in product deliveries and that changes to these assets are detected and approved before deploying new product instances in turn.<br/><br/>
+MLOps tooling should assist in the tracking and qualification of third party ML assets in production workflows.<br/>
+</td>
+</tr>
+<tr> 
+<td>Managing ethical and legal issues in the supply chain</td>
+<td>Product owners are responsible for ensuring that their product is delivered in line with market compliance requirements. Upstream services must be verified for compliance.<br/><br/>
+It is essential to ensure that activities such as labelling are carried out in line with legal and ethical labour practices, and that inputs to product development, such as training data or other models are obtained from legal sources and are unencumbered by IP issues.<br/>
+</td>
+</tr>
+<tr> 
+<td>Loss of control over IP</td>
+<td>Product design should be carried out so as to maintain control over core IP. Design processes should ensure that there is never a situation where the product is overly reliant upon the outputs of an upstream vendor's models without sufficiently defensible proprietary IP being introduced within the product.<br/><br/>
+MLOps processes should enforce this review process on an ongoing basis.
+</td>
+</tr>
+<tr> 
+<td>Risk of overspend on Cloud resources</td>
+<td>Processes should include continuous monitoring at fine granularity to detect and remedy runaway resource-consuming activities.<br/><br/>
+Products should provide predictive models for resource usage to compare against.<br/>
+</td>
+</tr>
+<tr> 
+<td>Energy usage and sustainability</td>
+<td>Energy efficiency must be a primary design concern for all ML products. The cost of operating with ML assets should be expected to rise steeply with exponentially increasing demand for compute power and business models must account for this expenditure.<br/><br/>
+It should be anticipated that additional regulation will be introduced in some jurisdictions to control the access to scarce power generation resources.
+</td>
+</tr>
+<tr> 
+<td>Availability of critical hardware</td>
+<td>With the scale of market demand for compute resources currently, it is not safe to assume that elastic compute capacity will be available upon demand. Actions must be taken to ensure that sufficient compute capability is available across the lifecycle of a given product or the risk is that infrastructure will not be available to scale in response to market demand for the product.<br/><br/>
+Continuous Delivery processes require ongoing compute resources in order to function. Interruption to hardware availability could cause serious harm, for example preventing the deployment of patch releases during a security breach.
+</td>
+</tr>
+<tr> 
+<td>Risks of feedback loops</td>
+<td>MLOps processes must track the lifecycle of training data and prevent the pollution of that data with model outputs. This may be a pernicious problem in instances where training data is sourced from markets that are also customers for the model.<br/><br/>
+An example for this is sourcing training data for coding assistants from GitHub repositories that are now starting to contain code produced by the coding assistant models.<br/>
+</td>
+</tr>
+<tr> 
+<td>Mistaking plausibility for reasoning</td>
+<td>Education of decision-makers is very important to ensure that decision-making products are being produced upon good foundations rather than a misplaced belief in the capabilities of current models.<br/><br/>
+It should be recognised that it is in the commercial interests of the model vendors to perpetuate unrealistic beliefs in the capabilities of their products and to cherry-pick demonstrations that support obvious but incorrect conclusions.<br/><br/>
+MLOps processes must include explicit and conclusive tests to verify the reasoning capability of third party models being leveraged to produce a decision-making product. These should be fuzzed to avoid selection bias.<br/>
+</td>
+</tr>
+</table>
 
 <br>
 
@@ -659,18 +763,17 @@ The following cross-cutting concerns are identified:
 
 <!--NOTES: Conclusions and recommendations for the current year.-->
 
-Progress in the MLOps space has been slow, with many ML products continuing down the path of implementing isolated, run-time stores, manually deploying ML assets into live production environments without automated governance processes. Meanwhile, pressure for sweeping government regulation in the field of AI grows across multiple jurisdictions. There is increasing concern that it will not be possible to meet the demands of imminent legislation with the tools and approaches being used today and there is an urgent need for the widespread adoption of more formal MLOps methods.
+Progress in the MLOps space remains slow, with many ML products continuing down the path of implementing isolated, run-time stores, manually deploying ML assets into live production environments without automated governance processes. We are now facing the imminent issue that it will not be possible to meet the demands of government legislation with the tools and approaches being used today and there is an ever more urgent need for the widespread adoption of more formal MLOps methods.
 
-Concerns have been raised that some of the proposed legislation would negatively impact Open Source projects, making it cost-prohibitive to create open, ML-based solutions in some regions, and exposing contributors to potential risk of prosecution, if their projects are used in regions where this legislation is in force.
+The impact of regulation will be very significant to all providers of ML-based products, regardless of location, since legislation has been created to apply at the point of use by customers in the regulated region, rather than touching only local providers.
 
-Another emerging requirement is the need for products to provide a Software Bill of Materials (SBOM) for audit and compliance purposes. As this becomes a legislative requirement in some markets, it will become increasingly important to include ML assets within the BOM for a given product.
+There will need to be a significant shift towards improved process governance for ML assets as a result.
 
-A meta-study of 769 Machine Learning papers, published in 2021 by Benjamin, et al (https://arxiv.org/pdf/2106.15195.pdf), showed multiple failings of scientific rigour in validating the results of many projects. It is clear that a more mature process and availability of suitable tooling is essential for the successful management of machine learning products.
+The US government is currently in the final stage of preparing legislation which will require government contractors to provide a Software Bill of Materials (SBOM) as part of deliveries, for audit and compliance purposes. This introduces an urgent need to be able to include ML assets within the BOM for any given product.
 
-Of similar concern is the ongoing lack of understanding of the issues associated with the use of Jupyter Notebooks in building ML assets. A large scale study by Pimentel et al (http://www.ic.uff.br/~leomurta/papers/pimentel2019a.pdf) looked at 1.4 million Jupyter Notebooks from GitHub. They found that only 24% could be executed without errors and that a mere 4% produced repeatable results, with only 1.5% having any form of testing implemented. As a result, it is to be expected that the mortality rate of ML products will continue to be excessively high due to the high likelihood of multiple failures of reproducibility of core assets in production.
+A number of studies have been looking at the impact of AI code generation upon code quality metrics and the results are concerning. A study from [Bilkent University](https://arxiv.org/pdf/2304.10778) showed Copilot giving correct code less than 50% of the time and another study from [Stanford](https://arxiv.org/pdf/2211.03622) showed that developers wrote less secure code when using AI assistants, but tended to believe that their code was more secure. Findings from [GitClear](https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality) show a doubling of code churn in 2024 due to AI-generated code which has to be reverted or patched with two weeks of creation.
 
-Market forces are inexorably moving us to an imminent need for MLOps tooling that is Product-focused, rather than ML-focused.
-
+All of this speaks to an urgent need to improve governance over product delivery processes in order to maintain quality. Improved MLOps tooling and more widespread adoption of Continuous Delivery practices are essential factors in the safe delivery and sustainable ownership of ML-based products.
 <br>
 
 # Glossary

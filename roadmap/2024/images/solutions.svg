@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 450 912">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 450 1200">
+<rect width="100%" height="100%" fill="#fffefe"/>
 <defs>
   <rect id='TBD' width='50' height='16' fill='#fff598' stroke='black' stroke-width='0.4' vector-effect='non-scaling-stroke' shape-rendering='geometricPrecision' />
   <rect id='RR' width='50' height='16' fill='#000000' stroke='black' stroke-width='0.4' vector-effect='non-scaling-stroke' shape-rendering='geometricPrecision' />
@@ -20,11 +21,11 @@
   <rect x='400' y='0' width='50' height='16' fill='none' stroke='black' stroke-width='0.4'/>
   <text x='0' y='12' font-family="Arial" font-size='10px' text-anchor='left' role="row">
   <tspan  x='5'>Solution</tspan>
-  <tspan  x='205'>2024</tspan>
-  <tspan  x='255'>2025</tspan>
-  <tspan  x='305'>2026</tspan>
-  <tspan  x='355'>2027</tspan>
-  <tspan  x='405'>2028</tspan>
+  <tspan  x='205'>2025</tspan>
+  <tspan  x='255'>2026</tspan>
+  <tspan  x='305'>2027</tspan>
+  <tspan  x='355'>2028</tspan>
+  <tspan  x='405'>2029</tspan>
   </text>
 </g>
 
@@ -139,7 +140,7 @@
 <g id='rowGroup9' transform='translate(0, 272)'>
   <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
   <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
-  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
@@ -152,10 +153,10 @@
 
 <g id='rowGroup10' transform='translate(0, 304)'>
   <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
-  <use x='200' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
   <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
-  <use x='300' y='0' transform='scale(1, 2)' href='#DU'/>
-  <use x='350' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
   <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
   <tspan  x='5' y='12'>Approaches for enabling MLOps to support a broad range of</tspan>
@@ -166,7 +167,7 @@
 
 <g id='rowGroup11' transform='translate(0, 336)'>
   <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
-  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='250' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
@@ -180,8 +181,8 @@
 
 <g id='rowGroup12' transform='translate(0, 368)'>
   <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
-  <use x='200' y='0' transform='scale(1, 2)' href='#RR'/>
-  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
@@ -280,7 +281,7 @@
   <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
   <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
   <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
-  <use x='300' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
   <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
@@ -293,10 +294,10 @@
 <g id='rowGroup20' transform='translate(0, 624)'>
   <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
   <use x='200' y='0' transform='scale(1, 2)' href='#RR'/>
-  <use x='250' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
   <use x='300' y='0' transform='scale(1, 2)' href='#DU'/>
-  <use x='350' y='0' transform='scale(1, 2)' href='#DU'/>
-  <use x='400' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
   <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
   <tspan  x='5' y='12'>Escalation of data categories</tspan>
   <tspan  x='5' y='19'></tspan>
@@ -307,8 +308,8 @@
 <g id='rowGroup21' transform='translate(0, 656)'>
   <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
   <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
-  <use x='250' y='0' transform='scale(1, 2)' href='#DU'/>
-  <use x='300' y='0' transform='scale(1, 2)' href='#QPP'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#QPP'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
   <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
@@ -337,8 +338,8 @@
   <use x='200' y='0' transform='scale(1, 2)' href='#RR'/>
   <use x='250' y='0' transform='scale(1, 2)' href='#RR'/>
   <use x='300' y='0' transform='scale(1, 2)' href='#RR'/>
-  <use x='350' y='0' transform='scale(1, 2)' href='#RR'/>
-  <use x='400' y='0' transform='scale(1, 2)' href='#RR'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#QPP'/>
   <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
   <tspan  x='5' y='12'>Online learning</tspan>
   <tspan  x='5' y='19'></tspan>
@@ -348,7 +349,7 @@
 
 <g id='rowGroup24' transform='translate(0, 752)'>
   <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
-  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='250' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
@@ -362,8 +363,8 @@
 
 <g id='rowGroup25' transform='translate(0, 784)'>
   <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
-  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
-  <use x='250' y='0' transform='scale(1, 2)' href='#QPP'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#QPP'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
@@ -378,7 +379,7 @@
   <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
   <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
   <use x='250' y='0' transform='scale(1, 2)' href='#QPP'/>
-  <use x='300' y='0' transform='scale(1, 2)' href='#QPP'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
   <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
   <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
@@ -413,6 +414,132 @@
   <tspan  x='5' y='12'>Educating data science practitioners on the approaches and</tspan>
   <tspan  x='5' y='19'>best practices used in product development while educating</tspan>
   <tspan  x='5' y='26'>product development teams on the requirements of ML</tspan>
+  </text>
+</g>
+
+<g id='rowGroup29' transform='translate(0, 912)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#QPP'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Vulnerability to Supply Chain attacks</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup30' transform='translate(0, 944)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#QPP'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Understanding the chain of responsibility associated with</tspan>
+  <tspan  x='5' y='19'>ML assets</tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup31' transform='translate(0, 976)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Managing ethical and legal issues in the supply chain</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup32' transform='translate(0, 1008)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#QPP'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Loss of control over IP</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup33' transform='translate(0, 1040)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#QPP'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Risk of overspend on Cloud resources</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup34' transform='translate(0, 1072)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Energy usage and sustainability</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup35' transform='translate(0, 1104)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Availability of critical hardware</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup36' transform='translate(0, 1136)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#QPP'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Risks of feedback loops</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
+  </text>
+</g>
+
+<g id='rowGroup37' transform='translate(0, 1168)'>
+  <use x='0' y='0' transform='scale(1, 2)' href='#item'/>
+  <use x='200' y='0' transform='scale(1, 2)' href='#DU'/>
+  <use x='250' y='0' transform='scale(1, 2)' href='#QPP'/>
+  <use x='300' y='0' transform='scale(1, 2)' href='#QPP'/>
+  <use x='350' y='0' transform='scale(1, 2)' href='#CI'/>
+  <use x='400' y='0' transform='scale(1, 2)' href='#CI'/>
+  <text x='0' y='12' font-family="Arial" font-size='7px' fill='black' text-anchor='left' role="row">
+  <tspan  x='5' y='12'>Mistaking plausibility for reasoning</tspan>
+  <tspan  x='5' y='19'></tspan>
+  <tspan  x='5' y='26'></tspan>
   </text>
 </g>
 </svg>
