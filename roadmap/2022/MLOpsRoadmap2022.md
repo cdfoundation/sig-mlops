@@ -3,6 +3,9 @@
 
 # MLOps Roadmap 2022
 
+> **Warning**
+> This document is now outdated. Please see [the 2024 edition](../2024/MLOpsRoadmap2024.md)
+
 ## About this document
 
 This document sets out the current state of MLOps and provides a five year roadmap for future customer needs which is intended to support pre-competitive collaboration across the industry with a view to improving the overall state of MLOps as a capability for all.
