@@ -1,7 +1,7 @@
 <!-- cSpell:locale en-GB -->
 <img src="images/mlops-horizontal-color.svg"/>
 
-# MLOps Roadmap 2024 - DRAFT
+# MLOps Roadmap 2024
 
 ## About this document
 
@@ -32,7 +32,7 @@ Kim Scofield, Space42 <kscofield@space42.ca>
 <!--Amend list of contributors here-->
 
 
-*DRAFT VERSION*
+*Update publication - Nov 30th, 2024*
 
 <br>
 
@@ -771,9 +771,9 @@ There will need to be a significant shift towards improved process governance fo
 
 The US government is currently in the final stage of preparing legislation which will require government contractors to provide a Software Bill of Materials (SBOM) as part of deliveries, for audit and compliance purposes. This introduces an urgent need to be able to include ML assets within the BOM for any given product.
 
-A number of studies have been looking at the impact of AI code generation upon code quality metrics and the results are concerning. A study from [Bilkent University](https://arxiv.org/pdf/2304.10778) showed Copilot giving correct code less than 50% of the time and another study from [Stanford](https://arxiv.org/pdf/2211.03622) showed that developers wrote less secure code when using AI assistants, but tended to believe that their code was more secure. Findings from [GitClear](https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality) show a doubling of code churn in 2024 due to AI-generated code which has to be reverted or patched with two weeks of creation.
+A number of studies have been looking at the impact of AI code generation upon code quality metrics and the results are concerning. A study from [Bilkent University](https://arxiv.org/pdf/2304.10778) showed Copilot giving correct code less than 50% of the time and another study from [Stanford](https://arxiv.org/pdf/2211.03622) showed that developers wrote less secure code when using AI assistants, but tended to believe that their code was more secure. Findings from [GitClear](https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality) show a doubling of code churn in 2024 due to AI-generated code which has to be reverted or patched with two weeks of creation. This correlates with the data from the 2024 [DORA State of DevOps](https://dora.dev/research/2024/dora-report/) report, which indicates widespread adoption of AI for writing code and summarising data, but shows 39% of respondents having low trust in the quality of such generated code.
 
-All of this speaks to an urgent need to improve governance over product delivery processes in order to maintain quality. Improved MLOps tooling and more widespread adoption of Continuous Delivery practices are essential factors in the safe delivery and sustainable ownership of ML-based products.
+All of this speaks to an urgent need to improve governance over product delivery processes in order to maintain quality. Better MLOps tooling and more widespread adoption of Continuous Delivery practices are essential factors in the safe delivery and sustainable ownership of ML-based products.
 <br>
 
 # Glossary
